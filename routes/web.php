@@ -19,13 +19,16 @@ Route::get('/find-tutors','frontend\HomeController@findTutors')->name('find-tuto
 Route::get('/become-tutors','frontend\HomeController@becomeTutors')->name('become-tutors');
 Route::get('/login','frontend\HomeController@login')->name('login');
 Route::get('/signup','frontend\HomeController@signup')->name('signup');
-Route::get('teacher/login','frontend\TeacherController@login')->name('teacher-login');
-Route::get('teacher/registration','frontend\TeacherController@registration')->name('teacher-registration');
-Route::post('teacher/insert','frontend\TeacherController@insertTeacher')->name('teacher-insert');
-Route::group(['prefix' => 'teacher','middleware' => 'teacher'], function () {
+Route::get('/teacher/login','frontend\TeacherController@login')->name('teacher-login');
+Route::get('/teacher/registration','frontend\TeacherController@registration')->name('teacher-registration');
+Route::post('/teacher/insert','frontend\TeacherController@insertTeacher')->name('teacher-insert');
 
-  
-  
+   Route::get('/student/registration','frontend\StudentController@registration')->name('student-registration');
+   Route::get('/student/login','frontend\StudentController@login')->name('student-login');
+   Route::get('/parent/registration','frontend\ParentController@registration')->name('parent-registration');
+   Route::get('/parent/login','frontend\ParentController@login')->name('parent-login');
+
+Route::group(['prefix' => 'teacher','middleware' => ['teacher','auth']], function () {
    Route::get('/step-one','frontend\TeacherController@stepOne')->name('teacher-step-one');
    Route::get('/step-two','frontend\TeacherController@stepTwo')->name('teacher-step-two');
    Route::get('/step-three','frontend\TeacherController@stepThree')->name('teacher-step-three');
@@ -36,19 +39,13 @@ Route::group(['prefix' => 'teacher','middleware' => 'teacher'], function () {
 
 });	
 
-Route::group(['prefix' => 'parent'], function () {
-
-   Route::get('/registration','frontend\ParentController@registration')->name('parent-registration');
-   Route::get('/login','frontend\ParentController@login')->name('parent-login');
+Route::group(['prefix' => 'parent','middleware' => ['parent','auth']], function () {
    Route::get('/dashboard','frontend\ParentController@dashboard')->name('parent-dashboard');
    Route::get('/profile','frontend\ParentController@profile')->name('parent-profile');
    Route::get('/change-password','frontend\ParentController@changePassword')->name('parent-change-password');
 });	
 
-Route::group(['prefix' => 'student'], function () {
-
-   Route::get('/registration','frontend\StudentController@registration')->name('student-registration');
-   Route::get('/login','frontend\StudentController@login')->name('student-login');
+Route::group(['prefix' => 'student','middleware' => ['student','auth']], function () {
    Route::get('/dashboard','frontend\StudentController@dashboard')->name('student-dashboard');
    Route::get('/profile','frontend\StudentController@profile')->name('student-profile');
    Route::get('/change-password','frontend\StudentController@changePassword')->name('student-change-password');
