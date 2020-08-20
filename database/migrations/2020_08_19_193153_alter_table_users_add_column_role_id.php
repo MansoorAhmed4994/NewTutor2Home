@@ -15,8 +15,8 @@ class AlterTableUsersAddColumnRoleId extends Migration
     {
         Schema::table('users', function (Blueprint $table) {
             $table->integer('role_id')->after('password')->nullable();
-            $table->integer('image')->after('role_id')->nullable();
-            $table->integer('phone_number')->after('image')->nullable();
+            $table->string('image')->after('role_id')->nullable();
+            $table->string('phone_number')->after('image')->nullable();
         });
     }
 
