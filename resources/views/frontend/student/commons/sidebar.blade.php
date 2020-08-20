@@ -17,8 +17,10 @@
                         Password</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="nine-tab" href="{{ route('home') }}" role="tab" aria-controls="nine" aria-selected="false"><span style="background-image: url({{asset('front/img/logo/list-icn8.png')}})" class="icn eight"></span>
-                        Logout</a>
+                        <form action="{{ route('logout') }}" method="post">
+                          @csrf
+                          <a class="nav-link" id="nine-tab" href="javascript:void(0);" role="tab" aria-controls="nine" aria-selected="false" onclick="$(this).closest('form').submit();"><span style="background-image: url({{asset('front/img/logo/list-icn8.png')}})" class="icn eight"></span>Logout</a>
+                        </form>
                     </li>
                     
                 </ul>

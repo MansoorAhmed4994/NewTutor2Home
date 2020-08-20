@@ -44,11 +44,14 @@ Route::group(['prefix' => 'parent','middleware' => ['parent','auth']], function 
    Route::get('/profile','frontend\ParentController@profile')->name('parent-profile');
    Route::get('/change-password','frontend\ParentController@changePassword')->name('parent-change-password');
 });	
-
+Route::post('/student/insert','frontend\StudentController@insertTeacher')->name('student-insert');
 Route::group(['prefix' => 'student','middleware' => ['student','auth']], function () {
    Route::get('/dashboard','frontend\StudentController@dashboard')->name('student-dashboard');
    Route::get('/profile','frontend\StudentController@profile')->name('student-profile');
    Route::get('/change-password','frontend\StudentController@changePassword')->name('student-change-password');
+   Route::post('/update-password','frontend\StudentController@updatePassword')->name('student-update-password');
+   Route::post('/update-student-profile','frontend\StudentController@updateprofile')->name('student-update-profile');
+   
 
 });
 

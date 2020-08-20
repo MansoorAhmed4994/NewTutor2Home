@@ -57,7 +57,9 @@
 								Student SIGN uP
 							</div>
 							<div class="form">
-								<form>
+							@include('frontend.frontalert')
+							<form class="form" method="POST" action="{{ route('student-insert') }}">
+        @csrf
 									<p class="text-primary mb-5">(*) Marked fields are mandatory</p>
 
 
@@ -101,7 +103,7 @@
 												Confirm password
 											</label>
 											<span class="text-danger pull-right">*</span>
-											<input type="password" id="c_password" name="c_password" placeholder="Confirm password" autocomplete="new-password" class="form-control">
+											<input type="password" id="c_password" name="password_confirmation" placeholder="Confirm password" autocomplete="new-password" class="form-control">
 										</div>
 										<div class="form-group col-sm-6 mt-5">
 											<label>
@@ -122,9 +124,9 @@
 										</div>
 
 										<div class="form-group col-12">
-											<a class=" btn btn-primary w-100" href="login.php">
+										<button type="submit" class=" btn btn-primary w-100">
 												Become A Student
-											</a>
+											</button>
 										</div>
 										<div class="form-group text-center col-12">
 											<span>OR</span>
