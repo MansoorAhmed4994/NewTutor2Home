@@ -31,7 +31,9 @@
 								Parent SIGN uP
 							</div>
 							<div class="form">
-								<form>
+								@include('frontend.frontalert')
+							<form class="form" method="POST" action="{{ route('parent-insert') }}">
+        @csrf
 									<p class="text-primary mb-5">(*) Marked fields are mandatory</p>
 
 
@@ -75,7 +77,7 @@
 												Confirm password
 											</label>
 											<span class="text-danger pull-right">*</span>
-											<input type="password" id="c_password" name="c_password" placeholder="Confirm password" autocomplete="new-password" class="form-control">
+											<input type="password" id="c_password" name="password_confirmation" placeholder="Confirm password" autocomplete="new-password" class="form-control">
 										</div>
 										<div class="form-group col-sm-6 mt-5">
 											<label>
@@ -96,9 +98,9 @@
 										</div>
 
 										<div class="form-group col-12">
-											<a class=" btn btn-primary w-100" href="{{ route('login') }}">
-												Become A Parent
-											</a>
+										<button type="submit" class=" btn btn-primary w-100">
+												Become A Student
+											</button>
 										</div>
 										<div class="form-group text-center col-12">
 											<span>OR</span>
@@ -110,7 +112,7 @@
 
 										</div>
 										<div class="form-group text-center mb-0 col-12">
-											<p>Already have an account ? <a href="{{ route('login') }}">Login</a>
+											<p>Already have an account ? <a href="login.php">Login</a>
 											</p>
 										</div>
 										<div class="form-group col-12 mt-2" style="line-height: 1.3;">
@@ -122,7 +124,6 @@
 												policy.</small>
 										</div>
 									</div>
-								</form>
 							</div>
 						</div>
 					</div>

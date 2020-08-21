@@ -16,7 +16,7 @@ class StudentController extends Controller
     {
     	return view('frontend.student.registration');
     }
-    public function insertTeacher(Request $request)
+    public function insertStudent(Request $request)
     {
     	
         $validator = Validator::make($request->all(), [

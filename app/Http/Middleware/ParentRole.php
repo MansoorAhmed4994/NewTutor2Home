@@ -17,7 +17,8 @@ class ParentRole
 
     public function handle($request, Closure $next)
     {
-        if ($this->auth->user()->role->id !== Role::PARENT) {
+       
+        if ($this->auth->user()->role->id !== Role::PARENTS) {
             abort(403, 'Unauthorized action.');
         }
         return $next($request);

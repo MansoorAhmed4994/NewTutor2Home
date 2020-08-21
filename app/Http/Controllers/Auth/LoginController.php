@@ -67,7 +67,7 @@ class LoginController extends Controller
         elseif($user->role->id == Role::STUDENT) {
             return redirect()->route('student-dashboard');
         } 
-        elseif($user->role->id == Role::PARENT) {
+        elseif($user->role->id == Role::PARENTS) {
             return redirect()->route('parent-dashboard');
         }
 
