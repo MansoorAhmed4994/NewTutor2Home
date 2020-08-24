@@ -26,7 +26,9 @@
                         <div class="container">
                             <div class="row justify-content-center">
                                 <div class="col-lg-12">
-                                    <form>
+                                @include('frontend.frontalert')
+							<form class="form" method="POST" action="{{ route('parent-update-password') }}">
+        @csrf
                                         <div class="bg">
                                             <div class="title text-center">
                                                 Change Password
@@ -39,13 +41,13 @@
                                                         <label class="font-weight-bold">
                                                             Current password
                                                         </label>
-                                                        <input type="password" name="password" id="password" placeholder="Current password" class="form-control ">
+                                                        <input type="password" name="old_password" id="password" placeholder="Current password" class="form-control ">
                                                     </div>
                                                     <div class="form-group col-sm-12 col-lg-6">
                                                         <label class=" font-weight-bold">
                                                             New password
                                                         </label>
-                                                        <input type="password" name="new_password" id="new_password" placeholder="New password" class="form-control ">
+                                                        <input type="password" name="password" id="new_password" placeholder="New password" class="form-control ">
                                                     </div>
 
 
@@ -53,7 +55,7 @@
                                                         <label class="font-weight-bold">
                                                             Confirm password
                                                         </label>
-                                                        <input type="password" name="c_password" id="c_password" placeholder="Confirm password" class="form-control ">
+                                                        <input type="password" name="password_confirmation" id="c_password" placeholder="Confirm password" class="form-control ">
                                                     </div>
 
                                                     <div class="col-sm-12 m-auto pt-2">

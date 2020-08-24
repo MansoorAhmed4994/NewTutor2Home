@@ -29,20 +29,20 @@
                                             <img src="{{asset('front/img/teacher/mt-3.jpg')}}" alt="">
                                         </div>
                                         <div class="text col-lg-8">
-                                            <div class="name">
-                                                <h4>Daniyal Munaf<!-- <span style="color: #13a89e;font-size: small;">()</span> -->
+                                        <div class="name">
+                                                <h4>{{ Auth::user()->name }}<!-- <span style="color: #13a89e;font-size: small;">()</span> -->
                                                 </h4>
-                                                <span class="subtitle d-block"><b>Parent ID:</b>
-                                                    TND1595721636
+                                                <span class="subtitle d-block"><b>Student ID:</b>
+                                                    TND{{ Auth::user()->id }}
                                                 </span>
                                                 <span class="subtitle d-block"><b>DOB:</b>
-                                                    19th Apr, 2001
+                                                {{ Auth::user()->dob }}
                                                 </span>
                                                 <span class="subtitle d-block"><b>Email Id:</b>
-                                                    daniyalmunaf@gmail.com
+                                                {{ Auth::user()->email }}
                                                 </span>
                                                 <span class="subtitle d-block"><b>Phone No.:</b>
-                                                    03152476062
+                                                {{ Auth::user()->phone_number }}
                                                 </span>
                                             </div>
                                         </div>
