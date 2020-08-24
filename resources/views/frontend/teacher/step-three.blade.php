@@ -45,8 +45,11 @@
   														<span class="text-danger pull-right">*</span>
   														<select class="form-control" id="select_subject" name="select_subject">
   															<option value="">Select Subject</option>
-  															<option value="">Animal Communication</option>
-  															<option value="s">Cat Education</option>
+  															<option value="">Maths</option>
+															<option value="s">English</option>
+															<option value="s">Science</option>
+  															<option value="s">11 Plus</option>
+  															<option value="s">GCSE</option>
   														</select>
   													</div>
 
@@ -55,24 +58,15 @@
   														<span class="text-danger pull-right">*</span>
   														<select class="form-control" id="select_level" name="select_level">
   															<option value="Select Level">Select Level</option>
-  															<option value="Primary">Primary</option>
-  															<option value="Secondary">Secondary</option>
+  															<option value="Primary">Fresh</option>
+															<option value="Secondary">Basic</option>
+															<option value="Secondary">Intermediate</option>
+															<option value="Secondary">Expert</option>
   														</select>
   													</div>
   												</div>
 
-  												<div class="row pr-4 pl-4">
-
-  													<div class="form-group col-md-12 col-sm-12">
-  														<label class="font-weight-bold">Examination board</label>
-  														<span class="text-danger pull-right">*</span> 
-  														<select class="form-control" id="select_level" name="select_level">
-  															<option value="">Select Board</option>
-  															<option value="">Matric Board</option>
-  															<option value="">Inter Board</option>
-  														</select>
-  													</div>
-  												</div>
+  												
 
   												<hr>
 
@@ -82,16 +76,16 @@
 
   										<!-- content div  -->
 
-  										<div class="form-group col-12 mt-2">
+  										<!--<div class="form-group col-12 mt-2">
   											<div class="offset-sm-6 text-right">
   												<button type="button" class="btn btn-primary small add-more">
   													Add More
   												</button>
   											</div>
-  										</div>
+  										</div>-->
 
   										<div class="row pr-5 pl-5">
-  											<div class="form-group col-sm-12 col-md-12">
+  											<!--<div class="form-group col-sm-12 col-md-12">
   												<label class="font-weight-bold">
   													Will you be teaching student under 18
   													<span class="text-danger pull-right ml-2">*</span>
@@ -110,22 +104,9 @@
   														</label>
   													</li>
   												</ul>
-  											</div>
+  											</div>-->
 
-  											<div id="dbs_certificate_div" class="col-md-12" style="display:none">
-  												<small>Max file size must be less than 10MB.</small>
-  												<br>
-  												<label class="upload img btn py-2">
-
-  													<input type="file" name="dbs_certificate" id="dbs_certificate" data-target="image-name" class="d-none" accept="image/jpeg,image/jpg,image/png,application/pdf">
-  													<span>
-  													Government background check certificate                                                     </span>
-  												</label>
-  												<!-- <span class="text-danger ml-2">*</span> -->
-  												<br>
-  											</div>
-  											<div class="col-md-12 ml-3 image-name" style="color: teal">
-  											</div>
+  											
   										</div>
 
 
@@ -133,11 +114,8 @@
 
   										<div class="row pr-5 pl-5">
   											<div class="form-group col-sm-12 col-md-12 ">
-  												<label class="font-weight-bold">
-  													Availability
-  												</label>
-  												<div class="Qualifications p-0">
-  													<div id="" class="table-responsive">
+  												<div class="Qualifications  p-0">
+  													<div id="" class="table-responsive ">
   														<table class="table text-center">
   															<thead>
   																<tr>
@@ -147,156 +125,193 @@
   																	<th>Wed</th>
   																	<th>Thu</th>
   																	<th>Fri</th>
-  																	<th>Sat</th>
-  																	<th>Sun</th>
   																</tr>
   															</thead>
   															<tbody id="availability_div">
   																<tr>
   																	<td class="text-left">
-  																		<img src="assets/img/logo/genaral-icn-trns.png" alt="Pre 12 PM">
-  																		Pre 12 PM
+  																		<img src="http://localhost:8080/newtutor2home/public/front/img/logo/genaral-icn-trns.png" alt="Pre 12 PM">
+  																		4PM-6PM
   																	</td>
   																	<td>
-  																		<label>
-  																			<input type="checkbox" value="1">                                                                                    <span></span>
-  																			<span></span>
-  																		</label>
+																		<div class="custom-control custom-checkbox">
+																			<input type="checkbox" class="custom-control-input" id="customCheck1" checked>
+																			<label class="custom-control-label " for="customCheck1s"></label>
+																		</div>
   																	</td>
   																	<td>
-  																		<label>
-  																			<input type="checkbox">                                                                                    <span></span>
-  																			<span></span>
-  																		</label>
+																	  	<div class="custom-control custom-checkbox">
+																			<input type="checkbox" class="custom-control-input" id="customCheck2" >
+																			<label class="custom-control-label " for="customCheck2"></label>
+																		</div>
   																	</td>
   																	<td>
-  																		<label>
-  																			<input type="checkbox" value="1">                                                                                    <span></span>
-  																			<span></span>
-  																		</label>
+																		<div class="custom-control custom-checkbox">
+																			<input type="checkbox" class="custom-control-input" id="customCheck3" checked>
+																			<label class="custom-control-label " for="customCheck3"></label>
+																		</div>
   																	</td>
   																	<td>
-  																		<label>
-  																			<input type="checkbox" value="1">                                                                                    <span></span>
-  																			<span></span>
-  																		</label>
+																	  	<div class="custom-control custom-checkbox">
+																			<input type="checkbox" class="custom-control-input" id="customCheck4" >
+																			<label class="custom-control-label " for="customCheck4"></label>
+																		</div>
   																	</td>
   																	<td>
-  																		<label>
-  																			<input type="checkbox" value="1">                                                                                    <span></span>
-  																			<span></span>
-  																		</label>
-  																	</td>
-  																	<td>
-  																		<label>
-  																			<input type="checkbox" value="1">                                                                                    <span></span>
-  																			<span></span>
-  																		</label>
-  																	</td>
-  																	<td>
-  																		<label>
-  																			<input type="checkbox" value="1">                                                                                    <span></span>
-  																			<span></span>
-  																		</label>
+																		<div class="custom-control custom-checkbox">
+																			<input type="checkbox" class="custom-control-input" id="customCheck5" checked>
+																			<label class="custom-control-label " for="customCheck5"></label>
+																		</div>
   																	</td>
   																</tr>
 
   																<tr>
   																	<td class="text-left">
-  																		<img src="assets/img/logo/genaral-icn1-trns.png" alt="12 - 5 PM">
-  																		12 - 5 PM
+  																		<img src="http://localhost:8080/newtutor2home/public/front/img/logo/genaral-icn1-trns.png" alt="12 - 5 PM">
+  																		6PM-8PM
   																	</td>
   																	<td>
-  																		<label>
-  																			<input type="checkbox" value="1">                                                                                    <span></span>
-  																			<span></span>
-  																		</label>
+																		<div class="custom-control custom-checkbox">
+																			<input type="checkbox" class="custom-control-input" id="customCheck6" >
+																			<label class="custom-control-label " for="customCheck6"></label>
+																		</div>
   																	</td>
   																	<td>
-  																		<label>
-  																			<input type="checkbox" value="1">                                                                                    <span></span>
-  																			<span></span>
-  																		</label>
+																	  	<div class="custom-control custom-checkbox">
+																			<input type="checkbox" class="custom-control-input" id="customCheck7" checked>
+																			<label class="custom-control-label " for="customCheck7"></label>
+																		</div>
   																	</td>
   																	<td>
-  																		<label>
-  																			<input type="checkbox" value="1">                                                                                    <span></span>
-  																			<span></span>
-  																		</label>
+																		<div class="custom-control custom-checkbox">
+																			<input type="checkbox" class="custom-control-input" id="customCheck8" >
+																			<label class="custom-control-label " for="customCheck8"></label>
+																		</div>
   																	</td>
   																	<td>
-  																		<label>
-  																			<input type="checkbox" value="1">                                                                                    <span></span>
-  																			<span></span>
-  																		</label>
+																	  	<div class="custom-control custom-checkbox">
+																			<input type="checkbox" class="custom-control-input" id="customCheck9" checked>
+																			<label class="custom-control-label " for="customCheck9"></label>
+																		</div>
   																	</td>
   																	<td>
-  																		<label>
-  																			<input type="checkbox" value="1">                                                                                    <span></span>
-  																			<span></span>
-  																		</label>
-  																	</td>
-  																	<td>
-  																		<label>
-  																			<input type="checkbox" value="1">                                                                                    <span></span>
-  																			<span></span>
-  																		</label>
-  																	</td>
-  																	<td>
-  																		<label>
-  																			<input type="checkbox" value="1">                                                                                    <span></span>
-  																			<span></span>
-  																		</label>
+																		<div class="custom-control custom-checkbox">
+																			<input type="checkbox" class="custom-control-input" id="customCheck10" >
+																			<label class="custom-control-label " for="customCheck10"></label>
+																		</div>
   																	</td>
   																</tr>
 
   																<tr>
   																	<td class="text-left">
-  																		<img src="assets/img/logo/genaral-icn2-trns.png" alt="After 5 PM">
-  																		After 5 PM
+  																		<img src="http://localhost:8080/newtutor2home/public/front/img/logo/genaral-icn2-trns.png" alt="After 5 PM">
+  																		4PM-8PM
   																	</td>
   																	<td>
-  																		<label>
-  																			<input type="checkbox" value="1">                                                                                    <span></span>
-  																			<span></span>
-  																		</label>
+																		<div class="custom-control custom-checkbox">
+																			<input type="checkbox" class="custom-control-input" id="customCheck11" checked>
+																			<label class="custom-control-label " for="customCheck11"></label>
+																		</div>
   																	</td>
   																	<td>
-  																		<label>
-  																			<input type="checkbox" value="1">                                                                                    <span></span>
-  																			<span></span>
-  																		</label>
+																	  	<div class="custom-control custom-checkbox">
+																			<input type="checkbox" class="custom-control-input" id="customCheck12" >
+																			<label class="custom-control-label " for="customCheck12"></label>
+																		</div>
   																	</td>
   																	<td>
-  																		<label>
-  																			<input type="checkbox" value="1">                                                                                    <span></span>
-  																			<span></span>
-  																		</label>
+																		<div class="custom-control custom-checkbox">
+																			<input type="checkbox" class="custom-control-input" id="customCheck13" checked>
+																			<label class="custom-control-label " for="customCheck13"></label>
+																		</div>
   																	</td>
   																	<td>
-  																		<label>
-  																			<input type="checkbox" value="1">                                                                                    <span></span>
-  																			<span></span>
-  																		</label>
+																	  	<div class="custom-control custom-checkbox">
+																			<input type="checkbox" class="custom-control-input" id="customCheck14" >
+																			<label class="custom-control-label " for="customCheck14"></label>
+																		</div>
   																	</td>
   																	<td>
-  																		<label>
-  																			<input type="checkbox" value="1">                                                                                    <span></span>
-  																			<span></span>
-  																		</label>
+																		<div class="custom-control custom-checkbox">
+																			<input type="checkbox" class="custom-control-input" id="customCheck15" checked>
+																			<label class="custom-control-label " for="customCheck15"></label>
+																		</div>
+  																	</td>
+  																</tr>
+  															</tbody>
+  														</table>
+  													</div>
+												</div>
+												  <br><br>
+												<div class="Qualifications  p-0">
+  													<div id="" class="table-responsive ">
+  														<table class="table text-center">
+  															<thead>
+  																<tr>
+  																	<th class="text-left">Time</th>
+  																	<th>Saturday</th>
+  																	<th>Sunday</th>
+  																</tr>
+  															</thead>
+  															<tbody id="availability_div">
+  																<tr>
+  																	<td class="text-left">
+  																		<img src="http://localhost:8080/newtutor2home/public/front/img/logo/genaral-icn-trns.png" alt="Pre 12 PM">
+  																		10AM-12PM
   																	</td>
   																	<td>
-  																		<label>
-  																			<input type="checkbox" value="1">                                                                                    <span></span>
-  																			<span></span>
-  																		</label>
+																		<div class="custom-control custom-checkbox">
+																			<input type="checkbox" class="custom-control-input" id="customCheck1" checked>
+																			<label class="custom-control-label " for="customCheck1s"></label>
+																		</div>
   																	</td>
   																	<td>
-  																		<label>
-  																			<input type="checkbox" value="1">                                                                                    <span></span>
-  																			<span></span>
-  																		</label>
+																	  	<div class="custom-control custom-checkbox">
+																			<input type="checkbox" class="custom-control-input" id="customCheck2" >
+																			<label class="custom-control-label " for="customCheck2"></label>
+																		</div>
   																	</td>
+  																
+  																</tr>
+
+  																<tr>
+  																	<td class="text-left">
+  																		<img src="http://localhost:8080/newtutor2home/public/front/img/logo/genaral-icn1-trns.png" alt="12 - 5 PM">
+  																		12PM-2PM
+  																	</td>
+  																	<td>
+																		<div class="custom-control custom-checkbox">
+																			<input type="checkbox" class="custom-control-input" id="customCheck6" >
+																			<label class="custom-control-label " for="customCheck6"></label>
+																		</div>
+  																	</td>
+  																	<td>
+																	  	<div class="custom-control custom-checkbox">
+																			<input type="checkbox" class="custom-control-input" id="customCheck7" checked>
+																			<label class="custom-control-label " for="customCheck7"></label>
+																		</div>
+  																	</td>
+  																	
+  																</tr>
+
+  																<tr>
+  																	<td class="text-left">
+  																		<img src="http://localhost:8080/newtutor2home/public/front/img/logo/genaral-icn2-trns.png" alt="After 5 PM">
+  																		2PM-4PM
+  																	</td>
+  																	<td>
+																		<div class="custom-control custom-checkbox">
+																			<input type="checkbox" class="custom-control-input" id="customCheck11" checked>
+																			<label class="custom-control-label " for="customCheck11"></label>
+																		</div>
+  																	</td>
+  																	<td>
+																	  	<div class="custom-control custom-checkbox">
+																			<input type="checkbox" class="custom-control-input" id="customCheck12" >
+																			<label class="custom-control-label " for="customCheck12"></label>
+																		</div>
+  																	</td>
+  																	
   																</tr>
   															</tbody>
   														</table>

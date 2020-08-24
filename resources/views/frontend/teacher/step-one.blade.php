@@ -74,12 +74,12 @@
                                                 </div>
 
 
-                                                <div class="form-group col-sm-6 mt-4">
+                                                <!--<div class="form-group col-sm-6 mt-4">
                                                     <label class="font-weight-bold">
                                                         Youtube Video Link
                                                     </label>
                                                     <input type="text" placeholder="" name="video_link" id="video_link" value="" class="form-control">
-                                                </div>
+                                                </div>-->
 
                                                 <div class="form-group col-12">
                                                     <div class="mt-3 row">
@@ -130,6 +130,14 @@
                                                     </label>
                                                     <span class="text-danger pull-right">*</span>
                                                     <input type="text" name="city" id="city" placeholder="City" class="form-control">
+                                                </div>
+
+                                                <div class="form-group col-12">
+                                                    <label class="font-weight-bold">
+                                                        Postal Code
+                                                    </label>
+                                                    <span class="text-danger pull-right">*</span>
+                                                    <input type="text" name="postal_code" id="postal_code" placeholder="Postal Code" class="form-control">
                                                 </div>
 
                                                 <div class="form-group col-12">

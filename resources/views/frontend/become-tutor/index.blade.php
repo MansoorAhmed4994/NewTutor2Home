@@ -25,7 +25,7 @@
                         <h2 class="text-white landing-h2-font">Become a tutor today with Tutors2Home</h2>
                         <div class="about-btn text-center">
                             <div class="genius-btn gradient-bg text-center text-uppercase ul-li-block bold-font">
-                                <a href="teacher_registration.php">Register Now</a>
+                                <a href="{{route('teacher-registration')}}">Register Now</a>
                             </div>
                         </div>
                     </div>

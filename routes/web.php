@@ -22,6 +22,7 @@ Route::get('/signup','frontend\HomeController@signup')->name('signup');
 Route::get('/teacher/login','frontend\TeacherController@login')->name('teacher-login');
 Route::get('/teacher/registration','frontend\TeacherController@registration')->name('teacher-registration');
 Route::post('/teacher/insert','frontend\TeacherController@insertTeacher')->name('teacher-insert');
+Route::post('/parent/insert','frontend\ParentController@insertParent')->name('parent-insert');
 
    Route::get('/student/registration','frontend\StudentController@registration')->name('student-registration');
    Route::get('/student/login','frontend\StudentController@login')->name('student-login');
@@ -43,8 +44,10 @@ Route::group(['prefix' => 'parent','middleware' => ['parent','auth']], function 
    Route::get('/dashboard','frontend\ParentController@dashboard')->name('parent-dashboard');
    Route::get('/profile','frontend\ParentController@profile')->name('parent-profile');
    Route::get('/change-password','frontend\ParentController@changePassword')->name('parent-change-password');
+   Route::post('/update-password','frontend\StudentController@updatePassword')->name('parent-update-password');
+   Route::post('/update-parent-profile','frontend\StudentController@updateprofile')->name('parent-update-profile');
 });	
-Route::post('/student/insert','frontend\StudentController@insertTeacher')->name('student-insert');
+Route::post('/student/insert','frontend\StudentController@insertStudent')->name('student-insert');
 Route::group(['prefix' => 'student','middleware' => ['student','auth']], function () {
    Route::get('/dashboard','frontend\StudentController@dashboard')->name('student-dashboard');
    Route::get('/profile','frontend\StudentController@profile')->name('student-profile');
@@ -94,4 +97,3 @@ Route::group(['middleware' => 'auth'], function () {
 	Route::put('profile', ['as' => 'profile.update', 'uses' => 'ProfileController@update']);
 	Route::put('profile/password', ['as' => 'profile.password', 'uses' => 'ProfileController@password']);
 });
-

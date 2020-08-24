@@ -16,6 +16,11 @@ class TeacherController extends Controller
     	return view('frontend.teacher.registration');
     }
 
+    public function testing()
+    {
+        return view('frontend.teacher.testing');
+    }
+
     public function insertTeacher(Request $request)
     {
     	
