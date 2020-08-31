@@ -8,7 +8,7 @@
   				<div class="slider-text">
   					<div class="section-title mb20 headline text-center ">
   						<div class="layer-1-3 heading">
-  							<h2><span>Profile Step-3</span></h2><br>
+  							<h2><span>Update Subject</span></h2><br>
   						</div>
   					</div>
   				</div>
@@ -25,7 +25,7 @@
   						<div class="tab-pane fade show active" id="ninja" role="tabpanel" aria-labelledby="ninja-tab">
   							<div class="bg">
   								<div class="title text-center">
-  									Profile Step - 3
+                                  Update Subject
   								</div>
   								<label class="ml-3 mt-3"><small class="text-primary">(*) All fields are
   								mandatory.</small>
@@ -36,6 +36,7 @@
 								  @include('frontend.frontalert')
  <form class="form" method="POST" action="{{ route('teacher-step-three-save') }}" enctype="multipart/form-data" method="post" accept-charset="utf-8" autocomplete="off" novalidate="novalidate">
         @csrf
+        <input type="hidden" placeholder="First name" name="profile" value="update" class="form-control">
                           
   									<div class="row">
   										<div class="content col-12">
@@ -49,7 +50,7 @@
   														<select class="form-control" id="select_subject" name="subject">
   															<option value="">Select Subject</option>
 															  @for($i=0;$i<=count($subject)-1;$i++)
-                                                            <option value="{{ $i  }}"> {{ $subject[$i] }}</option>
+                                                            <option value="{{ $i  }}"  @if($result->subject==$i) selected @endif> {{ $subject[$i] }}</option>
                                                             @endfor
   														</select>
   													</div>
@@ -60,7 +61,7 @@
   														<select class="form-control" id="select_level" name="level">
   															<option value="">Select Level</option>
 															  @for($i=0;$i<=count($level)-1;$i++)
-                                                            <option value="{{ $i  }}"> {{ $level[$i] }}</option>
+                                                            <option value="{{ $i  }}"  @if($result->level==$i) selected @endif> {{ $level[$i] }}</option>
                                                             @endfor  													
 														</select>
   													</div>
@@ -111,7 +112,7 @@
 
 
 
-
+<!-- 
   										<div class="row pr-5 pl-5">
   											<div class="form-group col-sm-12 col-md-12 ">
   												<div class="Qualifications  p-0">
@@ -318,10 +319,10 @@
   													</div>
   												</div>
   											</div>
-  										</div>
+  										</div> -->
   										<div class="mt-5 form-group col-12">
 										  <button name="search" class="btn btn-primary w-100" type="submit">
-                                                              save
+                                                              Update
                                                             </button>
   										</div>
   									</div>

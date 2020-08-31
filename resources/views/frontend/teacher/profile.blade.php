@@ -30,13 +30,19 @@
 
 							<div class="row no-gutters">
 								<div class="img col-lg-4">
-
+                                    @if(Auth::user()->image!="")
+									
+									<img src="{{ url('images') }}/{{ Auth::user()->image }}" alt="">
+									@else
 									<img src="{{ asset('front/img/teacher/mt-3.jpg') }}" alt="">
+									@endif
+									
 
+									
 								</div>
 								<div class="text col-lg-8">
 									<div class="name">
-										<h4>Daniyal Munaf </h4>
+										<h4>{{ Auth::user()->name }}</h4>
 										<!-- <p>Fully Qualified &amp; Experienced GCSE Maths Teacher</p> -->
 										<div class="row">
 
@@ -51,7 +57,7 @@
 														Active:</span>Now                                                           </p>
 														<p><span class="badge badge-success">0</span>
 														Completed lessons</p>
-														<p>Email: usmanjawed456@gmail.com</p>
+														<p>Email: {{ Auth::user()->email }}</p>
 													</div>
 													<div class="col-6">
 														<p><span class="icn icn-small"><img src="{{ asset('front/img/white-1.png') }}" alt=""></span>
@@ -98,21 +104,23 @@
                            </div>
 
                            <div data-aos="fade-up" class="Bio bg-light position-relative aos-init aos-animate">
-                           	<a href="update_tutor_profile.php" class="edit"><i class="fa fa-pencil" aria-hidden="true"></i> Edit</a>
+                           	<a href="{{ route('teacher-view-profile') }}" class="edit"><i class="fa fa-pencil" aria-hidden="true"></i> Edit</a>
                            	<h4>My Bio</h4>
-                           	<p>asdsadasd asdsd asdhkjasdkjasdhasjdhasjdhasjkdhasjkdhasjkdhasjkdhasjkdhasjkdhask…</p>
+                           	<p>{{ Auth::user()->description }}</p>
                            </div>
                            
                            <div data-aos="fade-up" class="Subject bg-light position-relative aos-init aos-animate">
-                           	<a href="update_tutor_profile.php" class="edit"><i class="fa fa-pencil" aria-hidden="true"></i> Edit</a>
+                           	<a href="{{ route('teacher-update-Subject') }}" class="edit"><i class="fa fa-pencil" aria-hidden="true"></i> Edit</a>
                            	<h4>My subjects</h4>
                            	<p>I teach the following subjects:</p>
                            	<h6 class="">
-                           		Computer programming
+							   @for($i=0;$i<=count($subjectall)-1;$i++)
+                              @if($Subject->subject==$i) {{ $subjectall[$i] }} @endif
+                             @endfor
                            	</h6>
                            </div>
                            <div data-aos="fade-up" class="Qualifications bg-light position-relative aos-init aos-animate">
-                           	<a href="update_tutor_profile.php" class="edit"><i class="fa fa-pencil" aria-hidden="true"></i> Edit</a>
+                           	<a href="{{ route('teacher-update-Qualification') }}" class="edit"><i class="fa fa-pencil" aria-hidden="true"></i> Edit</a>
                            	<h4>My qualifications</h4>
 
                            	<div class="uni-list">
@@ -121,7 +129,9 @@
                            		<h6>School Details</h6>
                            		<p>
                            			<span class="font-weight-bold">Name:</span>
-                           			sm science
+                           			@for($i=0;$i<=count($qualificationall)-1;$i++)
+                              @if($Qualification->class_type==$i) {{ $qualificationall[$i] }} @endif
+                             @endfor
                            		</p>
                            		<div class="row mt-3">
                            			<div class="col-sm-3">
@@ -139,24 +149,28 @@
                                        		Teaching level
                                        	</span>
                                        </div>
-                                       <div class="col-sm-3">
+                                       <!-- <div class="col-sm-3">
                                        	<span class="font-weight-bold">
                                        		Result
                                        	</span>
-                                       </div>
+                                       </div> -->
                                    </div>
                                    <div class="row mt-3">
                                    	<div class="col-sm-3">
-                                   		Computer programming
+									   @for($i=0;$i<=count($qualification_type)-1;$i++)
+                              @if($Qualification->qualification_type==$i) {{ $qualification_type[$i] }} @endif
+                             @endfor
                                    	</div>
                                        <!-- <div class="col-sm-3">
                                        ACT                                       </div> -->
                                        <div class="col-sm-3">
-                                       	Secondary
+                                       @for($i=0;$i<=count($classtype)-1;$i++)
+                              @if($Qualification->level==$i) {{ $classtype[$i] }} @endif
+                             @endfor
                                        </div>
-                                       <div class="col-sm-3">
+                                       <!-- <div class="col-sm-3">
                                        	Pass
-                                       </div>
+                                       </div> -->
                                    </div>
                                </div>
                            </div>

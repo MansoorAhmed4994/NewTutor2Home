@@ -8,7 +8,7 @@
 					<div class="slider-text">
 						<div class="section-title mb20 headline text-center ">
 							<div class="layer-1-3 heading">
-                                <h2><span>Profile Step-1</span></h2><br>
+                                <h2><span>update profile</span></h2><br>
 							</div>
 						</div>
 					</div>
@@ -26,7 +26,7 @@
                             <div class="tab-pane fade show active" id="ninja" role="tabpanel" aria-labelledby="ninja-tab">
                                 <div class="bg">
                                     <div class="title text-center">
-                                        Profile Step - 1
+                                         Update Profile 
                                     </div>
                                     <label class="mt-3 ml-3"><small class="text-primary">(*) All fields are
                                             mandatory.</small></label>
@@ -36,6 +36,7 @@
                                     action="{{ route('teacher-step-one-save') }}" enctype="multipart/form-data"
                                      method="post" accept-charset="utf-8" autocomplete="off" novalidate="novalidate">
         @csrf
+        <input type="hidden" placeholder="First name" name="profile" value="update" class="form-control">
                                             <div class="row">
                                                 <div class="form-group col-sm-6">
                                                     <label class="font-weight-bold">
@@ -122,7 +123,7 @@
                                                         @foreach($countries as $countries)
 
                                                         <option value="{{ $countries }}" 
-                                                        
+                                                        @if( Auth::user()->country==$countries) selected @endif
 
                                                         >{{$countries }}</option> 
                                                         @endforeach;
@@ -139,7 +140,7 @@
                                                         @foreach($states as $states)
 
                                                         <option value="{{ $states }}" 
-                                                        
+                                                        @if( Auth::user()->state==$states) selected @endif
 
                                                         >{{$states }}</option> 
                                                         @endforeach;
@@ -157,7 +158,7 @@
 
                                                                     <option value="{{ $cities }}" 
                                                                     
-
+                                                                    @if( Auth::user()->city==$cities) selected @endif
                                                                     >{{$cities }}</option> 
                                                                     @endforeach;
                                                                 </select>
@@ -184,7 +185,7 @@
                                                         Phone Number
                                                     </label>
                                                     <span class="text-danger pull-right">*</span>
-                                                    <input type="text" name="phone_number" id="phone" value="" placeholder="Phone Number" class="form-control" value="{{ Auth::user()->phone_no}}">
+                                                    <input type="text" name="phone_number" id="phone" placeholder="Phone Number" class="form-control" value="{{ Auth::user()->phone_number}}">
                                                 </div>
 
                                                 <div class="form-group mt-1  col-12">
@@ -195,8 +196,8 @@
                                                         <span class="text-danger pull-right">*</span>
                                                         <select class="form-control" id="select_gender" name="gender">
                                                             <option value="">Select Gender</option>
-                                                            <option value="Male" @if(Auth::user()->gender=="Male") checked  @endif>Male</option>
-                                                            <option value="Female" @if(Auth::user()->gender=="Female") checked  @endif>Female</option>
+                                                            <option value="Male" @if(Auth::user()->gender=="Male") selected  @endif>Male</option>
+                                                            <option value="Female" @if(Auth::user()->gender=="Female") selected  @endif>Female</option>
                                                         </select>
                                                     </div>
                                                 </div>
@@ -231,7 +232,7 @@
                                                         <select class="form-control" id="select_subject" name="experience">
                                                             <option value="">Select</option>
                                                             @for($i=0;$i<=count($experience)-1;$i++)
-                                                            <option value="{{ $i  }}"  @if(Auth::user()->experience==$i) checked  @endif> {{ $experience[$i] }}</option>
+                                                            <option value="{{ $i  }}"  @if(Auth::user()->experience==$i) selected  @endif> {{ $experience[$i] }}</option>
                                                             @endfor
                                                         </select>
                                                     </div>
@@ -246,7 +247,7 @@
                                                         <select class="form-control"  id="here_of_us" name="here_of_us">
                                                             <option value="">Select</option>
                                                             @for($j=0;$j<=count($social)-1;$j++)
-                                                            <option value="{{ $j }}"  @if(Auth::user()->here_of_us==$i) checked  @endif> {{ $social[$j] }}</option>
+                                                            <option value="{{ $j }}"  @if(Auth::user()->here_of_us==$i) selected  @endif> {{ $social[$j] }}</option>
                                                             @endfor
                                                         </select>
                                                     </div>
@@ -255,7 +256,7 @@
 
                                                 <div class="mt-5 form-group col-12">
                                                 <button name="search" class="btn btn-primary w-100" type="submit">
-                                                              save
+                                                              update
                                                             </button>
                                                     <!-- <a class=" btn btn-primary w-100" href="{{ route('teacher-step-two') }}">
                                                     Save

@@ -9,7 +9,7 @@ use App\User;
 use App\Models\Role;
 use Hash;
 use Auth;
-use array_forget;
+
 class StudentController extends Controller
 {
     public function registration()

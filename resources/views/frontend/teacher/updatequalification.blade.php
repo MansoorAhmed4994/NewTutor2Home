@@ -8,7 +8,7 @@
 					<div class="slider-text">
 						<div class="section-title mb20 headline text-center ">
 							<div class="layer-1-3 heading">
-                                <h2><span>Profile Step-2</span></h2><br>
+                                <h2><span>Update Qualification</span></h2><br>
 							</div>
 						</div>
 					</div>
@@ -26,13 +26,15 @@
 
                     <div class="bg">
                         <div class="title text-center">
-                            Profile Step - 2
+                        Update Qualification
                         </div>
                         <div class="form">
                             
                         @include('frontend.frontalert')
  <form class="form" method="POST" action="{{ route('teacher-step-two-save') }}" enctype="multipart/form-data" method="post" accept-charset="utf-8" autocomplete="off" novalidate="novalidate">
         @csrf
+        <input type="hidden" placeholder="First name" name="profile" value="update" class="form-control">
+                                                       
                             
 
                                 
@@ -58,7 +60,7 @@
                                                             <select name="class_type" id="qualification" class="form-control">
                                                                 <option value="">Select</option>
                                                                 @for($i=0;$i<=count($qualification)-1;$i++)
-                                                            <option value="{{ $i  }}"> {{ $qualification[$i] }}</option>
+                                                            <option value="{{ $i  }}"  @if($result->class_type==$i) selected @endif > {{ $qualification[$i] }}</option>
                                                             @endfor
                                                             </select>
                                                         </div>
@@ -71,7 +73,7 @@
                                                             <select name="qualification_type" id="qualification_type_1" class="form-control">
                                                                 <option value="">Select</option>
                                                                 @for($i=0;$i<=count($qualification_type)-1;$i++)
-                                                            <option value="{{ $i  }}"> {{ $qualification_type[$i] }}</option>
+                                                            <option value="{{ $i  }}"  @if($result->qualification_type==$i) selected @endif> {{ $qualification_type[$i] }}</option>
                                                             @endfor
                                                             </select>
                                                         </div>
@@ -99,7 +101,7 @@
                                                             <select name="subject" id="class_type" class="form-control">
                                                                 <option value="">Select</option>
                                                                 @for($i=0;$i<=count($classtype)-1;$i++)
-                                                            <option value="{{ $i  }}"> {{ $classtype[$i] }}</option>
+                                                            <option value="{{ $i  }}"  @if($result->subject==$i) selected @endif> {{ $classtype[$i] }}</option>
                                                             @endfor
                                                             </select>
                                                         </div>
@@ -114,7 +116,7 @@
                                                             <select name="license" id="licence" class="form-control">
                                                                 <option value="">Select</option>
                                                                 @for($i=0;$i<=count($licence)-1;$i++)
-                                                            <option value="{{ $i  }}"> {{ $licence[$i] }}</option>
+                                                            <option value="{{ $i  }}"  @if($result->license==$i) selected @endif> {{ $licence[$i] }}</option>
                                                             @endfor
                                                             </select>
                                                         </div>
@@ -127,7 +129,7 @@
                                                             <select name="Tutor_per_hour" id="tutoer_per_hour_rate" class="form-control">
                                                                 <option value="">Select</option>
                                                                 @for($i=0;$i<=count($hourrate)-1;$i++)
-                                                            <option value="{{ $i  }}"> {{ $hourrate[$i] }}</option>
+                                                            <option value="{{ $i  }}"  @if($result->Tutor_per_hour==$i) selected @endif> {{ $hourrate[$i] }}</option>
                                                             @endfor
                                                             </select>
                                                         </div>
@@ -142,12 +144,12 @@
                                                                 <label class="upload_img" for="customcheck21">Monday To Friday 4PM TO 8PM</label>
                                                             </div>-->
                                                             <label>
-                                                                <input type="radio" id="yes" name="level" class="teach_under_16" value="0">
+                                                                <input type="radio" id="yes" name="level" class="teach_under_16" value="0" @if($result->level==0) checked @endif>
                                                                 <span class="upload_img">Monday To Friday 4PM TO 8PM</span>
                                                             </label>
 
                                                             <label>
-                                                                <input type="radio" id="yes" name="level" class="teach_under_16" value="1">
+                                                                <input type="radio" id="yes" name="level" class="teach_under_16" value="1" @if($result->level==1) checked @endif>
                                                                 <span class="upload_img">Saturday Sunday 10AM TO 4PM</span>
                                                             </label>
                                                         </div>
@@ -156,7 +158,7 @@
 
                                                             <div class="row ml-1 align-items-center">
                                                                 <label for="cv" class="upload_img">Upload CV:</label>
-                                                                <input type="file" id="myFile" name="cv">
+                                                                <input type="file" id="myFile" name="cv" value="{{ $result->cv }}">
                                                             </div>
                                                         </div>
 
@@ -198,7 +200,7 @@
 
                                 <div class="form-group col-12 mt-5 p-0">
                                 <button name="search" class="btn btn-primary w-100" type="submit">
-                                                              save
+                                                              update
                                                             </button>
                                 </div>
 

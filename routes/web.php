@@ -31,12 +31,19 @@ Route::post('/parent/insert','frontend\ParentController@insertParent')->name('pa
 
 Route::group(['prefix' => 'teacher','middleware' => ['teacher','auth']], function () {
    Route::get('/step-one','frontend\TeacherController@stepOne')->name('teacher-step-one');
+   Route::post('/teacher-step-one-save','frontend\TeacherController@stepOneSave')->name('teacher-step-one-save');
    Route::get('/step-two','frontend\TeacherController@stepTwo')->name('teacher-step-two');
+   Route::post('/teacher-step-two-save','frontend\TeacherController@stepTwoSave')->name('teacher-step-two-save');
    Route::get('/step-three','frontend\TeacherController@stepThree')->name('teacher-step-three');
+   Route::post('/teacher-step-three-save','frontend\TeacherController@stepThreeSave')->name('teacher-step-three-save');
    Route::get('/dashboard','frontend\TeacherController@dashboard')->name('teacher-dashboard');
    Route::get('/profile','frontend\TeacherController@profile')->name('teacher-profile');
    Route::get('/avalibility','frontend\TeacherController@avalibility')->name('teacher-avalibility');
    Route::get('/change-password','frontend\TeacherController@changePassword')->name('teacher-change-password');
+   Route::post('/update-password','frontend\TeacherController@updatePassword')->name('teacher-update-password');
+   Route::get('/viewprofile','frontend\TeacherController@viewprofile')->name('teacher-view-profile');
+   Route::get('/updateQualification','frontend\TeacherController@updateQualification')->name('teacher-update-Qualification');
+   Route::get('/updateSubject','frontend\TeacherController@updateSubject')->name('teacher-update-Subject');
 
 });	
 
