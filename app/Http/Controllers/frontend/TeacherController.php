@@ -139,7 +139,8 @@ public function profile()
 
 public function avalibility()
 {
-    return view('frontend.teacher.avalibility');
+    $teacherSlots=TeacherSlots::where('user_id',Auth::user()->id)->get();
+    return view('frontend.teacher.avalibility',compact('teacherSlots'));
 }
 
 
@@ -328,8 +329,9 @@ if ($validator->fails()) {
         'days'=>$ndata[1],
         'user_id'=>$user_id
         ];
-        TeacherSlots::updateOrCreate([
-            'user_id' =>$user_id],$timeslots);
+        TeacherSlots::updateOrCreate(['time'=>$ndata[0],
+        'days'=>$ndata[1],
+        'user_id'=>$user_id],$timeslots);
     }
     return redirect()->route('teacher-dashboard');
    }

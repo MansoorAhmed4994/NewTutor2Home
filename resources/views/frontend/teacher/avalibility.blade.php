@@ -51,8 +51,8 @@
                                             <tbody id="availability_div">
                                                 <tr>
                                                     <td class="text-left">
-                                                        <img src="{{asset('front/img/logo/genaral-icn-trns.png')}}" alt="Pre 12 PM">
-                                                        Pre 12 PM
+                                                    <img src="{{ url('front/img/logo/genaral-icn-trns.png') }}" alt="Pre 12 PM">
+  						                               4PM-6PM
                                                     </td>
                                                     <td></td>
                                                     <td></td>
@@ -64,8 +64,8 @@
                                                 </tr>
                                                 <tr>
                                                     <td class="text-left">
-                                                        <img src="{{asset('front/img/logo/genaral-icn1-trns.png')}}" alt="12 - 5 PM">
-                                                        12 - 5 PM
+                                                    <img src="{{ url('front/img/logo/genaral-icn1-trns.png') }}" alt="12 - 5 PM">
+  													6PM-8PM
                                                     </td>
                                                     <td></td>
                                                     <td></td>
@@ -77,8 +77,8 @@
                                                 </tr>
                                                 <tr>
                                                     <td class="text-left">
-                                                        <img src="{{asset('front/img/logo/genaral-icn2-trns.png')}}" alt="After 5 PM">
-                                                        After 5 PM
+                                                    <img src="{{ url('front/img/logo/genaral-icn2-trns.png')}}" alt="After 5 PM">
+  													4PM-8PM
                                                     </td>
                                                     <td><i class="fa fa-check text-success" aria-hidden="true"></i></td>
                                                     <td><i class="fa fa-check text-success" aria-hidden="true"></i></td>
@@ -88,6 +88,33 @@
                                                     <td><i class="fa fa-check text-success" aria-hidden="true"></i></td>
                                                     <td><i class="fa fa-check text-success" aria-hidden="true"></i></td>
                                                 </tr>
+                                                <tr>
+                                                    <td class="text-left">
+                                                    <img src="{{  url('front/img/logo/genaral-icn1-trns.png')}}" alt="12 - 5 PM">
+  													12PM-2PM
+                                                    </td>
+                                                    <td><i class="fa fa-check text-success" aria-hidden="true"></i></td>
+                                                    <td><i class="fa fa-check text-success" aria-hidden="true"></i></td>
+                                                    <td><i class="fa fa-check text-success" aria-hidden="true"></i></td>
+                                                    <td><i class="fa fa-check text-success" aria-hidden="true"></i></td>
+                                                    <td><i class="fa fa-check text-success" aria-hidden="true"></i></td>
+                                                    <td><i class="fa fa-check text-success" aria-hidden="true"></i></td>
+                                                    <td><i class="fa fa-check text-success" aria-hidden="true"></i></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-left">
+                                                    <img src="{{  url('front/img/logo/genaral-icn2-trns.png')}}" alt="After 5 PM">
+  													  2PM-4PM
+                                                    </td>
+                                                    <td><i class="fa fa-check text-success" aria-hidden="true"></i></td>
+                                                    <td><i class="fa fa-check text-success" aria-hidden="true"></i></td>
+                                                    <td><i class="fa fa-check text-success" aria-hidden="true"></i></td>
+                                                    <td><i class="fa fa-check text-success" aria-hidden="true"></i></td>
+                                                    <td><i class="fa fa-check text-success" aria-hidden="true"></i></td>
+                                                    <td><i class="fa fa-check text-success" aria-hidden="true"></i></td>
+                                                    <td><i class="fa fa-check text-success" aria-hidden="true"></i></td>
+                                                </tr>
+                                              
                                             </tbody>
                                         </table>
                                     </div>
