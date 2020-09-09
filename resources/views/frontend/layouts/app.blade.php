@@ -33,6 +33,12 @@
 	<link href="{{asset('front/css/colors/color-7.css')}}" rel="alternate stylesheet" type="text/css" title="color-7">
 	<link href="{{asset('front/css/colors/color-8.css')}}" rel="alternate stylesheet" type="text/css" title="color-8">
 	<link href="{{asset('front/css/colors/color-9.css')}}" rel="alternate stylesheet" type="text/css" title="color-9">
+    
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
+    <script src="https://cdn.bootcss.com/select2/3.4.5/select2.min.js"></script>
+    <link href="https://cdn.bootcss.com/select2/3.4.5/select2.min.css" rel="stylesheet">
 
 
 </head>
@@ -69,7 +75,7 @@
 					<div class="container">
 						<div class="navbar-default">
 							<div class="navbar-header float-left">
-								<a class="navbar-brand text-uppercase" href="index.php"><img class="img.logo_tutor_mobile" src="{{asset('front/img/logo/tutors2home.png')}}" style="  height: 60px; width: 150px;" alt="logo"></a>
+								<a class="navbar-brand text-uppercase logo_tutor_mobile" href="index.php"><img class="logo_tutor_mobile" src="{{asset('front/img/logo/tutors2home.png')}}"  alt="logo"></a>
 							</div><!-- /.navbar-header -->
 
 							<div class="select-lang">
@@ -444,7 +450,7 @@
 						<div class="row">
 							<div class="col-md-6">
 								<div class="copy-right-text">
-									<p>© 2018 - Designed & Developed by <a href="https://jthemes.com/" title="Best Premium WordPress, HTML Template Store"> Jthemes Studio</a>. All rights reserved</p>
+									<p>© 2020 - Designed & Developed by Desenador</a>. All rights reserved</p>
 								</div>
 							</div>
 							<div class="col-md-6">
@@ -463,6 +469,10 @@
 		</footer>
 	<!-- End of footer section
 		============================================= -->
+
+	 
+
+
 
 
 
@@ -484,6 +494,9 @@
 		<script src="{{asset('front/js/switch.js')}}"></script>
 		<script src="http://maps.google.com/maps/api/js?key=AIzaSyC61_QVqt9LAhwFdlQmsNwi5aUJy9B2SyA"></script>
 		<script src="{{asset('front/js/script.js')}}"></script>
+		
+		
+		
 
 
 	</body>

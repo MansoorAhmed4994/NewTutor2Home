@@ -98,8 +98,8 @@
 										</div>
 
 										<div class="form-group col-12">
-										<button type="submit" class=" btn btn-primary w-100">
-												Become A Student
+											<button type="submit" class=" btn btn-primary w-100">
+												Become A Parent
 											</button>
 										</div>
 										<div class="form-group text-center col-12">

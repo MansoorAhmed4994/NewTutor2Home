@@ -1452,15 +1452,44 @@ b, strong {
   }
 }
 
-  @media only screen and (min-width: 600px) {
-    img.logo_tutor_mobile {
-      height: 40px;
-      width: 200px;
-    }
+  
 
     @media (max-width: 1549px){
 .container {
     max-width: 1230px;
+}}
+  
+
+.logo_tutor_mobile {
+  height: 60px;
+  width: 150px;
+}
+
+@media only screen and (max-width: 710px) {
+.logo_tutor_mobile {
+  height: 38px ;
+  width: 70px ;
+}
+
+@media only screen and (min-width: 770px) {
+  .logo_tutor_mobile {
+    height: 48px ;
+    width: 90px ;
+  }
+
+  @media only screen and (max-width: 710px) {
+    .section-title h2 span {
+      font-weight: 400;
+    }
+
+    @media only screen and (min-width: 770px)  {
+      .section-title h2 span {
+        font-weight: 400;
+      }
+
+      @media screen and (max-width: 470px){
+.slider-text .section-title h2 {
+    font-size: 20px !important;
 }}
 
 

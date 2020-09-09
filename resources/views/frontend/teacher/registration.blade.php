@@ -63,7 +63,7 @@
 					<div class="col-lg-7">
 						<div class="bg">
 							<div class="title text-center">
-								Tutorninja SIGN uP
+								tutor SIGN uP
 							</div>
 							<div class="form">
 							@include('frontend.frontalert')

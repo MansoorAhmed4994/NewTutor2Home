@@ -38,6 +38,8 @@ Route::group(['prefix' => 'teacher','middleware' => ['teacher','auth']], functio
    Route::post('/teacher-step-three-save','frontend\TeacherController@stepThreeSave')->name('teacher-step-three-save');
    Route::get('/dashboard','frontend\TeacherController@dashboard')->name('teacher-dashboard');
    Route::get('/profile','frontend\TeacherController@profile')->name('teacher-profile');
+   Route::get('/myclass',function () {return view('frontend\teacher\myclass');})->name('teacher-myclass');
+   Route::get('/create-class',function () {return view('frontend\teacher\create-class');})->name('teacher-create-class');
    Route::get('/avalibility','frontend\TeacherController@avalibility')->name('teacher-avalibility');
    Route::get('/change-password','frontend\TeacherController@changePassword')->name('teacher-change-password');
    Route::post('/update-password','frontend\TeacherController@updatePassword')->name('teacher-update-password');

@@ -13,6 +13,14 @@
                         Profile</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link " id="one-tab" href="{{ route('teacher-myclass') }}" aria-selected="true"><span class="custom-icn"><i class="	fa fa-laptop" aria-hidden="true"></i></span>
+                        My Classs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " id="one-tab" href="{{ route('teacher-create-class') }}" aria-selected="true"><span class="custom-icn"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></span>
+                        Create Class</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link " id="five-tab" href="{{ route('teacher-avalibility') }}"><span style="background-image: url({{asset('front/img/logo/list-icn4.png')}})" class="icn four"></span>
                         Availability</a>
                     </li>
@@ -28,7 +36,9 @@
                     </li>
                     
                 </ul>
+                
             </div>
+            <br><br>
         </div>
-    </div>                
+    </div> 
 </div>
