@@ -14,6 +14,9 @@ use Illuminate\Support\Facades\Route;
 */
 Auth::routes();
 
+Route::get('/zoom','ZoomController@index')->name('zoom');
+
+
 Route::get('/','frontend\HomeController@index')->name('home');
 Route::get('/find-tutors','frontend\HomeController@findTutors')->name('find-tutors');
 Route::get('/become-tutors','frontend\HomeController@becomeTutors')->name('become-tutors');
@@ -48,6 +51,8 @@ Route::group(['prefix' => 'teacher','middleware' => ['teacher','auth']], functio
    Route::get('/updateSubject','frontend\TeacherController@updateSubject')->name('teacher-update-Subject');
 
 });	
+
+
 
 Route::group(['prefix' => 'parent','middleware' => ['parent','auth']], function () {
    Route::get('/dashboard','frontend\ParentController@dashboard')->name('parent-dashboard');
