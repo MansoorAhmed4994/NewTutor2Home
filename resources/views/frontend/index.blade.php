@@ -8,7 +8,7 @@
 					<div class="slider-text">
 						<div class="section-title mb20 headline text-center ">
 							<div class="layer-1-1">
-								<span class="subtitle text-uppercase">CONNECTING YOU WITH TUTORS</span>
+								<span class="subtitle text-uppercase">YOU WITH TUTORS</span>
 							</div>
 							<div class="layer-1-3">
 								<h2><span>Connecting </span> Tutors  <br> and  <span>Students</span></h2>
