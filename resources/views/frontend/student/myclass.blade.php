@@ -1,7 +1,5 @@
-
 @extends('frontend.layouts.app')
 @section('content')
-
   <!-- Start of slider section
     ============================================= -->
     <section id="slide" class="slider-section">
@@ -22,15 +20,17 @@
         <div class="container">
             <div class="clearfix"></div>
             <div class="row">
-                @include('frontend.teacher.commons.sidebar')
+                @include('frontend.student.commons.sidebar')
                 <div class="right col-sm-8 col-lg-9">
                     <div class="Loginside pt-0">
                         <div class="container">
                             <div class="row justify-content-center">
                                 <div class="col-lg-12">
+                                   
                                 @include('frontend.frontalert')
-							<form class="form" method="POST">
+							<form class="form" method="POST" action="{{ route('student-update-password') }}">
         @csrf
+                                              
                                         <div class="bg">
                                             <div class="title text-center">
                                                 My Classes
@@ -52,21 +52,21 @@
                                                         <td>Mark</td>
                                                         <td>Otto</td>
                                                         <td>@mdo</td>
-                                                        <td><a href="{{ route('teacher-view-class') }}"><i class="fa fa-eye"></i></a><a href="{{ route('teacher-edit-class') }}"><i class="ml-2 fa fa-edit"></i></a><a href=""><i class="ml-2 fa fa-trash-o"></i></a></td>
+                                                        <td><a href="{{ route('student-view-class') }}"><i class="fa fa-eye"></i></a></td>
                                                     </tr>
                                                     <tr>
                                                         <th scope="row">2</th>
                                                         <td>Jacob</td>
                                                         <td>Thornton</td>
                                                         <td>@fat</td>
-                                                        <td><a href="{{ route('teacher-view-class') }}"><i class="fa fa-eye"></i></a><a href="{{ route('teacher-edit-class') }}"><i class="ml-2 fa fa-edit"></i></a><a href=""><i class="ml-2 fa fa-trash-o"></i></a></td>
+                                                        <td><a href="{{ route('student-view-class') }}"><i class="fa fa-eye"></i></a></td>
                                                     </tr>
                                                     <tr>
                                                         <th scope="row">3</th>
                                                         <td>Larry</td>
                                                         <td>the Bird</td>
                                                         <td>@twitter</td>
-                                                        <td><a href="{{ route('teacher-view-class') }}"><i class="fa fa-eye"></i></a><a href="{{ route('teacher-edit-class') }}"><i class="ml-2 fa fa-edit"></i></a><a href=""><i class="ml-2 fa fa-trash-o"></i></a></td>
+                                                        <td><a href="{{ route('student-view-class') }}"><i class="fa fa-eye"></i></a></td>
                                                     </tr>
                                                 </tbody>
                                                 </table>
@@ -81,14 +81,4 @@
             </div>
         </div>
     </div>
-    <script>
-
-
-    
-
-    
-</script>   
-
-
-    
     @endsection
