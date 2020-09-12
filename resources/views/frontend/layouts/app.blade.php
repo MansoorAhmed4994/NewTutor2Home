@@ -496,7 +496,28 @@
 		<script src="{{asset('front/js/script.js')}}"></script>
 		
 		
-		
+		<script>
+            $(document).ready(function(){
+             
+         $("#session_hours").change(function() {
+          var hour    = parseFloat($(this).val());
+	      var  year_count=$('#total_amount_hidden').val()
+	      var price = hour *  year_count;
+			
+		$('#total_amount').html(price);
+        // var pc_count   = parseInt($('#noofpc').val());
+        // var year_count = parseInt($('#noofyear').val());
+
+        // var price = product * pc_count * year_count;
+
+        // if (pc_count > 1 || year_count > 1) {
+        //     price = price * 0.8;
+        // }
+
+        // $('#total_amount').html(price);
+    });
+});
+                </script>
 
 
 	</body>

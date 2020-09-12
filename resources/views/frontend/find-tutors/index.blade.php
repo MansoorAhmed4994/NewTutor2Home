@@ -14,13 +14,23 @@
 					</div>
 				</div>
             </div>
+            <form class="form" action="" method="GET" accept-charset="utf-8" id="filterfrom" >
+        @csrf
+      
             <div class="container mb-3">
                 <div class="search_course_bg">
                     <div class="row">
                         <div class="form-group col-lg-4 col-md-4 col-sm-6 ">
-                            <select name="country" id="country" class="custom-select ">
-                                <option value="" data-select2-id="8">Country</option>
-                            </select>
+                            <select name="country" id="country" class="custom-select" name="country">
+                                                        <option value="">Select Country</option>   
+                                                        @foreach($countries as $countries)
+
+                                                        <option value="{{ $countries }}" 
+                                                        @if(request()->get('country')== $countries) Selected  @endif
+
+                                                        >{{$countries }}</option> 
+                                                        @endforeach;
+                                                    </select>
                         </div>
             
                         <div class="form-group col-lg-4 col-md-4 col-sm-6 ">
@@ -31,18 +41,28 @@
                     
                         <div class="form-group col-lg-4 col-md-4 col-sm-6 ">
                             <select name="subject" id="subject" class="custom-select ">
-                                <option value="" data-select2-id="8">Subject</option>
+                            <option value=""> Select  Subject</option>
+                                                            @for($i=0;$i<=count($subjectall)-1;$i++)
+                                                            <option value="{{ $i  }}"   @if(request()->get('subject')== $i ) Selected  @endif> {{ $subjectall[$i] }}</option>
+                                                            @endfor
+                                                        </select>
                             </select>
                         </div>
                         <div class="form-group col-lg-4 col-md-4 col-sm-6 ">
-                            <select name="level" id="level" class="custom-select ">
-                                <option value="" data-select2-id="8">Level</option>
+                            <select name="level" id="level" class="custom-select " >
+                            <option value=""> Select  Lavel</option>
+                            @for($i=0;$i<=count($level)-1;$i++)
+                                                            <option value="{{ $i  }}"  @if(request()->get('level')== $i ) Selected  @endif > {{ $level[$i] }}</option>
+                                                            @endfor
                             </select>
                         </div>
             
                         <div class="form-group col-lg-4 col-md-4 col-sm-6 ">
                             <select name="price" id="price" class="custom-select ">
-                                <option value="" data-select2-id="8">Price</option>
+                            <option value=""> Select  Price</option>
+                            @for($i=0;$i<=count($rate)-1;$i++)
+                                                            <option value="{{ $i  }}"  @if(request()->get('price')== $i ) Selected  @endif> {{ $rate[$i] }}</option>
+                                                            @endfor
                             </select>
                         </div>
                     
@@ -53,17 +73,19 @@
                         </div>
                         <div class="form-group col-12 mb-0">
                             <div class="genius-btn float-right gradient-bg text-center text-uppercase ul-li-block bold-font">
-                                <a href="#">Find Now <i class="fas fa-caret-right"></i></a>
+                            <button name="search" type="submit">Find Now  </button>
                             </div>
                             <div class="about-btn">
                                 <div class="genius-btn float-right gradient-bg text-center text-uppercase ul-li-block bold-font">
-                                    <a href="#">Reset  <i class="fas fa-caret-right"></i></a>
+                                    <a href="javascript:void(0)" onClick="clearForm()">Reset  <i class="fas fa-caret-right"></i></a>
                                 </div>
                             </div>
                         </div>
+                   
                     </div>
                 </div>
             </div>
+          </form>  
             <div class="container">
                 <div class="row">
                     <div class=" col-lg-3 col-md-4">
@@ -106,29 +128,47 @@
                         <div id="dynamic-content">
                           @if(count($teachers))  
                            @foreach($teachers as $key => $teacher) 
+                           <?php //dump($teacher->qualification->id);?>
                             <div class="item @if($key>0) mt-5 @endif">
                                 <div class="row no-gutters">
                                     <div class="img col-lg-4">
                                         <img class="premium-badge-find-a-ninja-badge" src="{{asset('front/img/premium-badeg.png')}}">
                                         <img class="premium-badge-find-a-ninja" src="{{asset('front/img/icon_offre-pro1.png')}}">
     
-                                        <img src="{{asset('front/img/teacher/mt-1.jpg')}}" alt="">
+                                     @if($teacher->image!="")
+									<img src="{{ url('images') }}/{{$teacher->image }}" alt="">
+									@else
+									<img src="{{ asset('front/img/teacher/mt-3.jpg') }}" alt="">
+									@endif
                                     </div>
                                     <div class="text col-lg-8">
                                         <div class="row h-100">
                                             <div class="left col-lg-7 col-md-6">
                                                 <h4>{{ $teacher->name }}
-                                                    <span class="subtitle d-block">Mental Health Social Work (Master) - Institute of Education, University of London</span>
+                                                    <span class="subtitle d-block">{{$teacher->description }}</span>
                                                 </h4>
                                                 <p>I am a Afrocentric Dr. Of…</p>
-                                                <h6>Subjects: <span class="subtitle">Social Work</span></h6>    
-                                                <h6>Levels: <span class="subtitle">Professional</span></h6>    
+                                                @if(isset($teacher->teacherSpecialization) && !empty($teacher->teacherSpecialization))
+                                                <h6>Subjects: <span class="subtitle">  @for($i=0;$i<=count($subjectall)-1;$i++)
+                              @if($teacher->teacherSpecialization->subject==$i) {{ $subjectall[$i] }} @endif
+                             @endfor</span></h6>    
+                                                <h6>Levels: <span class="subtitle">
+                                                @for($i=0;$i<=count($level)-1;$i++)
+                              @if($teacher->teacherSpecialization->level==$i) {{ $level[$i] }} @endif
+                             @endfor</span></h6> 
+                                                @endif   
                                             </div>
                                         <div class="right col-lg-5 col-md-6">
                                         <div class="bdr">
                                             <div class="text-center">
                                                 <span class="hour">
-                                                    <span class="price d-block">$37</span> /hour
+                                                   
+                                                    @if(isset($teacher->qualification) && !empty($teacher->qualification)) 
+                                                    <span class="price d-block">
+                                                    @for($i=0;$i<=count($rate)-1;$i++)
+                              @if($teacher->qualification->Tutor_per_hour==$i) ${{ $rate[$i] }} @endif
+                             @endfor</span> /hour
+                             @endif
                                                 </span>
                                             </div>
                                             <div>
@@ -145,8 +185,8 @@
                                                         <p></p>
                                                             
                                             <div class="text-center">
-                                                <a href="viewprofile_teacher.php" class="btn btn-primary">View Profile</a>
-                                                <a href="booknow_teacher.php" class="btn btn-primary">Book Now</a>
+                                                <a href="{{ route('single-tutor', ['id' =>  $teacher->id]) }}" class="btn btn-primary">View Profile</a>
+                                                <a href="{{ route('book-class', ['id' =>  $teacher->id]) }}" class="btn btn-primary">Book Now</a>
                                             </div>
                                         </div>
                                     </div>
@@ -263,4 +303,10 @@
 		</section>
 	<!-- End of slider section
 		============================================= -->
+        <script>
+        function clearForm(){
+    document.getElementById("filterfrom").reset();
+    window.location="{{ route('find-tutors') }}";
+        }
+        </script>
 @endsection

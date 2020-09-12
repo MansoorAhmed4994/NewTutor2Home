@@ -141,7 +141,7 @@
                                                                 <input type="checkbox" id="customcheck21">
                                                                 <label class="upload_img" for="customcheck21">Monday To Friday 4PM TO 8PM</label>
                                                             </div>-->
-                                                            <label>
+                                                            <!-- <label>
                                                                 <input type="radio" id="yes" name="level" class="teach_under_16" value="0">
                                                                 <span class="upload_img">Monday To Friday 4PM TO 8PM</span>
                                                             </label>
@@ -149,7 +149,7 @@
                                                             <label>
                                                                 <input type="radio" id="yes" name="level" class="teach_under_16" value="1">
                                                                 <span class="upload_img">Saturday Sunday 10AM TO 4PM</span>
-                                                            </label>
+                                                            </label> -->
                                                         </div>
                                    
                                                         <div class="form-group col-md-12">

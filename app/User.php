@@ -58,6 +58,7 @@ class User extends Authenticatable
         return $this->belongsTo(\App\Models\TeacherSpecialization::class,'id', 'user_id');
     }
  
+    const PERCENT="20%";
     const WEEKDAYS=[
         1 => 'Mon',
         2 => 'Tue',

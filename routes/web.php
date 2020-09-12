@@ -19,7 +19,13 @@ Route::get('/zoom','ZoomController@index')->name('zoom');
 
 Route::get('/','frontend\HomeController@index')->name('home');
 Route::get('/find-tutors','frontend\HomeController@findTutors')->name('find-tutors');
-Route::get('/become-tutors','frontend\HomeController@becomeTutors')->name('become-tutors');
+Route::get('/single-tutor/{id}','frontend\HomeController@singleTutor')->name('single-tutor');
+Route::get('/book-class/{id}','frontend\HomeController@BookClass')->name('book-class')->middleware('auth');
+Route::post('/book-class-save','frontend\HomeController@savebookclass')->name('book-class-save')->middleware('auth');
+Route::post('/stripesubmit', 'StripeController@postPaymentWithStripe')->name('stripe-payment')->middleware('auth');
+Route::get('/payment/{id}', 'StripeController@index')->name('payment')->middleware('auth');
+Route::get('/payWithStripe', 'StripeController@payWithStripe')->name('payWithStripe')->middleware('auth');
+Route::get('/become-tutors','frontend\HomeController@becomeTutor')->name('become-tutors');
 Route::get('/login','frontend\HomeController@login')->name('login');
 Route::get('/signup','frontend\HomeController@signup')->name('signup');
 Route::get('/teacher/login','frontend\TeacherController@login')->name('teacher-login');
