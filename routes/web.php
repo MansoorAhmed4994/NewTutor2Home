@@ -47,8 +47,10 @@ Route::group(['prefix' => 'teacher','middleware' => ['teacher','auth']], functio
    Route::post('/teacher-step-three-save','frontend\TeacherController@stepThreeSave')->name('teacher-step-three-save');
    Route::get('/dashboard','frontend\TeacherController@dashboard')->name('teacher-dashboard');
    Route::get('/profile','frontend\TeacherController@profile')->name('teacher-profile');
-   Route::get('/myclass',function () {return view('frontend\teacher\myclass');})->name('teacher-myclass');
-   Route::get('/create-class',function () {return view('frontend\teacher\create-class');})->name('teacher-create-class');
+   Route::get('/myclass','frontend\TeacherclassController@myclass')->name('teacher-myclass');
+   Route::get('/create-class','frontend\TeacherclassController@createclass')->name('teacher-create-class');
+   Route::get('/edit-class','frontend\TeacherclassController@editclass')->name('teacher-edit-class');
+   Route::get('/view-class','frontend\TeacherclassController@viewclass')->name('teacher-view-class');
    Route::get('/avalibility','frontend\TeacherController@avalibility')->name('teacher-avalibility');
    Route::get('/change-password','frontend\TeacherController@changePassword')->name('teacher-change-password');
    Route::post('/update-password','frontend\TeacherController@updatePassword')->name('teacher-update-password');
@@ -71,6 +73,8 @@ Route::post('/student/insert','frontend\StudentController@insertStudent')->name(
 Route::group(['prefix' => 'student','middleware' => ['student','auth']], function () {
    Route::get('/dashboard','frontend\StudentController@dashboard')->name('student-dashboard');
    Route::get('/profile','frontend\StudentController@profile')->name('student-profile');
+   Route::get('/myclass','frontend\StudentclassController@myclass')->name('student-myclass');
+   Route::get('/view-class','frontend\StudentclassController@viewclass')->name('student-view-class');
    Route::get('/change-password','frontend\StudentController@changePassword')->name('student-change-password');
    Route::post('/update-password','frontend\StudentController@updatePassword')->name('student-update-password');
    Route::post('/update-student-profile','frontend\StudentController@updateprofile')->name('student-update-profile');
