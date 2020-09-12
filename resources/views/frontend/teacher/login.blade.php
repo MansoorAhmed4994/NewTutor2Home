@@ -37,7 +37,7 @@
 
                                     <div class="form-group">
                                         <span class="text-danger pull-right">*</span>
-                                        <input type="email" name="email" class="form-control" placeholder="{{ __('Email...') }}" value="{{ old('email', 'admin@material.com') }}" required>
+                                        <input type="email" name="email" class="form-control" placeholder="{{ __('Enter Email Address') }}" value="{{ old('email', '') }}" required>
 
                                     </div>
                                     @if ($errors->has('email'))
@@ -68,15 +68,7 @@
 
                                 <button type="submit" class=" btn btn-primary w-100">{{ __('Lets Go') }}</button>
                             </div>
-                            <div class="form-group text-center">
-                                <span>OR</span>
-                            </div>
-                            <div class="form-group">
-                                <a href="" class="btn facebook w-100">
-                                    <i class="fa fa-facebook-square" aria-hidden="true"></i>
-                                    Login with Facebook
-                                </a>
-                            </div>
+                            
                             <div class="form-group text-center mb-0">
                                 <p>Don't have an account? <a href="{{ route('teacher-registration') }}">Sign Up</a>
                                 </p>

@@ -28,7 +28,7 @@
                         <div class="title text-center">
                             Profile Step - 2
                         </div>
-                        <div class="form">
+                        <div style="padding-top:0px; padding-bottom:0px;" class="form">
                             
                         @include('frontend.frontalert')
  <form class="form" method="POST" action="{{ route('teacher-step-two-save') }}" enctype="multipart/form-data" method="post" accept-charset="utf-8" autocomplete="off" novalidate="novalidate">
@@ -196,7 +196,7 @@
 
 
 
-                                <div class="form-group col-12 mt-5 p-0">
+                                <div class="form-group col-12 mt-1 p-0">
                                 <button name="search" class="btn btn-primary w-100" type="submit">
                                                               save
                                                             </button>
