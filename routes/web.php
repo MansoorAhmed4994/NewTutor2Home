@@ -13,8 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 Auth::routes();
-
+ 
 Route::get('/zoom','ZoomController@index')->name('zoom');
+
+Route::get('/testform-create','TestformController@create')->name('testform-create');
+Route::post('/testform-create','TestformController@store')->name('testform-create');
+
 
 
 Route::get('/','frontend\HomeController@index')->name('home');
@@ -26,6 +30,7 @@ Route::get('/teacher/login','frontend\TeacherController@login')->name('teacher-l
 Route::get('/teacher/registration','frontend\TeacherController@registration')->name('teacher-registration');
 Route::post('/teacher/insert','frontend\TeacherController@insertTeacher')->name('teacher-insert');
 Route::post('/parent/insert','frontend\ParentController@insertParent')->name('parent-insert');
+
 
    Route::get('/student/registration','frontend\StudentController@registration')->name('student-registration');
    Route::get('/student/login','frontend\StudentController@login')->name('student-login');
