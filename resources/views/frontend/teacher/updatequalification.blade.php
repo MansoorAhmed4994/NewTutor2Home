@@ -143,7 +143,7 @@
                                                                 <input type="checkbox" id="customcheck21">
                                                                 <label class="upload_img" for="customcheck21">Monday To Friday 4PM TO 8PM</label>
                                                             </div>-->
-                                                            <label>
+                                                            <!-- <label>
                                                                 <input type="radio" id="yes" name="level" class="teach_under_16" value="0" @if($result->level==0) checked @endif>
                                                                 <span class="upload_img">Monday To Friday 4PM TO 8PM</span>
                                                             </label>
@@ -152,6 +152,7 @@
                                                                 <input type="radio" id="yes" name="level" class="teach_under_16" value="1" @if($result->level==1) checked @endif>
                                                                 <span class="upload_img">Saturday Sunday 10AM TO 4PM</span>
                                                             </label>
+                                                             -->
                                                         </div>
                                    
                                                         <div class="form-group col-md-12">

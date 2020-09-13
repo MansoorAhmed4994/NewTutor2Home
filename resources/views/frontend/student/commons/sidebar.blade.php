@@ -13,6 +13,10 @@
                         Profile</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link " id="one-tab" href="{{ route('student-myclass') }}" aria-selected="true"><span class="custom-icn"><i class="	fa fa-laptop" aria-hidden="true"></i></span>
+                        My Classs</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link " id="one-tab" href="{{ route('student-change-password') }}" aria-selected="true"><span class="custom-icn"><i class="fa fa-unlock-alt" aria-hidden="true"></i></span> Change
                         Password</a>
                     </li>

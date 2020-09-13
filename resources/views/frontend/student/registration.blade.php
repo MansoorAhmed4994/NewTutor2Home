@@ -60,16 +60,11 @@
 							@include('frontend.frontalert')
 							<form class="form" method="POST" action="{{ route('student-insert') }}">
         @csrf
-									<p class="text-primary mb-5">(*) Marked fields are mandatory</p>
+									<p class="text-primary mb-2">(*) Marked fields are mandatory</p>
 
 
 									<div class="row">
-										<div class="form-group col-12 mb-5">
-											<a href="" class="btn facebook w-100" data-target="tutor_with_faceboook">
-												<i class="fa fa-facebook-square" aria-hidden="true"></i> Sign Up with
-												Facebook
-											</a>
-										</div>
+										
 										<div class="form-group col-sm-6">
 											<label class="font-weight-bold">First name</label>
 											<span class="text-danger pull-right">*</span>
@@ -108,7 +103,7 @@
 										<div class="form-group col-sm-6 mt-5">
 											<label>
 												<input name="terms_agree" type="radio" value="1" id="terms_agree">
-												<span class="font-weight-bold">I agree to the <a target="_blank" class="text-primary" href="">Terms of Service</a>
+												<span class="font-weight-bold">I agree to the <a target="_blank" class="text-primary" href="{{ route('termsofservices') }}">Terms of Service</a>
 													<span class="ml-1 text-danger">*</span>
 												</span>
 											</label>
@@ -128,15 +123,7 @@
 												Become A Student
 											</button>
 										</div>
-										<div class="form-group text-center col-12">
-											<span>OR</span>
-										</div>
-										<div class="form-group col-12">
-											<a href="" class="btn facebook w-100" data-target="tutor_with_faceboook">
-												<i class="fa fa-facebook-square" aria-hidden="true"></i> Sign Up with
-												Facebook</a>
-
-										</div>
+										
 										<div class="form-group text-center mb-0 col-12">
 											<p>Already have an account ? <a href="login.php">Login</a>
 											</p>

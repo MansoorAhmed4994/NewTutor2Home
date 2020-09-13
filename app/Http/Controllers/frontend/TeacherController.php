@@ -139,8 +139,10 @@ public function profile()
 
 public function avalibility()
 {
-    $teacherSlots=TeacherSlots::where('user_id',Auth::user()->id)->get();
-    return view('frontend.teacher.avalibility',compact('teacherSlots'));
+   // $teacherSlots=TeacherSlots::where('user_id',Auth::user()->id)->get();
+   $teacherslots=TeacherSlots::where('user_id',Auth::user()->id)->get();
+   $rate=USER::HOURRATE;
+    return view('frontend.teacher.avalibility',compact('teacherslots','rate'));
 }
 
 
@@ -273,7 +275,7 @@ if ($validator->fails()) {
      'subject'=>$data['subject'],
      'license'=>$data['license'],
      'Tutor_per_hour'=>$data['Tutor_per_hour'],
-     'level'=>$data['level'],
+     //'level'=>$data['level'],
      'cv'  =>$imageName,
      'user_id' =>$user_id
      

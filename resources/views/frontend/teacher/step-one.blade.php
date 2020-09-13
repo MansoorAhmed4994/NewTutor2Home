@@ -30,9 +30,9 @@
                                     </div>
                                     <label class="mt-3 ml-3"><small class="text-primary">(*) All fields are
                                             mandatory.</small></label>
-                                    <div class="form">
+                                    <div style="padding-top:0px; padding-bottom:0px;" class="form">
                                     @include('frontend.frontalert')
-                                    <form class="form" method="POST" 
+                                    <form  class="form" method="POST" 
                                     action="{{ route('teacher-step-one-save') }}" enctype="multipart/form-data"
                                      method="post" accept-charset="utf-8" autocomplete="off" novalidate="novalidate">
         @csrf
@@ -55,7 +55,7 @@
                                                     <input type="text" placeholder="Last name" name="last_name" id="last_name" value="" class="form-control">
                                                 </div> -->
 
-                                                <div class="form-group mt-2 col-sm-6">
+                                                <div class="form-group  col-sm-6">
                                                     <div class="row align-items-center">
                                                         <div class="col-6">
                                                             <label class="font-weight-bold">Upload Image
@@ -86,7 +86,7 @@
                                                 </div>-->
 
                                                 <div class="form-group col-12">
-                                                    <div class="mt-3 row">
+                                                    <div style="margin-top:-10px;" class=" row">
                                                         <div class="col-md-6 col-lg-4">
                                                             <label class="font-weight-bold">Can you work in UK
                                                                 <span class="text-danger pull-right ml-2">*</span>
@@ -94,20 +94,17 @@
 
                                                         </div>
                                                         <div class="col-md-6 col-lg-8">
-                                                            <ul>
-                                                                <li>
+                                                            
                                                                     <label>
                                                                         <input type="radio" name="work_in_uk" value="1" @if( Auth::user()->work_in_uk==1) checked @endif>
                                                                         <span>Yes</span>
                                                                     </label>
-                                                                </li>
-                                                                <li>
-                                                                    <label>
+                                                                
+                                                                    <label class="ml-4">
                                                                         <input type="radio" name="work_in_uk" value="2"  @if( Auth::user()->work_in_uk==2) checked @endif>
                                                                         <span>No</span>
                                                                     </label>
-                                                                </li>
-                                                            </ul>
+                                                                
                                                         </div>
                                                     </div>
                                                 </div>
@@ -253,7 +250,7 @@
                                                 </div>
 
 
-                                                <div class="mt-5 form-group col-12">
+                                                <div class="mt-1 form-group col-12">
                                                 <button name="search" class="btn btn-primary w-100" type="submit">
                                                               save
                                                             </button>

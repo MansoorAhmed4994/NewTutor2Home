@@ -26,7 +26,7 @@
 				<div class="right col-sm-8 col-lg-9">
 					<div class="">
 						<div class="Profile bg-light position-relative">
-							<a href="update_tutor_profile.php" class="edit"><i class="fa fa-pencil" aria-hidden="true"></i> Edit</a>
+							<a href="{{ route('teacher-view-profile') }}" class="edit"><i class="fa fa-pencil" aria-hidden="true"></i> Edit</a>
 
 							<div class="row no-gutters">
 								<div class="img col-lg-4">

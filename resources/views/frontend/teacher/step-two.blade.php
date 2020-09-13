@@ -28,7 +28,7 @@
                         <div class="title text-center">
                             Profile Step - 2
                         </div>
-                        <div class="form">
+                        <div style="padding-top:0px; padding-bottom:0px;" class="form">
                             
                         @include('frontend.frontalert')
  <form class="form" method="POST" action="{{ route('teacher-step-two-save') }}" enctype="multipart/form-data" method="post" accept-charset="utf-8" autocomplete="off" novalidate="novalidate">
@@ -141,7 +141,7 @@
                                                                 <input type="checkbox" id="customcheck21">
                                                                 <label class="upload_img" for="customcheck21">Monday To Friday 4PM TO 8PM</label>
                                                             </div>-->
-                                                            <label>
+                                                            <!-- <label>
                                                                 <input type="radio" id="yes" name="level" class="teach_under_16" value="0">
                                                                 <span class="upload_img">Monday To Friday 4PM TO 8PM</span>
                                                             </label>
@@ -149,7 +149,7 @@
                                                             <label>
                                                                 <input type="radio" id="yes" name="level" class="teach_under_16" value="1">
                                                                 <span class="upload_img">Saturday Sunday 10AM TO 4PM</span>
-                                                            </label>
+                                                            </label> -->
                                                         </div>
                                    
                                                         <div class="form-group col-md-12">
@@ -196,7 +196,7 @@
 
 
 
-                                <div class="form-group col-12 mt-5 p-0">
+                                <div class="form-group col-12 mt-1 p-0">
                                 <button name="search" class="btn btn-primary w-100" type="submit">
                                                               save
                                                             </button>

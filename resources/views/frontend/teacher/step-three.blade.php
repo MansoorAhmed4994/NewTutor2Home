@@ -30,8 +30,8 @@
   								<label class="ml-3 mt-3"><small class="text-primary">(*) All fields are
   								mandatory.</small>
   							</label>
-  							<div class="form">
-  								<h5 class="mb-5">Tell us what subjects you specialise in</h5>
+  							<div style=" padding-bottom:0px;" class="form">
+  								<h5 >Tell us what subjects you specialise in</h5>
 
 								  @include('frontend.frontalert')
  <form class="form" method="POST" action="{{ route('teacher-step-three-save') }}" enctype="multipart/form-data" method="post" accept-charset="utf-8" autocomplete="off" novalidate="novalidate">
@@ -112,7 +112,7 @@
 
 
 
-  										<div class="row pr-5 pl-5">
+  										<div class="row pr-2 pl-2">
   											<div class="form-group col-sm-12 col-md-12 ">
   												<div class="Qualifications  p-0">
   													<div id="" class="table-responsive ">
@@ -242,7 +242,9 @@
   														</table>
   													</div>
 												</div>
-												  <br><br>
+											</div>
+											<div class="form-group col-sm-12 col-md-12 ">
+												  
 												<div class="Qualifications  p-0">
   													<div id="" class="table-responsive ">
   														<table class="table text-center">
@@ -319,7 +321,7 @@
   												</div>
   											</div>
   										</div>
-  										<div class="mt-5 form-group col-12">
+  										<div class="mt-1 form-group col-12">
 										  <button name="search" class="btn btn-primary w-100" type="submit">
                                                               save
                                                             </button>
