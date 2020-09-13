@@ -77,7 +77,7 @@
 										<div class="form-group col-sm-6 mt-5">
 											<label>
 												<input name="terms_agree" type="radio" value="1" id="terms_agree">
-												<span class="font-weight-bold">I agree to the <a target="_blank" class="text-primary" href="">Terms of Service</a>
+												<span class="font-weight-bold">I agree to the <a target="_blank" class="text-primary" href="{{ route('termsofservices') }}">Terms of Service</a>
 													<span class="ml-1 text-danger">*</span>
 												</span>
 											</label>

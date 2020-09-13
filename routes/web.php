@@ -28,6 +28,7 @@ Route::get('/payWithStripe', 'StripeController@payWithStripe')->name('payWithStr
 Route::get('/become-tutors','frontend\HomeController@becomeTutor')->name('become-tutors');
 Route::get('/login','frontend\HomeController@login')->name('login');
 Route::get('/signup','frontend\HomeController@signup')->name('signup');
+Route::get('/termsofservices','frontend\HomeController@termsofservices')->name('termsofservices');
 Route::get('/teacher/login','frontend\TeacherController@login')->name('teacher-login');
 Route::get('/teacher/registration','frontend\TeacherController@registration')->name('teacher-registration');
 Route::post('/teacher/insert','frontend\TeacherController@insertTeacher')->name('teacher-insert');

@@ -153,5 +153,10 @@ class HomeController extends Controller
     	return view('frontend.signup');
     }
 
+    public function termsofservices()
+    {
+    	return view('frontend.termsofservices');
+    }
+
 
 }
