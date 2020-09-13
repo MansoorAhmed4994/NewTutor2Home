@@ -120,7 +120,7 @@
 
                                                         <option value="{{ $countries }}" 
                                                         
-
+                                                        @if(old('country')==  $countries) selected @endif
                                                         >{{$countries }}</option> 
                                                         @endforeach;
                                                     </select>
@@ -136,7 +136,7 @@
                                                         @foreach($states as $states)
 
                                                         <option value="{{ $states }}" 
-                                                        
+                                                        @if(old('states')==  $states) selected @endif
 
                                                         >{{$states }}</option> 
                                                         @endforeach;
@@ -154,7 +154,7 @@
 
                                                                     <option value="{{ $cities }}" 
                                                                     
-
+                                                                    @if(old('city')==  $cities) selected @endif
                                                                     >{{$cities }}</option> 
                                                                     @endforeach;
                                                                 </select>

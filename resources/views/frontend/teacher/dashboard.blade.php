@@ -55,14 +55,14 @@
 													<div class="col-12">
 														<p class=""><span class="mr-2">Last
 														Active:</span>Now                                                           </p>
-														<p><span class="badge badge-success">0</span>
-														Completed lessons</p>
+														<!-- <p><span class="badge badge-success">0</span>
+														Completed lessons</p> -->
 														<p>Email: {{ Auth::user()->email }}</p>
 													</div>
-													<div class="col-6">
+													<!-- <div class="col-6">
 														<p><span class="icn icn-small"><img src="{{ asset('front/img/white-1.png') }}" alt=""></span>
 														White Belt                                                           </p>
-													</div>
+													</div> -->
 
 													<div class="col-6">
 

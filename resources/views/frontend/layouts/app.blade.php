@@ -108,9 +108,18 @@
 									</li>
 								</ul>
 							</div>
-							<<div class="log-in float-right">
-								<a href="{{ route('login') }}">log in</a>
+							<div class="log-in float-right">
+							    @if(!Auth::check()) 
+  								<a href="{{ route('login') }}">log in</a>
 								<a href="{{ route('signup') }}">Signup</a>
+								@endif
+						  @if(Auth::check()) 
+						 <form action="{{ route('logout') }}" method="post">
+                          @csrf
+                          <a  href="javascript:void(0);" onclick="$(this).closest('form').submit();">Logout</a>
+                        </form>
+						@endif
+								
 								<!-- The Modal -->
 								<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
 									<div class="modal-dialog">

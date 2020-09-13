@@ -95,7 +95,12 @@ class TeacherController extends Controller
          
      ];
      $created =  User::create($userInfo);
-     return redirect()->back()->with('success', 'Thank you for register'); 
+     Auth::login($created) ;
+       if($created){
+         return redirect('teacher/dashboard') ;
+         //->with('message','Check Your Email For Login Credentials') ;
+       }
+    // return redirect()->back()->with('success', 'Thank you for register'); 
  } catch (Exception $e) {
      return redirect()->back()->withErrors([$e->getMessage()]);  
  } 
