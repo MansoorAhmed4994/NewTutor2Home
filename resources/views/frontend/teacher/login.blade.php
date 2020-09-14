@@ -60,7 +60,11 @@
                                     <div class="col-6">
                                     </div>
                                     <div class="col-6 text-right">
-                                        <a href="parent/forgot-password">Forgot password ?</a>
+                                                                             @if (Route::has('password.request'))
+                                    <a  href="{{ route('password.request') }}">
+                                    Forgot password
+                                    </a>
+                                @endif
                                     </div>
                                 </div>
                             </div>

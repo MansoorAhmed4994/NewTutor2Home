@@ -177,11 +177,11 @@
                                                     <li><small style="font-size: small;">0 reviews</small></li>
                                                 </ul>
                                                 <div class="clearfix"></div>
-                                                <p><span class="badge badge-success">0</span> completed lessons</p>
+                                                <!-- <p><span class="badge badge-success">0</span> completed lessons</p> -->
                                             </div>
                                             <p class="d-none">Complete Session <span class="icn">450</span></p>
-                                            <p class=""><span class="icn"><img style="max-width: 20px;" src="{{asset('front/img/orange-1.png')}}" alt=""></span>
-                                                        Orange Belt</p>
+                                            <!-- <p class=""><span class="icn"><img style="max-width: 20px;" src="{{asset('front/img/orange-1.png')}}" alt=""></span>
+                                                        Orange Belt</p> -->
                                                         <p></p>
                                                             
                                             <div class="text-center">
@@ -198,102 +198,6 @@
                                No Tutors Found
                            </div>
                            @endif 
-{{-- 
-                            <div class="item mt-5">
-                                <div class="row no-gutters">
-                                    <div class="img col-lg-4">
-                                        <img class="premium-badge-find-a-ninja-badge" src="{{asset('front/img/premium-badeg.png')}}">
-                                        <img class="premium-badge-find-a-ninja" src="{{asset('front/img/icon_offre-pro1.png')}}">
-    
-                                        <img src="{{asset('front/img/teacher/mt-2.jpg')}}" alt="">
-                                    </div>
-                                    <div class="text col-lg-8">
-                                        <div class="row h-100">
-                                            <div class="left col-lg-7 col-md-6">
-                                                <h4>Dr Claire Felix-Baptiiste
-                                                    <span class="subtitle d-block">Mental Health Social Work (Master) - Institute of Education, University of London</span>
-                                                </h4>
-                                                <p>I am a Afrocentric Dr. Of…</p>
-                                                <h6>Subjects: <span class="subtitle">Social Work</span></h6>    
-                                                <h6>Levels: <span class="subtitle">Professional</span></h6>    
-                                            </div>
-                                        <div class="right col-lg-5 col-md-6">
-                                        <div class="bdr">
-                                            <div class="text-center">
-                                                <span class="hour">
-                                                    <span class="price d-block">$37</span> /hour
-                                                </span>
-                                            </div>
-                                            <div>
-                                                <ul class="rating mb-0">
-                                                    <li class="pr-1"><i class="fa fa-star-o" aria-hidden="true"></i></li><li class="pr-1"><i class="fa fa-star-o" aria-hidden="true"></i></li><li class="pr-1"><i class="fa fa-star-o" aria-hidden="true"></i></li><li class="pr-1"><i class="fa fa-star-o" aria-hidden="true"></i></li><li class="pr-1"><i class="fa fa-star-o" aria-hidden="true"></i></li>
-                                                    <li><small style="font-size: small;">0 reviews</small></li>
-                                                </ul>
-                                                <div class="clearfix"></div>
-                                                <p><span class="badge badge-success">0</span> completed lessons</p>
-                                            </div>
-                                            <p class="d-none">Complete Session <span class="icn">450</span></p>
-                                            <p class=""><span class="icn"><img style="max-width: 20px;" src="{{asset('front/img/orange-1.png')}}" alt=""></span>
-                                                        Orange Belt</p>
-                                                        <p></p>
-                                                            
-                                            <div class="text-center">
-                                                <a href="" class="btn btn-primary">View Profile</a>
-                                                <a href="" class="btn btn-primary">Book Now</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="item mt-5">
-                                <div class="row no-gutters">
-                                    <div class="img col-lg-4">
-                                        <img class="premium-badge-find-a-ninja-badge" src="{{asset('front/img/premium-badeg.png')}}">
-                                        <img class="premium-badge-find-a-ninja" src="{{asset('front/img/icon_offre-pro1.png')}}">
-    
-                                        <img src="{{asset('front/img/teacher/mt-3.jpg')}}" alt="">
-                                    </div>
-                                    <div class="text col-lg-8">
-                                        <div class="row h-100">
-                                            <div class="left col-lg-7 col-md-6">
-                                                <h4>Dr Claire Felix-Baptiiste
-                                                    <span class="subtitle d-block">Mental Health Social Work (Master) - Institute of Education, University of London</span>
-                                                </h4>
-                                                <p>I am a Afrocentric Dr. Of…</p>
-                                                <h6>Subjects: <span class="subtitle">Social Work</span></h6>    
-                                                <h6>Levels: <span class="subtitle">Professional</span></h6>    
-                                            </div>
-                                        <div class="right col-lg-5 col-md-6">
-                                        <div class="bdr">
-                                            <div class="text-center">
-                                                <span class="hour">
-                                                    <span class="price d-block">$37</span> /hour
-                                                </span>
-                                            </div>
-                                            <div>
-                                                <ul class="rating mb-0">
-                                                    <li class="pr-1"><i class="fa fa-star-o" aria-hidden="true"></i></li><li class="pr-1"><i class="fa fa-star-o" aria-hidden="true"></i></li><li class="pr-1"><i class="fa fa-star-o" aria-hidden="true"></i></li><li class="pr-1"><i class="fa fa-star-o" aria-hidden="true"></i></li><li class="pr-1"><i class="fa fa-star-o" aria-hidden="true"></i></li>
-                                                    <li><small style="font-size: small;">0 reviews</small></li>
-                                                </ul>
-                                                <div class="clearfix"></div>
-                                                <p><span class="badge badge-success">0</span> completed lessons</p>
-                                            </div>
-                                            <p class="d-none">Complete Session <span class="icn">450</span></p>
-                                            <p class=""><span class="icn"><img style="max-width: 20px;" src="{{asset('front/img/orange-1.png')}}" alt=""></span>
-                                                        Orange Belt</p>
-                                                        <p></p>
-                                                            
-                                            <div class="text-center">
-                                                <a href="" class="btn btn-primary">View Profile</a>
-                                                <a href="" class="btn btn-primary">Book Now</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> --}}
-
-                            
                         </div>
                     </div>
                     

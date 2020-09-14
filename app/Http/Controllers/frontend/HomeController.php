@@ -152,6 +152,9 @@ class HomeController extends Controller
     {
     	return view('frontend.signup');
     }
+    public function forgot_password() {
+      return view('frontend.forgot');
+  }
 
     public function termsofservices()
     {
