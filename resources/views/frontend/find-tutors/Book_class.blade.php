@@ -184,11 +184,11 @@
                                                     <li><small style="font-size: small;">0 reviews</small></li>
                                                 </ul>
                                                 <div class="clearfix"></div>
-                                                <p><span class="badge badge-success">0</span> completed lessons</p>
+                                                <!-- <p><span class="badge badge-success">0</span> completed lessons</p> -->
                                             </div>
-                                            <p class="d-none">Complete Session <span class="icn">450</span></p>
-                                            <p class=""><span class="icn"><img style="max-width: 20px;" src="assets/img/orange-1.png" alt=""></span>
-                                                        Orange Belt</p>
+                                            <!-- <p class="d-none">Complete Session <span class="icn">450</span></p> -->
+                                            <!-- <p class=""><span class="icn"><img style="max-width: 20px;" src="assets/img/orange-1.png" alt=""></span>
+                                                        Orange Belt</p> -->
                                                         <p></p>
                                                             
                                             

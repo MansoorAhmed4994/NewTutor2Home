@@ -1,10 +1,37 @@
-@extends('layouts.app', ['class' => 'off-canvas-sidebar', 'activePage' => 'email', 'title' => __('Material Dashboard')])
-
+@extends('frontend.layouts.app')
 @section('content')
-<div class="container" style="height: auto;">
-  <div class="row align-items-center">
-    <div class="col-lg-4 col-md-6 col-sm-8 ml-auto mr-auto">
-      <form class="form" method="POST" action="{{ route('password.email') }}">
+<!-- Start of slider section
+		============================================= -->
+		<section id="slide" class="slider-section">
+			<div id="slider-item" class="slider-item-details">
+				<div  class="slider-area slider-bg-1 relative-position">
+					<div class="slider-text">
+						<div class="section-title mb20 headline text-center ">
+							<div class="layer-1-3 heading">
+								<h2><span>Forgot Password </span></h2><br>
+                               
+							</div><br>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+			
+		</section>
+
+        <!-- Registration form -->
+        <br>
+        
+        <div class="Loginside">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-lg-7">
+						<div class="bg">
+							
+							<div class="form">
+							@include('frontend.frontalert')
+							<form class="form" method="POST" action="{{ route('password.email') }}">
         @csrf
 
         <div class="card card-login card-hidden mb-3">
@@ -45,7 +72,10 @@
           </div>
         </div>
       </form>
-    </div>
-  </div>
-</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 @endsection

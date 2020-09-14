@@ -1,5 +1,45 @@
 @extends('frontend.layouts.app')
 @section('content')
+<html>
+	<head>
+		<script>
+			///custom
+			function validateform()
+			{  
+				var first_name=document.myform.first_name.value;  
+				var last_name=document.myform.last_name.value;  
+				var phone= document.myform.phone.value;  
+				var password=document.myform.password.value;  
+		
+				if (first_name==null || first_name=="")
+				{  
+					alert("Name can't be blank");  
+					return false;  
+				}
+				else if(first_name.length<3)
+				{  
+					alert("First Name must be 3 characters long .");  
+					return false;  
+				}
+				else if (last_name==null || last_name=="")
+				{  
+					alert("Name can't be blank");  
+					return false;  
+				}
+				else if(last_name.length<3)
+				{  
+					alert("Last Name must be 3 characters long .");  
+					return false;  
+				}
+				else if(password.length<6)
+				{  
+					alert("Your password must be at least 6 characters long. Please try another.");  
+					return false;  
+				}  
+			} 
+		</script>
+	</head>
+</html>
   <!-- Start of slider section
 		============================================= -->
 		<section id="slide" class="slider-section">
@@ -58,7 +98,7 @@
 							</div>
 							<div class="form">
 							@include('frontend.frontalert')
-							<form class="form" method="POST" action="{{ route('student-insert') }}">
+							<form class="form" name="myform" onsubmit="return validateform()"  method="POST" action="{{ route('student-insert') }}">
         @csrf
 									<p class="text-primary mb-2">(*) Marked fields are mandatory</p>
 
@@ -68,22 +108,26 @@
 										<div class="form-group col-sm-6">
 											<label class="font-weight-bold">First name</label>
 											<span class="text-danger pull-right">*</span>
-											<input type="text" name="first_name" id="first_name" placeholder="First name" value="" class="form-control">
+											<input type="text" name="first_name" id="first_name" placeholder="First name" value="{{ old('first_name') }}" class="form-control">
 										</div>
 										<div class="form-group col-sm-6">
 											<label class="font-weight-bold">Last name</label>
 											<span class="text-danger pull-right">*</span>
-											<input type="text" id="last_name" name="last_name" value="" placeholder="Last name" class="form-control">
+											<input type="text" id="last_name" name="last_name" value="{{ old('last_name') }}" placeholder="Last name" class="form-control">
 										</div>
 										<div class="form-group col-12">
 											<label class="font-weight-bold">Personal email address</label>
 											<span class="text-danger pull-right">*</span>
-											<input type="text" id="email" name="email" placeholder="Personal email address" autocomplete="username" value="" class="form-control">
+											<input type="text" id="email" name="email" placeholder="Personal email address" autocomplete="username" value="{{ old('email') }}" class="form-control">
 										</div>
 										<div class="form-group col-12">
 											<label class="font-weight-bold">Phone number</label>
 											<!-- <span class="text-danger pull-right">*</span> -->
-											<input type="text" id="phone" name="phone" placeholder="Phone number" autocomplete="new-password" value="" class="form-control">
+<<<<<<< HEAD
+											<input type="tel" id="phone" name="phone" placeholder="Phone Number" autocomplete="new-password" value="" class="form-control">
+=======
+											<input type="text" id="phone" name="phone" placeholder="Phone number" autocomplete="new-password" value="{{ old('phone') }}" class="form-control">
+>>>>>>> a9649d192d214031b2f2501a1c84c38c132a1924
 										</div>
 
 										<div class="form-group col-12 mt-3">
@@ -112,11 +156,11 @@
 
 										<!-- Captcha......-->
 
-										<div class="form-group col-sm-6">
+										<!-- <div class="form-group col-sm-6">
 											<span class="c-ml text-danger">*</span>
 											<div class="g-recaptcha" data-sitekey="6LcmnrIZAAAAAIgR5DA1-YQlfh2A66kFnCeonVSD"><div style="width: 304px; height: 78px;"><div><iframe src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LcmnrIZAAAAAIgR5DA1-YQlfh2A66kFnCeonVSD&amp;co=aHR0cHM6Ly93d3cudHV0b3JuaW5qYXMuY29tOjQ0Mw..&amp;hl=en&amp;v=r8WWNwsCvXtk22_oRSVCCZx9&amp;size=normal&amp;cb=icrmn1igrwde" width="304" height="78" role="presentation" name="a-y8xd29x46r0h" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div><iframe style="display: none;"></iframe></div>
 											<script src="https://www.google.com/recaptcha/api.js?hl=en" async="" defer=""></script>
-										</div>
+										</div> -->
 
 										<div class="form-group col-12">
 										<button type="submit" class=" btn btn-primary w-100">

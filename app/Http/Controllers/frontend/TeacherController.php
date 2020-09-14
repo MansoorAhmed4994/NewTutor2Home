@@ -95,7 +95,12 @@ class TeacherController extends Controller
          
      ];
      $created =  User::create($userInfo);
-     return redirect()->back()->with('success', 'Thank you for register'); 
+     Auth::login($created) ;
+       if($created){
+         return redirect('teacher/dashboard') ;
+         //->with('message','Check Your Email For Login Credentials') ;
+       }
+    // return redirect()->back()->with('success', 'Thank you for register'); 
  } catch (Exception $e) {
      return redirect()->back()->withErrors([$e->getMessage()]);  
  } 
@@ -256,11 +261,11 @@ public function stepTwoSave(Request $request)
         'cv' => 'required|max:10000|mimes:doc,docx,pdf' ,
        
     );
-$validator = Validator::make($request->all(), $rules);
+    $validator = Validator::make($request->all(), $rules);
 
-if ($validator->fails()) {
-    return redirect()->back()->withErrors($validator)->withInput();
-}
+    if ($validator->fails()) {
+        return redirect()->back()->withErrors($validator)->withInput();
+    }
   
     $data= $request->all();
     if ($request->hasFile('cv')) {
@@ -309,33 +314,33 @@ public function stepThreeSave(Request $request)
         'level' => 'required' ,
        
     );
-$validator = Validator::make($request->all(), $rules);
+    $validator = Validator::make($request->all(), $rules);
 
-if ($validator->fails()) {
-    return redirect()->back()->withErrors($validator)->withInput();
-}
-   $data= $request->all(); 
-   $special=['subject'=>$data['subject'],
-            'level'=> $data['level'],
-             'user_id'=>$user_id
-     ]; 
-     TeacherSpecialization::updateOrCreate([
-        'user_id' =>$user_id],$special);
-        if(isset($request->profile)){
-            return redirect()->route('teacher-profile');
-        }else{
-
-    for($i=0;$i<=count($data['daysTime'])-1;$i++){
-        $ndata=explode("-",$data['daysTime'][$i]);
-        $timeslots=['time'=>$ndata[0],
-        'days'=>$ndata[1],
-        'user_id'=>$user_id
-        ];
-        TeacherSlots::updateOrCreate(['time'=>$ndata[0],
-        'days'=>$ndata[1],
-        'user_id'=>$user_id],$timeslots);
+    if ($validator->fails()) {
+        return redirect()->back()->withErrors($validator)->withInput();
     }
-    return redirect()->route('teacher-dashboard');
+    $data= $request->all(); 
+    $special=['subject'=>$data['subject'],
+                'level'=> $data['level'],
+                'user_id'=>$user_id
+        ]; 
+        TeacherSpecialization::updateOrCreate([
+            'user_id' =>$user_id],$special);
+            if(isset($request->profile)){
+                return redirect()->route('teacher-profile');
+            }else{
+
+        for($i=0;$i<=count($data['daysTime'])-1;$i++){
+            $ndata=explode("-",$data['daysTime'][$i]);
+            $timeslots=['time'=>$ndata[0],
+            'days'=>$ndata[1],
+            'user_id'=>$user_id
+            ];
+            TeacherSlots::updateOrCreate(['time'=>$ndata[0],
+            'days'=>$ndata[1],
+            'user_id'=>$user_id],$timeslots);
+        }
+        return redirect()->route('teacher-dashboard');
    }
 
 }    

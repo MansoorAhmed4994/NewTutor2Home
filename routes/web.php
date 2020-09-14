@@ -13,8 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 Auth::routes();
-
+ 
 Route::get('/zoom','ZoomController@index')->name('zoom');
+
+Route::get('/testform-create','TestformController@create')->name('testform-create');
+Route::post('/testform-create','TestformController@store')->name('testform-create');
+
 
 
 Route::get('/','frontend\HomeController@index')->name('home');
@@ -34,10 +38,11 @@ Route::get('/teacher/registration','frontend\TeacherController@registration')->n
 Route::post('/teacher/insert','frontend\TeacherController@insertTeacher')->name('teacher-insert');
 Route::post('/parent/insert','frontend\ParentController@insertParent')->name('parent-insert');
 
-   Route::get('/student/registration','frontend\StudentController@registration')->name('student-registration');
-   Route::get('/student/login','frontend\StudentController@login')->name('student-login');
-   Route::get('/parent/registration','frontend\ParentController@registration')->name('parent-registration');
-   Route::get('/parent/login','frontend\ParentController@login')->name('parent-login');
+
+Route::get('/student/registration','frontend\StudentController@registration')->name('student-registration');
+Route::get('/student/login','frontend\StudentController@login')->name('student-login');
+Route::get('/parent/registration','frontend\ParentController@registration')->name('parent-registration');
+Route::get('/parent/login','frontend\ParentController@login')->name('parent-login');
 
 Route::group(['prefix' => 'teacher','middleware' => ['teacher','auth']], function () {
    Route::get('/step-one','frontend\TeacherController@stepOne')->name('teacher-step-one');
@@ -48,16 +53,21 @@ Route::group(['prefix' => 'teacher','middleware' => ['teacher','auth']], functio
    Route::post('/teacher-step-three-save','frontend\TeacherController@stepThreeSave')->name('teacher-step-three-save');
    Route::get('/dashboard','frontend\TeacherController@dashboard')->name('teacher-dashboard');
    Route::get('/profile','frontend\TeacherController@profile')->name('teacher-profile');
-   Route::get('/myclass','frontend\TeacherclassController@myclass')->name('teacher-myclass');
-   Route::get('/create-class','frontend\TeacherclassController@createclass')->name('teacher-create-class');
-   Route::get('/edit-class','frontend\TeacherclassController@editclass')->name('teacher-edit-class');
-   Route::get('/view-class','frontend\TeacherclassController@viewclass')->name('teacher-view-class');
    Route::get('/avalibility','frontend\TeacherController@avalibility')->name('teacher-avalibility');
    Route::get('/change-password','frontend\TeacherController@changePassword')->name('teacher-change-password');
    Route::post('/update-password','frontend\TeacherController@updatePassword')->name('teacher-update-password');
    Route::get('/viewprofile','frontend\TeacherController@viewprofile')->name('teacher-view-profile');
    Route::get('/updateQualification','frontend\TeacherController@updateQualification')->name('teacher-update-Qualification');
    Route::get('/updateSubject','frontend\TeacherController@updateSubject')->name('teacher-update-Subject');
+
+
+   // Teacher classes   
+   Route::get('/classes/create','frontend\TeacherClassesController@CreatClass')->name('create-class');
+   Route::post('/classes/create','frontend\TeacherClassesController@CreatClassStore')->name('create-class');
+   Route::get('/classes/list','frontend\TeacherClassesController@ListClass')->name('list-class');
+   Route::get('/classes/view','frontend\TeacherClassesController@ViewClass')->name('view-class');
+   Route::get('/classes/edit','frontend\TeacherClassesController@EditClass')->name('edit-class');
+
 
 });	
 

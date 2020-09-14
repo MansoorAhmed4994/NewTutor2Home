@@ -52,7 +52,11 @@ class ParentController extends Controller
          
      ];
      $created =  User::create($userInfo);
-     return redirect()->back()->with('success', 'Thank you for register'); 
+     Auth::login($created) ;
+     if($created){
+       return redirect('parent/dashboard') ;
+       //->with('message','Check Your Email For Login Credentials') ;
+     }
  } catch (Exception $e) {
      return redirect()->back()->withErrors([$e->getMessage()]);  
  } 
