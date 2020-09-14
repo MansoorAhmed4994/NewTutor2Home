@@ -13,11 +13,11 @@
                         Profile</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " id="one-tab" href="{{ route('teacher-myclass') }}" aria-selected="true"><span class="custom-icn"><i class="	fa fa-laptop" aria-hidden="true"></i></span>
+                        <a class="nav-link " id="one-tab" href="{{ route('list-class') }}" aria-selected="true"><span class="custom-icn"><i class="	fa fa-laptop" aria-hidden="true"></i></span>
                         My Classs</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " id="one-tab" href="{{ route('teacher-create-class') }}" aria-selected="true"><span class="custom-icn"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></span>
+                        <a class="nav-link " id="one-tab" href="{{ route('create-class') }}" aria-selected="true"><span class="custom-icn"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></span>
                         Create Class</a>
                     </li>
                     <li class="nav-item">
