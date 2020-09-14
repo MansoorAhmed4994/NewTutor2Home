@@ -1,6 +1,47 @@
 @extends('frontend.layouts.app')
 @section('content')
 
+<html>
+	<head>
+		<script>
+			///custom
+			function validateform()
+			{  
+				var first_name=document.myform.first_name.value;  
+				var last_name=document.myform.last_name.value;  
+				var phone= document.myform.phone.value;  
+				var password=document.myform.password.value;  
+		
+				if (first_name==null || first_name=="")
+				{  
+					alert("Name can't be blank");  
+					return false;  
+				}
+				else if(first_name.length<3)
+				{  
+					alert("First Name must be 3 characters long .");  
+					return false;  
+				}
+				else if (last_name==null || last_name=="")
+				{  
+					alert("Name can't be blank");  
+					return false;  
+				}
+				else if(last_name.length<3)
+				{  
+					alert("Last Name must be 3 characters long .");  
+					return false;  
+				}
+				else if(password.length<6)
+				{  
+					alert("Your password must be at least 6 characters long. Please try another.");  
+					return false;  
+				}  
+			} 
+		</script>
+	</head>
+</html>
+
 <!-- Start of slider section
 		============================================= -->
 		<section id="slide" class="slider-section">
@@ -32,7 +73,7 @@
 							</div>
 							<div class="form">
 								@include('frontend.frontalert')
-							<form class="form" method="POST" action="{{ route('parent-insert') }}">
+							<form class="form" name="myform" onsubmit="return validateform()" method="POST" action="{{ route('parent-insert') }}">
         @csrf
 									<p class="text-primary mb-5">(*) Marked fields are mandatory</p>
 
