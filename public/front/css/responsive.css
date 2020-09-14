@@ -764,6 +764,49 @@
 		display: none;
 
 	}
+	
+	#slider-item .slider-course-category li {
+		color: #fff;
+		font-weight: 100;
+		font-size: 12px;
+		margin: 0px 3px;
+
+		
+	}
+
+	#slider-item .slider-course-category span {
+		
+		font-size: 12px;
+    	margin-top: 3px;
+	}
+
+	#slider-item .search-course {
+
+		max-width: 400px;
+		font-size: 10px;
+
+	}
+
+	#search-course .search-course {
+
+		max-width: 400px;
+		font-size: 10px;
+
+	}
+
+	.logo_tutor_mobile {
+		height: 38px;
+		width: 70px;
+		padding-bottom: 11px;
+	}
+
+	.heading h1 {
+		padding: 0 15%;
+		font-size: 22px;
+		font-family: "Raleway", sans-serif;
+		color: white;
+		margin-bottom: 15px;
+	}
 
 	.section-title.mb20.headline.text-left {
 
@@ -1203,13 +1246,13 @@
 
 	.slider-text .section-title h2 {
 
-		font-size: 40px;
+		font-size: 20px;
 
 	}
 
 	.slider-text .section-title .subtitle {
 
-		font-size: 14px;
+		font-size: 8px;
 
 	}
 
@@ -1630,5 +1673,7 @@
 		right: 55px;
 
 	}
+
+	
 
 }

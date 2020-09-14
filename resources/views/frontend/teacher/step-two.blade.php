@@ -28,7 +28,7 @@
                         <div class="title text-center">
                             Profile Step - 2
                         </div>
-                        <div class="form">
+                        <div style="padding-top:0px; padding-bottom:0px;" class="form">
                             
                         @include('frontend.frontalert')
  <form class="form" method="POST" action="{{ route('teacher-step-two-save') }}" enctype="multipart/form-data" method="post" accept-charset="utf-8" autocomplete="off" novalidate="novalidate">
@@ -58,7 +58,7 @@
                                                             <select name="class_type" id="qualification" class="form-control">
                                                                 <option value="">Select</option>
                                                                 @for($i=0;$i<=count($qualification)-1;$i++)
-                                                            <option value="{{ $i  }}"> {{ $qualification[$i] }}</option>
+                                                            <option value="{{ $i  }}"      @if(old('class_type')==  $i) selected @endif> {{ $qualification[$i] }}</option>
                                                             @endfor
                                                             </select>
                                                         </div>
@@ -71,7 +71,7 @@
                                                             <select name="qualification_type" id="qualification_type_1" class="form-control">
                                                                 <option value="">Select</option>
                                                                 @for($i=0;$i<=count($qualification_type)-1;$i++)
-                                                            <option value="{{ $i  }}"> {{ $qualification_type[$i] }}</option>
+                                                            <option value="{{ $i  }}" @if(old('qualification_type')==  $i) selected @endif> {{ $qualification_type[$i] }}</option>
                                                             @endfor
                                                             </select>
                                                         </div>
@@ -99,7 +99,7 @@
                                                             <select name="subject" id="class_type" class="form-control">
                                                                 <option value="">Select</option>
                                                                 @for($i=0;$i<=count($classtype)-1;$i++)
-                                                            <option value="{{ $i  }}"> {{ $classtype[$i] }}</option>
+                                                            <option value="{{ $i  }}" @if(old('subject')==  $i) selected @endif> {{ $classtype[$i] }}</option>
                                                             @endfor
                                                             </select>
                                                         </div>
@@ -114,7 +114,7 @@
                                                             <select name="license" id="licence" class="form-control">
                                                                 <option value="">Select</option>
                                                                 @for($i=0;$i<=count($licence)-1;$i++)
-                                                            <option value="{{ $i  }}"> {{ $licence[$i] }}</option>
+                                                            <option value="{{ $i  }}" @if(old('license')==  $i) selected @endif> {{ $licence[$i] }}</option>
                                                             @endfor
                                                             </select>
                                                         </div>
@@ -127,7 +127,7 @@
                                                             <select name="Tutor_per_hour" id="tutoer_per_hour_rate" class="form-control">
                                                                 <option value="">Select</option>
                                                                 @for($i=0;$i<=count($hourrate)-1;$i++)
-                                                            <option value="{{ $i  }}"> {{ $hourrate[$i] }}</option>
+                                                            <option value="{{ $i  }}"  @if(old('Tutor_per_hour')==  $i) selected @endif> {{ $hourrate[$i] }}</option>
                                                             @endfor
                                                             </select>
                                                         </div>
@@ -141,7 +141,7 @@
                                                                 <input type="checkbox" id="customcheck21">
                                                                 <label class="upload_img" for="customcheck21">Monday To Friday 4PM TO 8PM</label>
                                                             </div>-->
-                                                            <label>
+                                                            <!-- <label>
                                                                 <input type="radio" id="yes" name="level" class="teach_under_16" value="0">
                                                                 <span class="upload_img">Monday To Friday 4PM TO 8PM</span>
                                                             </label>
@@ -149,7 +149,7 @@
                                                             <label>
                                                                 <input type="radio" id="yes" name="level" class="teach_under_16" value="1">
                                                                 <span class="upload_img">Saturday Sunday 10AM TO 4PM</span>
-                                                            </label>
+                                                            </label> -->
                                                         </div>
                                    
                                                         <div class="form-group col-md-12">
@@ -196,7 +196,7 @@
 
 
 
-                                <div class="form-group col-12 mt-5 p-0">
+                                <div class="form-group col-12 mt-1 p-0">
                                 <button name="search" class="btn btn-primary w-100" type="submit">
                                                               save
                                                             </button>

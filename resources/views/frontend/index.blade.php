@@ -8,17 +8,17 @@
 					<div class="slider-text">
 						<div class="section-title mb20 headline text-center ">
 							<div class="layer-1-1">
-								<span class="subtitle text-uppercase">CONNECTING YOU WITH TUTORS</span>
+								<span class="subtitle text-uppercase">YOU WITH TUTORS</span>
 							</div>
 							<div class="layer-1-3">
 								<h2><span>Connecting </span> Tutors  <br> and  <span>Students</span></h2>
 							</div>
 						</div>
 						<div class="search-course mb30 relative-position">
-							<form action="#" method="post">
+							<form>
 								<input class="course" name="course" type="text" placeholder="Type what do you want to learn today?">
-								<div class="nws-button text-center  gradient-bg text-capitalize">
-									<button type="submit" value="Submit"><a href="searchsubjects.php">Search Course</button> 
+								<div class="nws-button text-center  gradient-bg text-capitalize" >
+									<a href="{{route('find-tutors')}}"><button type="button">Search Course</button> </a>
 									</div>
 								</form>
 							</div>
@@ -140,10 +140,10 @@
 					<h2><span>Search</span> For Tutors</h2>
 				</div>
 				<div class="search-course mb30 relative-position "  >
-					<form action="#" method="post">
+					<form >
 						<input class="course" name="course" type="text" placeholder="Type what do you want to learn today?">
 						<div class="nws-button text-center  gradient-bg text-capitalize">
-							<button type="submit" value="Submit">Search Tutors</button> 
+							<a href="{{route('find-tutors')}}"><button type="button" >Search Tutors</button></a>
 						</div>
 					</form>
 				</div>

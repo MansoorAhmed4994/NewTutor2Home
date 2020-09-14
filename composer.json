@@ -10,12 +10,14 @@
     "require": {
         "php": "^7.2.5",
         "fideloper/proxy": "^4.2",
+        "firebase/php-jwt": "5.0",
         "fruitcake/laravel-cors": "^1.0",
-        "guzzlehttp/guzzle": "^6.3",
+        "guzzlehttp/guzzle": "^7.0",
         "laravel-frontend-presets/material-dashboard": "^1.1",
         "laravel/framework": "^7.0",
         "laravel/tinker": "^2.0",
-        "laravel/ui": "^2.1"
+        "laravel/ui": "^2.2",
+        "cartalyst/stripe-laravel": "^12.0"
     },
     "require-dev": {
         "dipeshsukhia/laravel-country-state-city-data": "^1.0",

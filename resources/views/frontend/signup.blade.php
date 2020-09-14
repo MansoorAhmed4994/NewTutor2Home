@@ -33,12 +33,12 @@
             <div class="row justify-content-center align-items-center">
                 <div class="col-lg-4">
                     <div class="sitelogo text-center">
-                        <a href="/">
+                        <a href="index.php">
                             <img src="{{asset('front/img/logo/tutors2home.png')}}" alt="">
                         </a>
                     </div>
                     <div class="bg bg-white position-relative mb-4">
-                        <a href="/" class="back"><img src="{{asset('front/img/logo/left-arrow.png')}}" alt=""></a>
+                        <a href="index.php" class="back"><img src="{{asset('front/img/logo/left-arrow.png')}}" alt=""></a>
                         <h4>Sign up</h4>
                         <a href="{{route('login')}}" class="signup">Login</a>
                         <div class="form">

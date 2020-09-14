@@ -11,7 +11,7 @@
                                 <span class="subtitle ">Earn while Individuals learn!</span>
                                 <div class="about-btn text-center">
                                     <div class="genius-btn gradient-bg text-center text-uppercase ul-li-block bold-font">
-                                        <a href="teacher_registration.php">Sign Up</a>
+                                        <a href="{{ route('teacher-registration') }}">Sign Up</a>
                                     </div>
                                 </div>
                             </div>
@@ -106,7 +106,7 @@
                                         <li><i class="fa fa-check" aria-hidden="true"></i>  Freedom to set your own rate and timetable</li>
                                         <li><i class="fa fa-check" aria-hidden="true"></i>  Get paid straight into your bank account</li>
                                     </ul>
-                                    <a href="teacher_registration.php" class="btn btn-primary">Sign up</a>
+                                    <a href="{{ route('teacher-registration') }}" class="btn btn-primary">Sign up</a>
                                 </div>
                             </div>
                         </div>
@@ -196,7 +196,7 @@
 
             <div class="text-center mb-4 mb-md-5">
                 <p class="font-weight-bold">Register today to become a tutor</p>
-                <a href="teacher_registration.php" class=" text-center btn btn-primary font-weight-bold landing-btn">Sign up</a>
+                <a href="{{ route('teacher-registration') }}" class=" text-center btn btn-primary font-weight-bold landing-btn">Sign up</a>
             </div>
             
             <!-- Video start -->
@@ -243,7 +243,7 @@
 
             <div class="text-center">
                 <p class="font-weight-bold">Register today to become a tutor</p>
-                <a href="teacher_registration.php" class="btn btn-primary font-weight-bold landing-btn" style="">Sign up</a>
+                <a href="{{ route('teacher-registration') }}" class="btn btn-primary font-weight-bold landing-btn" style="">Sign up</a>
             </div>
             <!-- End Easy side -->
             <br>
@@ -393,7 +393,7 @@
                     <small >Online One-to-One tuition for students and tutors alike!</small>
                     <div class="text-center">
                         <p class="font-weight-bold">Register today to become a tutor</p>
-                        <a href="teacher_registration.php" class="btn btn-primary font-weight-bold landing-btn" style="">Sign up</a>
+                        <a href="{{ route('teacher-registration') }}" class="btn btn-primary font-weight-bold landing-btn" style="">Sign up</a>
                     </div>
                 </div>
             </div>
