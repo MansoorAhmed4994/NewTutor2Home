@@ -1294,7 +1294,11 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
             "time": "2020-09-13T14:44:46+00:00"
+=======
+            "time": "2020-08-18T01:19:12+00:00"
+>>>>>>> 940a52bf9102fcfddca32ff96732deb0f6470f27
         },
         {
             "name": "league/flysystem",

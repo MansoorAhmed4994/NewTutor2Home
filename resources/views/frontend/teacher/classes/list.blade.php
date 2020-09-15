@@ -52,21 +52,21 @@
                                                         <td>Mark</td>
                                                         <td>Otto</td>
                                                         <td>@mdo</td>
-                                                        <td><a href="{{ route('teacher-view-class') }}"><i class="fa fa-eye"></i></a><a href="{{ route('teacher-edit-class') }}"><i class="ml-2 fa fa-edit"></i></a><a href=""><i class="ml-2 fa fa-trash-o"></i></a></td>
+                                                        <td><a href="{{ route('view-class') }}"><i class="fa fa-eye"></i></a><a href="{{ route('edit-class') }}"><i class="ml-2 fa fa-edit"></i></a><a href=""><i class="ml-2 fa fa-trash-o"></i></a></td>
                                                     </tr>
                                                     <tr>
                                                         <th scope="row">2</th>
                                                         <td>Jacob</td>
                                                         <td>Thornton</td>
                                                         <td>@fat</td>
-                                                        <td><a href="{{ route('teacher-view-class') }}"><i class="fa fa-eye"></i></a><a href="{{ route('teacher-edit-class') }}"><i class="ml-2 fa fa-edit"></i></a><a href=""><i class="ml-2 fa fa-trash-o"></i></a></td>
+                                                        <td><a href="{{ route('view-class') }}"><i class="fa fa-eye"></i></a><a href="{{ route('edit-class') }}"><i class="ml-2 fa fa-edit"></i></a><a href=""><i class="ml-2 fa fa-trash-o"></i></a></td>
                                                     </tr>
                                                     <tr>
                                                         <th scope="row">3</th>
                                                         <td>Larry</td>
                                                         <td>the Bird</td>
                                                         <td>@twitter</td>
-                                                        <td><a href="{{ route('teacher-view-class') }}"><i class="fa fa-eye"></i></a><a href="{{ route('teacher-edit-class') }}"><i class="ml-2 fa fa-edit"></i></a><a href=""><i class="ml-2 fa fa-trash-o"></i></a></td>
+                                                        <td><a href="{{ route('view-class') }}"><i class="fa fa-eye"></i></a><a href="{{ route('edit-class') }}"><i class="ml-2 fa fa-edit"></i></a><a href=""><i class="ml-2 fa fa-trash-o"></i></a></td>
                                                     </tr>
                                                 </tbody>
                                                 </table>

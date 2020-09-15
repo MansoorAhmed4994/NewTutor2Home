@@ -140,7 +140,7 @@
 										</div>
 										
 										<div class="form-group text-center mb-0 col-12">
-											<p>Already have an account ? <a href="login.php">Login</a>
+											<p>Already have an account ? <a href="{{ route('parent-login') }}">Login</a>
 											</p>
 										</div>
 										<div class="form-group col-12 mt-2" style="line-height: 1.3;">

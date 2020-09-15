@@ -13,7 +13,7 @@
                             <h2><span>PROFILE</span></h2><br>
                         </div>
                     </div>
-                </div>
+                </div> 
             </div>
         </div>
     </section>
@@ -29,7 +29,7 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-12">
                                 @include('frontend.frontalert')
-							<form class="form" method="POST">
+							<form class="form" method="POST" action="{{route('create-class')}}">
         @csrf
                                         <div class="bg">
                                             <div class="title text-center">
@@ -44,6 +44,13 @@
                                                             Topic
                                                         </label>
                                                         <input type="text" name="topic" id="topic" placeholder="Topic" class="form-control ">
+                                                    </div>
+
+                                                    <div class="form-group col-sm-12 col-lg-6 ">
+                                                        <label class="font-weight-bold">
+                                                            Topic
+                                                        </label>
+                                                        <textarea type="text" name="agenda" id="agenda"  class="form-control "></textarea>
                                                     </div>
                                                     <div class="form-group col-sm-12 col-lg-6">
                                                         <label class=" font-weight-bold">
