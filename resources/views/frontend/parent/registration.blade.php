@@ -25,7 +25,7 @@
 				else if (last_name==null || last_name=="")
 				{  
 					alert("Name can't be blank");  
-					return false;  
+					return false;   
 				}
 				else if(last_name.length<3)
 				{  

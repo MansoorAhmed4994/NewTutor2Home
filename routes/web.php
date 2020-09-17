@@ -29,8 +29,8 @@ Route::post('/book-class-save','frontend\HomeController@savebookclass')->name('b
 Route::post('/stripesubmit', 'StripeController@postPaymentWithStripe')->name('stripe-payment')->middleware('auth');
 Route::get('/payment/{id}', 'StripeController@index')->name('payment')->middleware('auth');
 Route::get('/payWithStripe', 'StripeController@payWithStripe')->name('payWithStripe')->middleware('auth');
-Route::get('/become-tutors','frontend\HomeController@becomeTutor')->name('become-tutors');
-Route::get('/login','frontend\HomeController@login')->name('login');
+Route::get('/become-tutors','frontend\HomeController@becomeTutors')->name('become-tutors');
+Route::get('/login','frontend\HomeController@login')->name('login'); 
 Route::get('/signup','frontend\HomeController@signup')->name('signup');
 Route::get('/termsofservices','frontend\HomeController@termsofservices')->name('termsofservices');
 Route::get('/teacher/login','frontend\TeacherController@login')->name('teacher-login');

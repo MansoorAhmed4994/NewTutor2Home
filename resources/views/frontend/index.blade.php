@@ -17,7 +17,7 @@
 						<div class="search-course mb30 relative-position">
 							<form>
 								<input class="course" name="course" type="text" placeholder="Type what do you want to learn today?">
-								<div class="nws-button text-center  gradient-bg text-capitalize" >
+								<div class="nws-button button text-center  gradient-bg text-capitalize" >
 									<a href="{{route('find-tutors')}}"><button type="button">Search Course</button> </a>
 									</div>
 								</form>
