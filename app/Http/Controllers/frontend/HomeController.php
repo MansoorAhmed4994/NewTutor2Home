@@ -28,7 +28,8 @@ class HomeController extends Controller
     public function findTutors(Request $request)
     {
        // $teachers = $this->user->getTeachers();
-       $teachers = User::where(['role_id'=>Role::TEACHER])->with('teacherSpecialization','qualification');
+       $teachers = User::where(['role_id'=>Role::TEACHER])->with('teacherSpecialization','qualification','teacherSlots');
+       
        $country=$request->get('country');
        $subject=$request->get('subject');
        $level=$request->get('level');
@@ -54,6 +55,7 @@ class HomeController extends Controller
        });
      }
        $teachers=$teachers->get();
+     //  dd( $teachers);
         $countries = DB::table("countries")->pluck("name","id");
         // $Qualification=User::find(Auth::user()->id)->Qualification;
         // $Subject=User::find(Auth::user()->id)->TeacherSpecialization;

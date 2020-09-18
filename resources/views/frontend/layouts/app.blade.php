@@ -113,13 +113,22 @@
   								<a href="{{ route('login') }}">log in</a>
 								<a href="{{ route('signup') }}">Signup</a>
 								@endif
+								@if(isset(Auth::user()->id) && Auth::user()->role_id==4) 
+						<a href="{{ route('parent-dashboard') }}">Dashboard</a>
+						@endif		
 						  @if(Auth::check()) 
 						 <form action="{{ route('logout') }}" method="post">
                           @csrf
                           <a  href="javascript:void(0);" onclick="$(this).closest('form').submit();">Logout</a>
                         </form>
 						@endif
-								
+						@if(isset(Auth::user()->id) && Auth::user()->role_id==2) 
+						<a href="{{ route('teacher-dashboard') }}">Dashboard</a>
+						@endif
+						@if(isset(Auth::user()->id) && Auth::user()->role_id==3) 
+						<a href="{{ route('student-dashboard') }}">Dashboard</a>
+						@endif
+						
 								<!-- The Modal -->
 								<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
 									<div class="modal-dialog">
