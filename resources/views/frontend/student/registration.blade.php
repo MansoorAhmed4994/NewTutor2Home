@@ -1,5 +1,45 @@
 @extends('frontend.layouts.app')
 @section('content')
+<html>
+	<head>
+		<script>
+			///custom
+			function validateform()
+			{  
+				var first_name=document.myform.first_name.value;  
+				var last_name=document.myform.last_name.value;  
+				var phone= document.myform.phone.value;  
+				var password=document.myform.password.value;  
+		
+				if (first_name==null || first_name=="")
+				{  
+					alert("Name can't be blank");  
+					return false;  
+				}
+				else if(first_name.length<3)
+				{  
+					alert("First Name must be 3 characters long .");  
+					return false;  
+				}
+				else if (last_name==null || last_name=="")
+				{  
+					alert("Name can't be blank");  
+					return false;  
+				}
+				else if(last_name.length<3)
+				{  
+					alert("Last Name must be 3 characters long .");  
+					return false;  
+				}
+				else if(password.length<6)
+				{  
+					alert("Your password must be at least 6 characters long. Please try another.");  
+					return false;  
+				}  
+			} 
+		</script>
+	</head>
+</html>
   <!-- Start of slider section
 		============================================= -->
 		<section id="slide" class="slider-section">
@@ -58,7 +98,7 @@
 							</div>
 							<div class="form">
 							@include('frontend.frontalert')
-							<form class="form" method="POST" action="{{ route('student-insert') }}">
+							<form class="form" name="myform" onsubmit="return validateform()"  method="POST" action="{{ route('student-insert') }}">
         @csrf
 									<p class="text-primary mb-2">(*) Marked fields are mandatory</p>
 
@@ -83,7 +123,11 @@
 										<div class="form-group col-12">
 											<label class="font-weight-bold">Phone number</label>
 											<!-- <span class="text-danger pull-right">*</span> -->
+<<<<<<< HEAD
+											<input type="tel" id="phone" name="phone" placeholder="Phone Number" autocomplete="new-password" value="" class="form-control">
+=======
 											<input type="text" id="phone" name="phone" placeholder="Phone number" autocomplete="new-password" value="{{ old('phone') }}" class="form-control">
+>>>>>>> a9649d192d214031b2f2501a1c84c38c132a1924
 										</div>
 
 										<div class="form-group col-12 mt-3">
@@ -125,7 +169,7 @@
 										</div>
 										
 										<div class="form-group text-center mb-0 col-12">
-											<p>Already have an account ? <a href="login.php">Login</a>
+											<p>Already have an account ? <a href="{{ route('student-login') }}">Login</a>
 											</p>
 										</div>
 										<div class="form-group col-12 mt-2" style="line-height: 1.3;">

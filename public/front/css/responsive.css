@@ -63,13 +63,30 @@
       right: 0;
       top: 0; }
       .b-not_found .b-searchform .btn:hover {
-        opacity: 0.75; }
-        @media (max-width: 990px) {
+		opacity: 0.75; }
+		
+@media (max-width: 990px) {
   .b-not_found .b-page_header::before {
     font-size: 300px; }
   .b-not_found h2 {
-    font-size: 28px; } }
-@media (max-width: 767px) {
+	font-size: 28px; } }
+	
+@media (max-width: 767px){
+
+	#slider-item .search-course {
+
+		max-width: 400px;
+		font-size: 10px;
+
+	}
+
+	#search-course .search-course {
+
+		max-width: 400px;
+		font-size: 10px;
+
+	}
+
   .b-not_found .b-page_header h1 {
     font-size: 35px;
     padding: 55px 0; }
@@ -79,7 +96,8 @@
   .b-not_found h2 {
     font-size: 22px; }
   .b-not_found .b-searchform {
-    max-width: 300px; } }
+	max-width: 300px; } }
+	
 @media screen and (max-width: 1024px) { 
 
 	.select-lang {
@@ -762,6 +780,7 @@
 
 	}
 	
+	
 	#slider-item .slider-course-category li {
 		color: #fff;
 		font-weight: 100;
@@ -792,9 +811,9 @@
 	}
 
 	.logo_tutor_mobile {
-		height: 38px;
-		width: 70px;
+		width: 45px;
 		padding-bottom: 11px;
+		padding-top: 1px;
 	}
 
 	.heading h1 {
@@ -1461,8 +1480,10 @@
 
 	.navbar-header {
 
-		width: 140px;
-
+		width: 120px;
+    	padding-right: 40px;
+		margin-top: -18px;
+    	
 	}
 
 	.affiliate-market-accordion .panel-group .panel {

@@ -965,6 +965,8 @@ quickScroll: function (){
 },
 
 
+			
+		
 
 }
 }
@@ -972,4 +974,6 @@ jQuery(document).ready(function (){
 	Genius.init();
 });
 
+
 })();
+ 
