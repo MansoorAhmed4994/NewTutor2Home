@@ -76,7 +76,7 @@
 						<div class="slider-text">
 							<div class="layer-1-2">
 								<div class="coming-countdown ul-li">
-									<ul>
+									<ul class="margin-countdown">
 										<li class="days">
 											<span class="number"></span>
 											<span class>Days</span>
@@ -147,14 +147,14 @@
 						</div>
 					</form>
 				</div>
-				<div class="search-counter-up">
+				<div class="search-counter-up text-center">
 					<div class="row">
 						<div class="col-md-3 col-sm-6">
 							<div class="counter-icon-number "  >
 								<div class="counter-icon">
 									<i class="text-gradiant flaticon-graduation-hat"></i>
 								</div>
-								<div class="counter-number">
+								<div class="counter-number"  style="margin-left: 10px">
 									<span class="counter-count bold-font">5 </span><span>M+</span>
 									<p>Students Enrolled</p>
 								</div>
@@ -499,17 +499,17 @@
 
 					<div class="col-md-7">
 						<div class="about-us-text">
-							<div class="section-title relative-position mb20 headline text-left "  >
+							<div class="section-title relative-position mb20 headline text-center"  >
 								<span class="subtitle ml42 text-uppercase">SORT ABOUT US</span>
 								<h2>We are <span>Tutors2home </span>
 								work since 2010.</h2>
-								<p>With the help of Tutors2home, you can find out the top class in-home and online tutors  for students and also work as tutor on part-time.</p>
+								<p class="text-left">With the help of Tutors2home, you can find out the top class in-home and online tutors  for students and also work as tutor on part-time.</p>
 							</div>
-							<div class="section-title about-content-text">
+							<div class="section-title about-content-text text-center">
 								<h2><span>Quality and Assurance</span></h2>
-								<p class=""  >We take 100% responsibility of the performance,qualification, commitment and behaviour of our tutors. And we are sure no one else can give such an assurance like this much audicityaudicity.We have have over thousands of parents and students as our happy and satisfied clients as we have been providing tutors in the UK for the past 10 years.</p>
+								<p class="text-left"  >We take 100% responsibility of the performance,qualification, commitment and behaviour of our tutors. And we are sure no one else can give such an assurance like this much audicityaudicity.We have have over thousands of parents and students as our happy and satisfied clients as we have been providing tutors in the UK for the past 10 years.</p>
 								<div class="about-list mb65 ul-li-block "  >
-									<ul>
+									<ul class="text-justify">
 										<li>Professional And Experienced Since 2010</li>
 										<li>We Connect Students With The In-Home Tutors As Well As Online Tutors From Around The UK.</li>
 										<li>Our Mission Increasing Global Access To Quality Education.</li>
@@ -539,18 +539,18 @@
 		<section id="why-choose-us" class="why-choose-us-section">
 			<div class="jarallax  backgroud-style">
 				<div class="container">
-					<div class="section-title mb20 headline text-center "  >
-						<span class="subtitle text-uppercase">Tutors2home Advantages</span>
-						<h2>Reason <span>Why Choose Tutors2home.</span></h2>
+					<div class="section-title heading-look mb20 headline text-center "  >
+						<span class="subtitle dot-margin text-uppercase">Tutors2home Advantages</span>
+						<h2 class="justify content-manage ">Reason <span>Why Choose Tutors2home.</span></h2>
 					</div>
-					<div id="service-slide-item" class="service-slide">
+					<div id="service-slide-item" class="service-slide service-qualified-content">
 						<div class="service-text-icon "  >
 							<div class="service-icon float-left">
 								<i class="text-gradiant fas fa-shopping-bag"></i>
 							</div>
 							<div class="service-text">
 								<h3 class="bold-font">Qualified Teachers</h3>
-								<p>We are partner with more than 200 UK qualified teachers across the UK. Our teachers are also subject specialists, experienced, reliable and up-to-date with national curriculum, and the current requirements of exam boards.</p>
+								<p class="text-justify">We are partner with more than 200 UK qualified teachers across the UK. Our teachers are also subject specialists, experienced, reliable and up-to-date with national curriculum, and the current requirements of exam boards.</p>
 							</div>
 						</div>
 						<div class="service-text-icon "  >
@@ -559,7 +559,7 @@
 							</div>
 							<div class="service-text">
 								<h3 class="bold-font">In-home or Online</h3>
-								<p>All lessons are taught at home, or provided blended lessons on interactive whiteboard sessions,at your convenience. Our timings are Monday to Friday from 4 Pm to 8 Pm and on weekends from 10 Am to 4 Pm. You can sit it on lessons and have a clear sense of progress.</p>
+								<p class="text-justify">All lessons are taught at home, or provided blended lessons on interactive whiteboard sessions,at your convenience. Our timings are Monday to Friday from 4 Pm to 8 Pm and on weekends from 10 Am to 4 Pm. You can sit it on lessons and have a clear sense of progress.</p>
 							</div>
 						</div>
 						<div class="service-text-icon "  >
@@ -568,7 +568,7 @@
 							</div>
 							<div class="service-text">
 								<h3 class="bold-font">Choose Your Tutor</h3>
-								<p>It all begins with initial search browse your tutor in your area. First tell us what subjects you're interested in and if you want to learn online or in-home face-to-face.You can then select the tutor in your area and talk with the tutor, and interview before making any decision.Select your perfect tutor and book your first lesson.</p>
+								<p class="text-justify">It all begins with initial search browse your tutor in your area. First tell us what subjects you're interested in and if you want to learn online or in-home face-to-face.You can then select the tutor in your area and talk with the tutor, and interview before making any decision.Select your perfect tutor and book your first lesson.</p>
 							</div>
 						</div>
 						<div class="service-text-icon "  >
@@ -577,7 +577,7 @@
 							</div>
 							<div class="service-text">
 								<h3 class="bold-font">Flexible Tuition</h3>
-								<p>Our working hours are quite flexible. You can study at your convenience time in between 4 Pm to 8 Pm Monday to Friday and on weekends from 10 Am to 4 Pm.</p>
+								<p class="text-justify">Our working hours are quite flexible. You can study at your convenience time in between 4 Pm to 8 Pm Monday to Friday and on weekends from 10 Am to 4 Pm.</p>
 							</div>
 						</div>
 						<div class="service-text-icon">
@@ -586,7 +586,7 @@
 							</div>
 							<div class="service-text">
 								<h3 class="bold-font">Academic Benefits</h3>
-								<p>In-home tuition should be a positive and enjoyable experience, for student and teacher. The aim is for each student to achieve their personal objectives, developing confidence, enthusiasm, skills and exam techniques.</p>
+								<p class="text-justify">In-home tuition should be a positive and enjoyable experience, for student and teacher. The aim is for each student to achieve their personal objectives, developing confidence, enthusiasm, skills and exam techniques.</p>
 							</div>
 						</div>
 						<div class="service-text-icon">
@@ -595,14 +595,14 @@
 							</div>
 							<div class="service-text">
 								<h3 class="bold-font">Personal Services</h3>
-								<p>You can talk to us in between 4Pm to 8Pm Monday to Friday we will answer your questions and give you good personal advice. Feel free to send us email to book appointment with the tutor and we will arrange the tutor in couple of days.</p>
+								<p class="text-justify">You can talk to us in between 4Pm to 8Pm Monday to Friday we will answer your questions and give you good personal advice. Feel free to send us email to book appointment with the tutor and we will arrange the tutor in couple of days.</p>
 							</div>
 						</div>
 					</div>
 					<!-- /service-slide -->
 					<div  class="testimonial-slide">
-						<div class="section-title-2 mb65 headline text-left "  >
-							<h2>Students <span>Testimonial.</span></h2>
+						<div class="section-title-2  mb65 headline text-left "  >
+							<h2 class="text-center testonomial">Students <span>Testimonial.</span></h2>
 						</div>
 
 						<div id="testimonial-slide-item" class="testimonial-slide-area">
@@ -777,10 +777,10 @@
 								<h2>Latest <span>Video.</span></h2>
 							</div>
 							<div class="latest-video-poster relative-position mb20">
-								<img src="{{asset('front/img/banner/v-1.jpg')}}" alt="">
-								<div class="video-play-btn text-center gradient-bg">
-									<a class="popup-with-zoom-anim" href="https://www.youtube.com/watch?v=-g4TnixUdSc"><i class="fas fa-play"></i></a>
-								</div>
+							
+							<video class="video-border" width="80%" height="200" controls="">
+								<source src="{{asset('front/videos/demo-2.mp4')}}" type="video/mp4">
+							</video>
 							</div>
 							<div class="vidoe-text">
 								<h3 class="latest-title bold-font"><a href="#">Learning IOS Apps in Amsterdam.</a></h3>
@@ -801,8 +801,8 @@
 
 	<!-- Start of sponsor section
 		============================================= -->
-		<section id="sponsor" class="sponsor-section">
-			<div class="container">
+		<!-- <section id="sponsor" class="sponsor-section">
+			<div class="container sponsor-content">
 				<div class="section-title-2 mb65 headline text-left "  >
 					<h2>Genius <span>Sponsors.</span></h2>
 				</div>
@@ -836,7 +836,7 @@
 					</div>
 				</div>
 			</div>
-		</section>
+		</section> -->
 	<!-- End of sponsor section
 		============================================= -->
 
@@ -1369,7 +1369,7 @@
 
 	<!-- Start of best product section
 		============================================= -->
-		<section id="best-product" class="best-product-section">
+		<section id="best-product" class="best-product-section best-product-content">
 			<div class="container">
 				<div class="section-title-2 mb65 headline text-left "  >
 					<h2>Genius <span>Best Products.</span></h2>
@@ -1519,7 +1519,7 @@
 	<!-- Start FAQ section
 		============================================= -->
 		<section id="faq" class="faq-section">
-			<div class="container">
+			<div class="container faq-content">
 				<div class="section-title mb45 headline text-center "  >
 					<span class="subtitle text-uppercase">Tutors2home FAQ</span>
 					<h2>Frequently<span> Ask & Questions</span></h2>

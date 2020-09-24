@@ -253,13 +253,13 @@
 
 	<!-- Start of contact area
 		============================================= -->
-		<section id="contact-area" class="contact-area-section backgroud-style">
-			<div class="container">
+		<section id="contact-area" class="contact-area-section backgroud-style ">
+			<div class="container ">
 				<div class="contact-area-content">
 					<div class="row">
 						<div class="col-md-6">
 							<div class="contact-left-content " >
-								<div class="section-title  mb45 headline text-left">
+								<div class="section-title area-contact-content  mb45 headline text-center">
 									<span class="subtitle ml42  text-uppercase">CONTACT US</span>
 									<h2><span>Get in Touch</span></h2>
 									<p>
@@ -267,7 +267,7 @@
 									</p>
 								</div>
 
-								<div class="contact-address">
+								<div class="contact-address area-contact-content">
 									<div class="contact-address-details">
 										<div class="address-icon relative-position text-center float-left">
 											<i class="fas fa-map-marker-alt"></i>
@@ -280,7 +280,7 @@
 										</div>
 									</div>
 
-									<div class="contact-address-details">
+									<div class="contact-address-details ">
 										<div class="address-icon relative-position text-center float-left">
 											<i class="fas fa-phone"></i>
 										</div>
@@ -305,7 +305,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="genius-btn mt60 gradient-bg text-center text-uppercase ul-li-block bold-font ">
+							<div class="genius-btn area-contact-content mt60 gradient-bg text-center text-uppercase ul-li-block bold-font ">
 								<a href="#">Contact Us <i class="fas fa-caret-right"></i></a>
 							</div>
 						</div>
@@ -332,17 +332,17 @@
 						<div class="row">
 							<div class="col-md-3">
 								<div class="footer-widget "  >
-									<div class="footer-logo mb35">
+									<div class="footer-logo area-footer-content  mb35">
 										<img src="{{asset('front/img/logo/f-logo.png')}}" alt="">
 									</div>
-									<div class="footer-about-text">
+									<div class="footer-about-text area-footer-content ">
 										<p>We take our mission of increasing global access to quality education seriously. We connect learners to best Tutors from around the UK.</p>
 										<p>Tutors2Home provide professional, In-home and online tuition in Maths, English, Science, 11plus, GCSE for students aged 5(year one) to year (Year 14,15). Tutors2home is the disclosed partner with over 200 fully qualified and experienced teachers, across the UK. We aim to provide highest quality of service to families and to teachers, providing high quality home tuition and the very best outcomes for learners. </p>
 									</div>
 								</div>
 							</div>
-							<div class="col-md-6">
-								<div class="footer-widget "  >
+							<div class="col-md-6 area-footer-content">
+								<div class="footer-widget  "  >
 									<div class="footer-menu ul-li-block">
 										<h2 class="widget-title">Useful Links</h2>
 										<ul>
@@ -367,7 +367,7 @@
 									</ul>
 								</div>
 							</div>
-							<div class="col-md-3">
+							<div class="col-md-3 area-footer-content">
 								<div class="footer-widget "  >
 									<h2 class="widget-title">Photo Gallery</h2>
 									<div class="photo-list ul-li">
@@ -426,7 +426,7 @@
 						</div>
 					</div> 
 					<!-- /footer-widget-content -->
-					<div class="footer-social-subscribe mb65">
+					<div class="footer-social-subscribe mb65 area-footer-content">
 						<div class="row">
 							<div class="col-md-3">
 								<div class="footer-social ul-li "  >

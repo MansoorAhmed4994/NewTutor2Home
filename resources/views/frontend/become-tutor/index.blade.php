@@ -118,9 +118,9 @@
 
             <!-- Start Custom side -->
 
-            <div class="Customside bg-white text-center pb-0">
+            <div class="Customside  bg-white text-center pb-0">
                 <div class="container">
-                    <img src="{{asset('front/img/customised-img.png')}}" alt="">
+                    <img src="{{asset('front/img/customised-img.png')}}"  class="customised-photo-size" alt="">
                 </div>
             </div>
 
@@ -128,7 +128,7 @@
 
             <!-- Start Budget side -->
             <div class="Budgetside inner text-center become-a-tutor">
-                <div class="container">
+                <!-- <div class="container">
                     <h2>How much can I make?</h2>
                     <p>TutorNinjas, we have 4 tiers of tutoring levels you can choose from. Just select your tier and confirm
                         it during the sign-up process or within your personal tutor account. Build up your ratings and
@@ -190,7 +190,7 @@
                         </div>
 
                     </div>
-                </div>
+                </div> -->
             </div>
             <!-- End Budget side -->
 
@@ -249,9 +249,9 @@
             <br>
 
             <!-- Start Build side -->
-            <div class="Buildside mb-0">
+            <!-- <div class="Buildside mb-0">
                 <img src="{{asset('front/img/build-bg7.jpg')}}" alt="" class="w-100">
-            </div>
+            </div> -->
             <!-- End Build side -->
 
 
@@ -268,7 +268,7 @@
                                 <p>Plus, we pay directly to your bank account every two weeks. Cha-ching!</p>
                             </div>
                         </div>
-                        <div class="col-md-6 d-block d-md-none">
+                        <div class="col-md-6 build-side-photo-size d-block d-md-none">
                             <img src="{{asset('front/img/build-bg-30-05-2.jpg')}}" alt="" class="w-100">
                         </div>
                     </div>
@@ -281,7 +281,7 @@
             <div class="Buildside build-3 inner">
                 <div class="container">
                     <div class="row text-left">
-                        <div class="col-md-6 d-block d-md-none">
+                        <div class="col-md-6 build-side-photo-size-two d-block d-md-none">
                             <img src="{{asset('front/img/build-bg4.jpg')}}" alt="" class="w-100">
                         </div>
                         <div class="col-md-6 aos-init aos-animate" data-aos="fade-right">
@@ -312,7 +312,7 @@
                                     to help with any query you have.</p>
                             </div>
                         </div>
-                        <div class="col-md-6 d-block d-md-none">
+                        <div class="col-md-6 build-side-photo-size-three d-block d-md-none">
                             <img src="{{asset('front/img/build-bg-30-05-1.jpg')}}" alt="" class="w-100">
                         </div>
                     </div>
@@ -325,7 +325,7 @@
             <div class="Buildside build-4 inner mb-4 mb-md-5">
                 <div class="container">
                     <div class="row text-left">
-                        <div class="col-md-6 d-block d-md-none">
+                        <div class="col-md-6 build-side-photo-size-four d-block d-md-none">
                             <img src="{{asset('front/img/build-bg5.jpg')}}" alt="" class="w-100">
                         </div>
                         <div class="col-md-6 aos-init" data-aos="fade-left">
