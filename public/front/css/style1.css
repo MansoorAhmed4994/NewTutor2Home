@@ -1721,6 +1721,19 @@ b, strong {
   margin-left: 19px !important;
 }
 
+<<<<<<< HEAD
+@media only screen and (max-width: 710px) {
+.logo_tutor_mobile {
+  height: 38px ;
+  width: 70px ;
+}}
+
+@media only screen and (min-width: 770px) {
+  .logo_tutor_mobile {
+    height: 48px ;
+    width: 90px ;
+  }}
+=======
   #slider-item .search-course .course
 {
   font-weight: 400 !important;
@@ -1790,6 +1803,7 @@ b, strong {
     height: 403.2px !important;
   }
     
+>>>>>>> eb780c629c0b729070396184e42d9dd70c2fc3a7
 
   #slider-item .slider-course-category li 
   {
@@ -1826,17 +1840,12 @@ b, strong {
     {
       font-weight: 400;
 
-    }
-    
-  }
 
     @media only screen and (min-width: 770px)  
     {
       .section-title h2 span 
       {
         font-weight: 400;
-      }
-      
 
     }
 
@@ -1908,6 +1917,7 @@ b, strong {
     height: 403.2px !important;
       }
 
+<<<<<<< HEAD
       .counter-icon {
         width: 50px;
         margin-right: 5px;
@@ -1920,3 +1930,9 @@ b, strong {
     }
     
   
+=======
+<<<<<<< HEAD
+=======
+  
+>>>>>>> eb780c629c0b729070396184e42d9dd70c2fc3a7
+>>>>>>> 52fea729bb47c4150ac5be3ee2750b3fa026f693

@@ -183,10 +183,14 @@
                                             <!-- <p class=""><span class="icn"><img style="max-width: 20px;" src="{{asset('front/img/orange-1.png')}}" alt=""></span>
                                                         Orange Belt</p> -->
                                                         <p></p>
-                                                            
+                                                      
                                             <div class="text-center">
                                                 <a href="{{ route('single-tutor', ['id' =>  $teacher->id]) }}" class="btn btn-primary">View Profile</a>
+                                                @if(isset(Auth::user()->id) && Auth::user()->role_id!=2) 
                                                 <a href="{{ route('book-class', ['id' =>  $teacher->id]) }}" class="btn btn-primary">Book Now</a>
+                                                @else
+                                                <a href="{{ route('book-class', ['id' =>  $teacher->id]) }}" class="btn btn-primary">Book Now</a>
+                                                @endif
                                             </div>
                                         </div>
                                     </div>

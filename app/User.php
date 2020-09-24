@@ -52,7 +52,7 @@ class User extends Authenticatable
         return $this->belongsTo(\App\Models\Qualification::class,'id', 'user_id');
     }
     public function teacherSlots() {
-        return $this->belongsTo(\App\Models\TeacherSlots::class,'id', 'user_id');
+        return $this->hasMany(\App\Models\TeacherSlots::class,'user_id');
     }
     public function teacherSpecialization() {
         return $this->belongsTo(\App\Models\TeacherSpecialization::class,'id', 'user_id');

@@ -117,6 +117,12 @@ class ParentController extends Controller
                 $data['gender'] =$request->gender;
                 $data['phone'] =$request->phone;
                 $data['dob'] =$request->dob;
+                if ($request->hasFile('image')) {
+                    $imageName = time().'.'.request()->image->getClientOriginalExtension();
+                    request()->image->move(public_path('images'), $imageName);
+                    $data['image'] =$imageName;
+                }
+    
                 $user->update($data);
                 return redirect()->back()->with('success', 'profile has been updated.');
                

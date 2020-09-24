@@ -26,7 +26,12 @@
                                 <div class="Profile bg-light position-relative">
                                     <div class="row no-gutters">
                                         <div class="img col-lg-4">
-                                            <img src="{{asset('front/img/teacher/mt-3.jpg')}}" alt="">
+                                        @if(Auth::user()->image!="")
+									
+									<img src="{{ url('images') }}/{{ Auth::user()->image }}" alt="">
+									@else
+									<img src="{{ asset('front/img/teacher/mt-3.jpg') }}" alt="">
+									@endif
                                         </div>
                                         <div class="text col-lg-8">
                                         <div class="name">
