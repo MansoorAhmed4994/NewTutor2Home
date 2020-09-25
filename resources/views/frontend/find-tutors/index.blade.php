@@ -72,8 +72,10 @@
                             </select>
                         </div>
                         <div class="form-group col-12 mb-0">
-                            <div class="genius-btn float-right gradient-bg text-center text-uppercase ul-li-block bold-font">
-                            <button name="search" type="submit">Find Now  </button>
+                            <div class="about-btn">
+                                <div class="genius-btn float-right gradient-bg text-center text-uppercase ul-li-block bold-font">
+                                    <button name="search" type="submit">Find Now <i class="fas fa-caret-right"></i> </button>
+                                </div>
                             </div>
                             <div class="about-btn">
                                 <div class="genius-btn float-right gradient-bg text-center text-uppercase ul-li-block bold-font">
