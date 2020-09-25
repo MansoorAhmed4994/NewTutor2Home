@@ -123,11 +123,10 @@
 										<div class="form-group col-12">
 											<label class="font-weight-bold">Phone number</label>
 											<!-- <span class="text-danger pull-right">*</span> -->
-<<<<<<< HEAD
+
 											<input type="tel" id="phone" name="phone" placeholder="Phone Number" autocomplete="new-password" value="" class="form-control">
-=======
-											<input type="text" id="phone" name="phone" placeholder="Phone number" autocomplete="new-password" value="{{ old('phone') }}" class="form-control">
->>>>>>> a9649d192d214031b2f2501a1c84c38c132a1924
+								
+
 										</div>
 
 										<div class="form-group col-12 mt-3">

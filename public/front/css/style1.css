@@ -1721,49 +1721,52 @@ b, strong {
   margin-left: 19px !important;
 }
 
-<<<<<<< HEAD
+
 @media only screen and (max-width: 710px) {
 .logo_tutor_mobile {
   height: 38px ;
   width: 70px ;
-}}
+}
+}
 
 @media only screen and (min-width: 770px) {
   .logo_tutor_mobile {
     height: 48px ;
     width: 90px ;
-  }}
-=======
+  }
+
+}
+
   #slider-item .search-course .course
 {
   font-weight: 400 !important;
     font-size: 12px;
 }
-#search-course .search-course .course {
-  font-weight: 400 !important;
-  font-size: 12px !important;
-}
-  .logo_tutor_mobile 
-  { 
-    width: 50px ;
+  #search-course .search-course .course {
+    font-weight: 400 !important;
+    font-size: 12px !important;
   }
+    /* .logo_tutor_mobile 
+    { 
+      width: 50px ;
+    } */
 
-  .slider-text {
-    position: absolute;
-    top: 50%;
-    right: 0;
-    left: 0;
-    font-size: 10px;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-  }
-  .course-item-pic-text {
+    .slider-text {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      left: 0;
+      font-size: 10px;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+    }
+    .course-item-pic-text {
 
-    max-width: 370px;
-    margin: 20px;
+      max-width: 370px;
+      margin: 20px;
 
-	}
+    }
 }
 @media only screen and (max-width: 375px) 
 {
@@ -1793,7 +1796,8 @@ b, strong {
   }
   .logo_tutor_mobile 
   { 
-    padding-top: 10px !important;
+    padding-top: 12px !important;
+    padding-bottom: 0px !important;
 
   }
 
@@ -1803,7 +1807,7 @@ b, strong {
     height: 403.2px !important;
   }
     
->>>>>>> eb780c629c0b729070396184e42d9dd70c2fc3a7
+
 
   #slider-item .slider-course-category li 
   {
@@ -1839,13 +1843,15 @@ b, strong {
     .section-title h2 span 
     {
       font-weight: 400;
-
+    }
+  }
 
     @media only screen and (min-width: 770px)  
     {
       .section-title h2 span 
       {
         font-weight: 400;
+      }
 
     }
 
@@ -1914,25 +1920,18 @@ b, strong {
       {
         height: 135vh ;
         min-height: 600px !important;
-    height: 403.2px !important;
+        height: 403.2px !important;
       }
 
-<<<<<<< HEAD
-      .counter-icon {
+      .counter-icon 
+      {
         width: 50px;
         margin-right: 5px;
-    }
+      }
     }
 
     .customised-photo-size
     {
       height: 400px;
     }
-    
-  
-=======
-<<<<<<< HEAD
-=======
-  
->>>>>>> eb780c629c0b729070396184e42d9dd70c2fc3a7
->>>>>>> 52fea729bb47c4150ac5be3ee2750b3fa026f693
+
