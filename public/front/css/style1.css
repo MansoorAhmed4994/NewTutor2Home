@@ -1456,12 +1456,10 @@ b, strong {
     @media (max-width: 1549px){
 .container {
     max-width: 1230px;
-}}
+}
+}
   
 
-/* .logo_tutor_mobile {
-  width: 150px;
-} */
 
 @media only screen and (max-width: 767px) {
 
@@ -1472,7 +1470,7 @@ b, strong {
 
 	}
 .logo_tutor_mobile { 
-  width: 60px ;
+  width: 70px !important ;
 }
 .search-course .nws-button, .subs-form .nws-button {
   width: 124px ;
@@ -1556,7 +1554,7 @@ b, strong {
 {
   .logo_tutor_mobile 
   { 
-    width: 80px ;
+    width: 90px ;
   }
 
   
@@ -1696,11 +1694,9 @@ b, strong {
 .why-choose-us-section .section-title {
   margin-bottom: 50px;
   margin-left: 60px;
-  margin-right: 50px;}
+  margin-right: 50px;
+}
 
-  /* .slider-bg-1, .slider-bg-2, .slider-bg-3, .slider-bg-4, .slider-bg-5 {
-    height: 75vh !important;
-  } */
   #slider-item .third-slide {
     font-size: 20px !important;
 }
@@ -1721,22 +1717,6 @@ b, strong {
   margin-left: 19px !important;
 }
 
-
-@media only screen and (max-width: 710px) {
-.logo_tutor_mobile {
-  height: 38px ;
-  width: 70px ;
-}
-}
-
-@media only screen and (min-width: 770px) {
-  .logo_tutor_mobile {
-    height: 48px ;
-    width: 90px ;
-  }
-
-}
-
   #slider-item .search-course .course
 {
   font-weight: 400 !important;
@@ -1746,10 +1726,7 @@ b, strong {
     font-weight: 400 !important;
     font-size: 12px !important;
   }
-    /* .logo_tutor_mobile 
-    { 
-      width: 50px ;
-    } */
+    
 
     .slider-text {
       position: absolute;
@@ -1796,8 +1773,9 @@ b, strong {
   }
   .logo_tutor_mobile 
   { 
-    padding-top: 12px !important;
+    padding-top: 7px !important;
     padding-bottom: 0px !important;
+    width: 60px!important;
 
   }
 
@@ -1844,6 +1822,7 @@ b, strong {
     {
       font-weight: 400;
     }
+    
   }
 
     @media only screen and (min-width: 770px)  
