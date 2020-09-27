@@ -15,4 +15,10 @@ class City extends Model
     {
         return $this->belongsTo(State::class);
     }
+
+    public static function getCities($state)
+    {
+        $result = City::where('state_id','=',$state)->orderby('name','asc')->get();
+        return $result;
+    }
 }

@@ -28,9 +28,9 @@
                         <div class="container">
                             <div class="row justify-content-center">
                                 <div class="col-lg-12">
-                                @include('frontend.frontalert')
-							<form class="form" method="POST" action="{{route('create-class')}}">
-        @csrf
+                                    @include('frontend.frontalert')
+                                    <form class="form" method="POST" action="{{route('create-class')}}">
+                                        @csrf
                                         <div class="bg">
                                             <div class="title text-center">
                                                 Create Class
@@ -70,13 +70,13 @@
                                                         <label class="font-weight-bold">
                                                             Time Zone
                                                         </label>
-                                                            <select name="time_zone" id="time_zone" class="form-control">
-                                                                <option value="">Select</option>
-                                                                <option value="">(GMT -12:00) Eniwetok, Kwajalein</option>
-                                                                <option value="">(GMT -11:00) Midway Island, Samoa</option>
-                                                                <option value="">(GMT -10:00) Hawaii</option>
-                                                                <option value="">(GMT -9:30) Taiohae</option>
-                                                            </select>
+                                                        <select name="time_zone" id="time_zone" class="form-control">
+                                                            <option value="">Select</option>
+                                                            <option value="(GMT -12:00) Eniwetok, Kwajalein">(GMT -12:00) Eniwetok, Kwajalein</option>
+                                                            <option value="(GMT -11:00) Midway Island, Samoa">(GMT -11:00) Midway Island, Samoa</option>
+                                                            <option value="(GMT -10:00) Hawaii">(GMT -10:00) Hawaii</option>
+                                                            <option value="(GMT -9:30) Taiohae">(GMT -9:30) Taiohae</option>
+                                                        </select>
                                                     </div>
 
                                                     <div class="form-group col-sm-12 col-lg-6">
@@ -91,42 +91,49 @@
 
                                                     <div class="form-group col-sm-12 col-lg-6 ">
                                                         <label class="font-weight-bold">
-                                                            Student Id
+                                                            Students
                                                         </label>
-                                                        <select name="student_id" id="v" class="form-control">
-                                                            <option value="">Select</option>
-                                                            <option value="">01</option>
-                                                            <option value="">02</option>
-                                                            <option value="">03</option>
-                                                            <option value="">04</option>
+                                                        <select name="student_id[]" id="v" class="form-control"  multiple="multiple">
+                                                            <option value="" disabled>Select Students</option>
+                                                            @if(!empty($teacherdata))
+                                                            @foreach($teacherdata as $key => $getname) 
+                                                            <option value="{{ $getname->id }}">{{ $getname->email }}</option>
+                                                            @endforeach
+                                                            @endif
+
                                                         </select>
                                                     </div>
 
-                                                    <div class="form-group col-sm-12 col-lg-6 ">
+                                                    {{-- <div class="form-group col-sm-12 col-lg-6 ">
                                                         <label class="font-weight-bold">
                                                             Students
                                                         </label>
-                                                        <select name="students" id="students" class="form-control">
+                                                        <select name="students[]" id="students" class="form-control" multiple="multiple">
                                                             <option value="">Select</option>
-                                                            <option value="">Ahmed</option>
-                                                            <option value="">Huzaifa</option>
-                                                            <option value="">Daniyal</option>
-                                                            <option value="">Muzammil</option>
-                                                        </select>
-                                                    </div>
+                                                            
+                                                            @if(!empty($teacherdata))
+                                                            @foreach($teacherdata as $key => $getname) 
+                                                            <option value="{{ $getname->name }}">{{ $getname->name }}</option>
+                                                            @endforeach
+                                                            @endif
 
-                                                    <div class="form-group col-sm-12 col-lg-6 ">
+                                                        </select>
+                                                    </div> --}}
+
+                                                    {{-- <div class="form-group col-sm-12 col-lg-6 ">
                                                         <label class="font-weight-bold">
                                                             Email
                                                         </label>
-                                                        <select name="email" id="email" class="form-control">
+                                                        <select name="email[]" id="email" class="form-control"  multiple="multiple">
                                                             <option value="">Select</option>
-                                                            <option value="">Ahmed@gmail.com</option>
-                                                            <option value="">Huzaifa@gmail.com</option>
-                                                            <option value="">Daniyal@gmail.com</option>
-                                                            <option value="">Muzammil@gmail.com</option>
+                                                            @if(!empty($teacherdata))
+                                                            @foreach($teacherdata as $key => $getname) 
+                                                            <option value="{{ $getname->email }}">{{ $getname->email }}</option>
+                                                            @endforeach
+                                                            @endif
+
                                                         </select>
-                                                    </div>
+                                                    </div> --}}
 
                                                     <div class="col-sm-12 m-auto pt-2">
                                                         <div class="text-center ">
@@ -151,10 +158,10 @@
     <script>
 
 
-    
 
-    
-</script>   
+
+
+    </script>   
 
 
     

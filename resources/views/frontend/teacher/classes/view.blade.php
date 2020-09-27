@@ -28,79 +28,82 @@
                         <div class="container">
                             <div class="row justify-content-center">
                                 <div class="col-lg-12">
-                                @include('frontend.frontalert')
-							<form class="form" method="POST">
-        @csrf
-                                        <div class="bg">
-                                            <div class="title text-center">
-                                                Class
-                                            </div>
-                                            <div class="form">
-                                                <div class="row">
+                                    @include('frontend.frontalert')
+                                    <div class="bg">
+                                        <div class="title text-center">
+                                            Class
+                                        </div>
+                                        <div class="form">
+                                            <div class="row">
 
 
-                                                    <div class="form-group col-sm-12 col-lg-6 ">
-                                                        <h2 >
-                                                            Topic
-                                                        </h2>
-                                                        <p>Importance of Software</p>
-                                                    </div>
-                                                    <div class="form-group col-sm-12 col-lg-6">
-                                                        <h2 >
-                                                            Date
-                                                        </h2>
-                                                        <p>11-September-2020</p>
-                                                    </div>
-
-                                                    <div class="form-group col-sm-12 col-lg-6">
-                                                        <h2 >
-                                                            Time
-                                                        </h2>
-                                                        <p>02:30P.M</p>
-                                                    </div>
-                                                    
-                                                    <div class="form-group col-sm-12 col-lg-6">
-                                                        <h2 >
-                                                            Time Zone
-                                                        </h2>
-                                                        <p>(GMT -9:30) Taiohae</p>
-                                                    </div>
-
-                                                    <div class="form-group col-sm-12 col-lg-6">
-                                                        <h2 >
-                                                            Duration
-                                                        </h2>
-                                                        <p>1 Hour</p>
-                                                    </div>
-                                                    <div class="form-group col-sm-12 col-lg-12">
-                                                        <hr>
-                                                    </div>
-
-                                                    <div class="form-group col-sm-12 col-lg-6 ">
-                                                        <h2 >
-                                                            Student Id
-                                                        </h2>
-                                                            <p>04</p>
-                                                    </div>
-
-                                                    <div class="form-group col-sm-12 col-lg-6 ">
-                                                        <h2 >
-                                                            Student
-                                                        </h2>
-                                                            <p>Daniyal</p>
-                                                    </div>
-
-                                                    <div class="form-group col-sm-12 col-lg-6 ">
-                                                        <h2 >
-                                                            Email
-                                                        </h2>
-                                                            <p>Daniyal@gmail.com</p>
-                                                    </div>
-
+                                                <div class="form-group col-sm-12 col-lg-6 ">
+                                                    <h2 >
+                                                        Topic
+                                                    </h2>
+                                                    <p>{{ $classData->topic }}</p>
                                                 </div>
+                                                <div class="form-group col-sm-12 col-lg-6">
+                                                    <h2 >
+                                                        Date
+                                                    </h2>
+                                                    <p>{{ $classData->start_date }}</p>
+                                                </div>
+
+                                                <div class="form-group col-sm-12 col-lg-6">
+                                                    <h2 >
+                                                        Time
+                                                    </h2>
+                                                    <p>{{ $classData->start_time }}</p>
+                                                </div>
+
+                                                <div class="form-group col-sm-12 col-lg-6">
+                                                    <h2 >
+                                                        Time Zone
+                                                    </h2>
+                                                    <p>{{ $classData->timezone }}</p>
+                                                </div>
+
+                                                <div class="form-group col-sm-12 col-lg-6">
+                                                    <h2 >
+                                                        Duration
+                                                    </h2>
+                                                    <p>{{ $classData->duration }} Hours</p>
+                                                </div>
+                                                <div class="form-group col-sm-12 col-lg-6">
+                                                    <h2 >
+                                                        Start Class 
+                                                    </h2>
+                                                    <p> <a href="{{ $classData->meeting->start_url }}"> Click to start</a> </p>
+                                                </div>
+                                                <div class="form-group col-sm-12 col-lg-12">
+                                                    <hr>
+                                                </div>
+
+                                                 <div class="form col-md-12">
+                                                <table class="table">
+                                                    <thead style="background-color: #a8b1b7; color: white;">
+                                                        <tr>
+                                                            <th scope="col">#</th>
+                                                            <th scope="col">Student Name</th>
+                                                            <th scope="col">Student Email</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        @foreach($classStudents as $data)
+                                                        <tr>
+                                                            <th scope="row">1</th>
+                                                            <td>{{ $data->students->name }}</td>
+                                                            <td>{{ $data->students->email }}</td>
+                                                        </tr>
+                                                        @endforeach
+                                                    </tbody>
+                                                </table>
+                                            </div>
+
                                             </div>
                                         </div>
-                                    </form>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -112,10 +115,10 @@
     <script>
 
 
-    
 
-    
-</script>   
+
+
+    </script>   
 
 
     

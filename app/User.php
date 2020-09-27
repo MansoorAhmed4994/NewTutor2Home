@@ -46,7 +46,7 @@ class User extends Authenticatable
     }
         
     public function role() {
-        return $this->belongsTo('App\Models\Role');
+        return $this->belongsTo(\App\Models\Role::class);
     }
     public function qualification() {
         return $this->belongsTo(\App\Models\Qualification::class,'id', 'user_id');

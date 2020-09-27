@@ -19,4 +19,10 @@ class State extends Model
     {
         return $this->belongsTo(Country::class);
     }
+
+    public static function getStates($country)
+    {
+        $result = State::where('country_id','=',$country)->orderby('name','asc')->get();
+        return $result;
+    }
 }
