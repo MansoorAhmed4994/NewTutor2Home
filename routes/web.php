@@ -39,6 +39,8 @@ Route::post('/teacher/insert','frontend\TeacherController@insertTeacher')->name(
 Route::post('/parent/insert','frontend\ParentController@insertParent')->name('parent-insert');
 
 
+Route::get('/get-states','frontend\HomeController@getStates')->name('get-states');
+Route::get('/get-cities','frontend\HomeController@getCities')->name('get-cities');
 Route::get('/student/registration','frontend\StudentController@registration')->name('student-registration');
 Route::get('/student/login','frontend\StudentController@login')->name('student-login');
 Route::get('/parent/registration','frontend\ParentController@registration')->name('parent-registration');
@@ -65,7 +67,8 @@ Route::group(['prefix' => 'teacher','middleware' => ['teacher','auth']], functio
    Route::get('/classes/create','frontend\TeacherClassesController@CreatClass')->name('create-class');
    Route::post('/classes/create','frontend\TeacherClassesController@CreatClassStore')->name('create-class');
    Route::get('/classes/list','frontend\TeacherClassesController@ListClass')->name('list-class');
-   Route::get('/classes/view','frontend\TeacherClassesController@ViewClass')->name('view-class');
+   Route::get('/classes/view/{class}','frontend\TeacherClassesController@ViewClass')->name('view-class');
+   Route::get('/classes/delete/{class}','frontend\TeacherClassesController@deleteClass')->name('delete-class');
    Route::get('/classes/edit','frontend\TeacherClassesController@EditClass')->name('edit-class');
 
 
@@ -85,7 +88,7 @@ Route::group(['prefix' => 'student','middleware' => ['student','auth']], functio
    Route::get('/dashboard','frontend\StudentController@dashboard')->name('student-dashboard');
    Route::get('/profile','frontend\StudentController@profile')->name('student-profile');
    Route::get('/myclass','frontend\StudentclassController@myclass')->name('student-myclass');
-   Route::get('/view-class','frontend\StudentclassController@viewclass')->name('student-view-class');
+   Route::get('/view-class/{class}','frontend\StudentclassController@viewclass')->name('student-view-class');
    Route::get('/change-password','frontend\StudentController@changePassword')->name('student-change-password');
    Route::post('/update-password','frontend\StudentController@updatePassword')->name('student-update-password');
    Route::post('/update-student-profile','frontend\StudentController@updateprofile')->name('student-update-profile');

@@ -26,53 +26,42 @@
                         <div class="container">
                             <div class="row justify-content-center">
                                 <div class="col-lg-12">
-                                   
-                                @include('frontend.frontalert')
-							<form class="form" method="POST" action="{{ route('student-update-password') }}">
-        @csrf
-                                              
+
+                                    @include('frontend.frontalert')
                                         <div class="bg">
                                             <div class="title text-center">
                                                 My Classes
                                             </div>
                                             <div class="form">
                                                 <table class="table">
-                                                <thead style="background-color: #a8b1b7; color: white;">
-                                                    <tr>
-                                                        <th scope="col">#</th>
-                                                        <th scope="col">First</th>
-                                                        <th scope="col">Last</th>
-                                                        <th scope="col">Handle</th>
-                                                        <th scope="col"></th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <th scope="row">1</th>
-                                                        <td>Mark</td>
-                                                        <td>Otto</td>
-                                                        <td>@mdo</td>
-                                                        <td><a href="{{ route('student-view-class') }}"><i class="fa fa-eye"></i></a></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">2</th>
-                                                        <td>Jacob</td>
-                                                        <td>Thornton</td>
-                                                        <td>@fat</td>
-                                                        <td><a href="{{ route('student-view-class') }}"><i class="fa fa-eye"></i></a></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">3</th>
-                                                        <td>Larry</td>
-                                                        <td>the Bird</td>
-                                                        <td>@twitter</td>
-                                                        <td><a href="{{ route('student-view-class') }}"><i class="fa fa-eye"></i></a></td>
-                                                    </tr>
-                                                </tbody>
+                                                    <thead style="background-color: #a8b1b7; color: white;">
+                                                        <tr>
+                                                            <th scope="col">#</th>
+                                                            <th scope="col">Teacher Name</th>
+                                                            <th scope="col">Topic</th>
+                                                            <th scope="col">Start Date</th>
+                                                            <th scope="col">Start Time</th>
+                                                            <th scope="col">Duration</th>
+                                                            <th scope="col"></th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                      @foreach($studentClass as $key => $studentData)  
+                                                        <tr>
+                                                            <?php $var =  $key; ?>
+                                                            <th scope="row">{{ $var + 1 }}</th>
+                                                            <td>{{ $studentData->class->teacher->name }}</td>
+                                                            <td>{{ $studentData->class->topic }}</td>
+                                                            <td>{{ $studentData->class->start_date }}</td>
+                                                            <td>{{ $studentData->class->start_time }}</td>
+                                                            <td>{{ $studentData->class->duration }} Hours</td>
+                                                            <td><a href="{{ route('student-view-class',$studentData->class_id) }}"><i class="fa fa-eye"></i></a></td>
+                                                        </tr>
+                                                    </tbody>
+                                                    @endforeach
                                                 </table>
                                             </div>
                                         </div>
-                                    </form>
                                 </div>
                             </div>
                         </div>

@@ -513,7 +513,7 @@
 		<script src="http://maps.google.com/maps/api/js?key=AIzaSyC61_QVqt9LAhwFdlQmsNwi5aUJy9B2SyA"></script>
 		<script src="{{asset('front/js/script.js')}}"></script>
 		
-		
+		@yield('scripts')
 		<script>
             $(document).ready(function(){
              

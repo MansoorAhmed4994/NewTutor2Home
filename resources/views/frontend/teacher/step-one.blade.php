@@ -114,14 +114,12 @@
                                                         Country
                                                     </label>
                                                     <span class="text-danger pull-right">*</span>
-                                                     <select class="form-control" name="country" required id="getState">
+                                                     <select class="form-control text-uppercase" name="country" required id="country">
                                                         <option value="">Select Country</option>   
-                                                        @foreach($countries as $countries)
-
-                                                        <option value="{{ $countries }}" 
-                                                        
-                                                        @if(old('country')==  $countries) selected @endif
-                                                        >{{$countries }}</option> 
+                                                        @foreach($countries as $key => $country)
+                                                        <option value="{{ $key }}" 
+                                                        @if(old('country')==  $key) selected @endif
+                                                        >{{$country }}</option> 
                                                         @endforeach;
                                                     </select>
                                                 </div>
@@ -131,15 +129,9 @@
                                                         State
                                                     </label>
                                                     <span class="text-danger pull-right">*</span>
-                                                        <select class="form-control" name="state" required id="getState">
+                                                        <select class="form-control text-uppercase" name="state" required id="states">
                                                         <option value="">Select State</option>   
-                                                        @foreach($states as $states)
-
-                                                        <option value="{{ $states }}" 
-                                                        @if(old('states')==  $states) selected @endif
-
-                                                        >{{$states }}</option> 
-                                                        @endforeach;
+                                                     
                                                     </select>
                                                 </div>
 
@@ -148,15 +140,9 @@
                                                         City
                                                     </label>
                                                     <span class="text-danger pull-right">*</span>
-                                                    <select class="form-control" name="city" required id="getState">
+                                                    <select class="form-control text-uppercase" name="city" required id="city">
                                                                     <option value="">Select City</option>   
-                                                                    @foreach($cities as $cities)
-
-                                                                    <option value="{{ $cities }}" 
-                                                                    
-                                                                    @if(old('city')==  $cities) selected @endif
-                                                                    >{{$cities }}</option> 
-                                                                    @endforeach;
+                                                                  
                                                                 </select>
                                                 </div>
                                                
@@ -268,4 +254,5 @@
                 </div>
             </div>
         </div>
+@include('frontend.teacher.commons.additionjs')
 @endsection

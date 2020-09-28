@@ -28,51 +28,44 @@
                         <div class="container">
                             <div class="row justify-content-center">
                                 <div class="col-lg-12">
-                                @include('frontend.frontalert')
-							<form class="form" method="POST">
-        @csrf
+                                    @include('frontend.frontalert')
                                         <div class="bg">
                                             <div class="title text-center">
                                                 My Classes
                                             </div>
                                             <div class="form">
                                                 <table class="table">
-                                                <thead style="background-color: #a8b1b7; color: white;">
-                                                    <tr>
-                                                        <th scope="col">#</th>
-                                                        <th scope="col">First</th>
-                                                        <th scope="col">Last</th>
-                                                        <th scope="col">Handle</th>
-                                                        <th scope="col"></th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <th scope="row">1</th>
-                                                        <td>Mark</td>
-                                                        <td>Otto</td>
-                                                        <td>@mdo</td>
-                                                        <td><a href="{{ route('view-class') }}"><i class="fa fa-eye"></i></a><a href="{{ route('edit-class') }}"><i class="ml-2 fa fa-edit"></i></a><a href=""><i class="ml-2 fa fa-trash-o"></i></a></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">2</th>
-                                                        <td>Jacob</td>
-                                                        <td>Thornton</td>
-                                                        <td>@fat</td>
-                                                        <td><a href="{{ route('view-class') }}"><i class="fa fa-eye"></i></a><a href="{{ route('edit-class') }}"><i class="ml-2 fa fa-edit"></i></a><a href=""><i class="ml-2 fa fa-trash-o"></i></a></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">3</th>
-                                                        <td>Larry</td>
-                                                        <td>the Bird</td>
-                                                        <td>@twitter</td>
-                                                        <td><a href="{{ route('view-class') }}"><i class="fa fa-eye"></i></a><a href="{{ route('edit-class') }}"><i class="ml-2 fa fa-edit"></i></a><a href=""><i class="ml-2 fa fa-trash-o"></i></a></td>
-                                                    </tr>
-                                                </tbody>
+                                                    <thead style="background-color: #a8b1b7; color: white;">
+                                                        <tr>
+                                                            <th scope="col">#</th>
+                                                            <th scope="col">Topic</th>
+                                                            <th scope="col">Start Date</th>
+                                                            <th scope="col">Start Time</th>
+                                                            <th scope="col">Agenda</th>
+                                                            <th scope="col">Duration</th>
+                                                            <th scope="col"></th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        @foreach($teacherClasses as $class)
+                                                        <tr>
+                                                            <th scope="row">1</th>
+                                                            <td>{{ $class->topic }}</td>
+                                                            <td>{{ $class->start_date }}</td>
+                                                            <td>{{ $class->start_time }}</td>
+                                                            <td>{{ $class->agenda }}</td>
+                                                            <td>{{ $class->duration }}</td>
+                                                            <td>
+                                                                <a href="{{ route('view-class',$class->id) }}"><i class="fa fa-eye"></i></a>
+                                                                {{-- <a href="{{ route('edit-class') }}"><i class="ml-2 fa fa-edit"></i></a> --}}
+                                                                <a href="{{ route('delete-class',$class->id) }}"><i class="ml-2 fa fa-trash-o"></i></a>
+                                                            </td>
+                                                        </tr>
+                                                        @endforeach
+                                                    </tbody>
                                                 </table>
                                             </div>
                                         </div>
-                                    </form>
                                 </div>
                             </div>
                         </div>
@@ -84,10 +77,10 @@
     <script>
 
 
-    
 
-    
-</script>   
+
+
+    </script>   
 
 
     

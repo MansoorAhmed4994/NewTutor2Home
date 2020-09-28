@@ -61,13 +61,13 @@ class LoginController extends Controller
             Auth::logout();
             return redirect('/');
         } 
-        elseif($user->role->id == Role::TEACHER) {
+        elseif($user->role_id == Role::TEACHER) {
             return redirect()->route('teacher-dashboard');
         } 
-        elseif($user->role->id == Role::STUDENT) {
+        elseif($user->role_id == Role::STUDENT) {
             return redirect()->route('student-dashboard');
         } 
-        elseif($user->role->id == Role::PARENTS) {
+        elseif($user->role_id == Role::PARENTS) {
             return redirect()->route('parent-dashboard');
         }
 
