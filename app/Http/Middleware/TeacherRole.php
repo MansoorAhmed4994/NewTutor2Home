@@ -17,7 +17,7 @@ class TeacherRole
 
     public function handle($request, Closure $next)
     {
-        if ($this->auth->user()->role_id !== Role::TEACHER) {
+        if ($this->auth->user()->role_id != Role::TEACHER) {
             abort(403, 'Unauthorized action.');
         }
         return $next($request);

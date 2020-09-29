@@ -115,9 +115,9 @@ public function login()
 public function dashboard()
 {
 
-  $TeacherSlots=User::find(Auth::user()->id)->TeacherSlots;
-  $Qualification=User::find(Auth::user()->id)->Qualification;
-  $TeacherSpecialization=User::find(Auth::user()->id)->TeacherSpecialization;
+  $TeacherSlots=User::find(Auth::user()->id)->teacherSlots;
+  $Qualification=User::find(Auth::user()->id)->qualification;
+  $TeacherSpecialization=User::find(Auth::user()->id)->teacherSpecialization;
    $postal_code = Auth::user()->postal_code;
    if(empty($postal_code)){
     return redirect()->route('teacher-step-one');
