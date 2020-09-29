@@ -17,7 +17,7 @@ class StudentRole
 
     public function handle($request, Closure $next)
     {
-        if ($this->auth->user()->role_id !== Role::STUDENT) {
+        if ($this->auth->user()->role_id != Role::STUDENT) {
             abort(403, 'Unauthorized action.');
         }
         return $next($request);
