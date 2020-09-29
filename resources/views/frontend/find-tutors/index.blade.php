@@ -17,7 +17,7 @@
             <form class="form" action="" method="GET" accept-charset="utf-8" id="filterfrom" >
         @csrf
       
-            <div class="container mb-3 mt-5">
+            <div class="container mb-3" style="margin-top: -105px;">
                 <div class="search_course_bg">
                     <div class="row">
                         <div class="form-group col-lg-4 col-md-4 col-sm-6 ">

@@ -48,13 +48,13 @@
 					<div class="slider-text">
 						<div class="section-title mb20 headline text-center ">
 							<div class="layer-1-3 heading">
-								<h2><span>Become A Student</span></h2><br>
+								<h2><span  class="lower-width-fontsize">Become A Student</span></h2><br>
 							</div><br>
 							<div class="step">
 								<div class="row">
 									<div class="col-md col-6">
 										<div class="bg active">
-                                            <div class="std">
+                                            <div class="std icons-setting">
                                                 <img src="{{asset('front/img/logo/become-icn.png')}}" alt="">
                                                 <p>1. Sign up and create a free profile</p>
                                             </div>

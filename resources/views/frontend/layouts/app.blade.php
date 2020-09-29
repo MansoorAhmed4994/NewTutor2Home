@@ -219,12 +219,12 @@
 										<li><a href="{{ route('find-tutors') }}">Find a Tutor</a></li>
 										<li><a href="{{ route('become-tutors') }}">Become A Tutor</a></li>
 										<li><a href="#footer-area">About</a></li>
-										<li><a href="blog.html">Blog</a>
+										<!-- <li><a href="blog.html">Blog</a>
 											<ul>
 												<li><a href="blog.html">Blog</a></li>
 												<li><a href="blog-single.html">Blog sinlge</a></li>
 											</ul>
-										</li>
+										</li> -->
 										<li><a href="#best-product">Shop</a>
 										</li>
 										<li><a href="#contact-area">Contact</a></li>
@@ -262,13 +262,13 @@
 
 	<!-- Start of contact area
 		============================================= -->
-		<section id="contact-area" class="contact-area-section backgroud-style ">
+		<section id="contact-area" class="contact-area-section backgroud-style " >
 			<div class="container ">
 				<div class="contact-area-content">
 					<div class="row">
 						<div class="col-md-6">
 							<div class="contact-left-content " >
-								<div class="section-title area-contact-content  mb45 headline text-center">
+								<div class="section-title area-contact-content  mb45 headline text-center" style="margin: 20px;">
 									<span class="subtitle ml42  text-uppercase">CONTACT US</span>
 									<h2><span>Get in Touch</span></h2>
 									<p>
@@ -276,7 +276,7 @@
 									</p>
 								</div>
 
-								<div class="contact-address area-contact-content">
+								<div class="contact-address area-contact-content" style="margin: 20px;">
 									<div class="contact-address-details">
 										<div class="address-icon relative-position text-center float-left">
 											<i class="fas fa-map-marker-alt"></i>

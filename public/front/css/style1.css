@@ -10,7 +10,7 @@
 
 .search_course_bg
 {
-
+  z-index: 1;
   position: relative;
   padding: 40px 30px 30px 30px;
   background-color: #0b6096;
@@ -294,6 +294,8 @@
 
 .step{
   padding-top: 30px;
+  margin-right: 40px;
+  margin-left: 40px;
 }
 
 
@@ -328,7 +330,7 @@
 
 .step .bg .std img {
   margin-bottom: 15px;
-  margin-left: 165px;
+  margin-left: 58px;
 }
 
 .step .bg p {
@@ -1463,6 +1465,15 @@ b, strong {
 
 @media only screen and (max-width: 767px) {
 
+  .padding-heading-pargraph
+  {
+    padding-top: 105px;
+  }
+  
+.step .bg .std img{
+    margin-left: 0px !important;
+    
+  }
   .course-item-pic-text {
 
     
@@ -1470,7 +1481,7 @@ b, strong {
 
 	}
 .logo_tutor_mobile { 
-  width: 70px !important ;
+  width: 80px !important ;
 }
 .search-course .nws-button, .subs-form .nws-button {
   width: 124px ;
@@ -1554,7 +1565,7 @@ b, strong {
 {
   .logo_tutor_mobile 
   { 
-    width: 90px ;
+    width: 105px ;
   }
 
   
@@ -1589,6 +1600,25 @@ b, strong {
 
 }
 @media only screen and (max-width: 480px) {
+
+  .padding-heading-pargraph
+  {
+    padding-top: 30px;
+  }
+  .step .bg p {
+    font-size: 10px;
+  
+  }
+  .step .bg img {
+    margin-left: 0px !important;
+    margin-bottom: 0px !important;
+    
+  }
+.step .bg .std img{
+    margin-left: 0px !important;
+    margin-bottom: 0px !important;
+    
+  }
 
   .heading-look h2 span {
     font-weight: 700 !important;
@@ -1782,7 +1812,7 @@ b, strong {
   }
   .logo_tutor_mobile 
   { 
-    padding-top: 7px !important;
+    padding-top: 9px !important;
     padding-bottom: 0px !important;
     width: 60px!important;
 
@@ -1849,9 +1879,16 @@ b, strong {
     .slider-text .section-title h2 {
         font-size: 40px !important;
     }
+    .lower-width-fontsize
+    {
+      font-size: 18px !important;
+    }
   }
   @media only screen and (max-width: 580px)
   {
+    .search-counter-up {
+      margin-left: 70px;
+    }
     #search-course .search-course {
       max-width: 550px !important;
       font-size: 16px !important;
@@ -1881,9 +1918,16 @@ b, strong {
   }
   @media only screen and (max-width: 1024px){
 
-    
+    .slider-text {
+      padding: 0px 60px;
+    }
+    .step .bg img {
+      margin-bottom: 15px;
+      margin-left: 0px; 
+    }
     .slider-bg-1, .slider-bg-2, .slider-bg-3, .slider-bg-4, .slider-bg-5 {
         height: 80vh ;
+        max-height: 1000px !important;
         min-height: 600px !important;
     height: 403.2px !important;
       }
@@ -1965,4 +2009,17 @@ b, strong {
     {
       padding-bottom: 35px;
     }
-    
+
+    .search-counter-up
+  {
+    margin-top: 35px;
+  }
+  
+  .item .no-gutters{
+    margin: 23px !important;
+  }
+  .teacher-bg-size
+  {
+    height: 950px !important;
+  }
+  

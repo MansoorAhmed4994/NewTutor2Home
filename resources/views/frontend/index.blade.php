@@ -24,7 +24,7 @@
 							</div>
 							<div class="layer-1-4">
 								<div class="slider-course-category ul-li text-center">
-									<span class="float-left">BY CATEGORY:</span>
+									<span class="float-left">Subject Wise:</span>
 									<ul>
 										<li>Graphics Design</li>
 										<li>Web Design</li>
@@ -169,7 +169,7 @@
 								</div>
 								<div class="counter-number">
 									<span class="counter-count bold-font">122</span><span>.500+</span>
-									<p>Online Available Courses</p>
+									<p>Daily Lesson Completed</p>
 								</div>
 							</div>
 						</div>
@@ -182,7 +182,7 @@
 								</div>
 								<div class="counter-number">
 									<span class="counter-count bold-font">15</span><span>.000+</span>
-									<p>Premium Quality Products</p>
+									<p>Online Tutors Available</p>
 								</div>
 							</div>
 						</div>
@@ -194,7 +194,7 @@
 									<i class="text-gradiant flaticon-group"></i>
 								</div>
 								<div class="counter-number">
-									<span class="counter-count bold-font">7</span><span>.500+</span>
+									<span class="counter-count bold-font">2</span><span>00+</span>
 									<p>Teachers Registered</p>
 								</div>
 							</div>
@@ -213,7 +213,7 @@
 		<section id="popular-course" class="popular-course-section">
 			<div class="container">
 				<div class="section-title mb20 headline text-left "  >
-					<span class="subtitle text-uppercase">LEARN NEW SKILLS</span>
+					<span class="subtitle text-uppercase">boost your confidence</span>
 					<h2><span>Popular</span> Courses.</h2>
 				</div>
 				<div id="course-slide-item" class="course-slide">
@@ -221,8 +221,8 @@
 						<div class="course-pic relative-position mb25">
 							<img src="{{asset('front/img/course/c-1.jpg')}}" alt="">
 							<div class="course-price text-center gradient-bg">
-								<span>$99.00</span>
-							</div>
+								<span>€99.00</span>
+								</div>
 							<div class="course-details-btn">
 								<a href="#">COURSE DETAIL <i class="fas fa-arrow-right"></i></a>
 							</div>
@@ -259,8 +259,8 @@
 						<div class="course-pic relative-position mb25">
 							<img src="{{asset('front/img/course/c-2.jpg')}}" alt="">
 							<div class="course-price text-center gradient-bg">
-								<span>$99.00</span>
-							</div>
+								<span>€99.00</span>
+								</div>
 							<div class="course-details-btn">
 								<a href="#">COURSE DETAIL <i class="fas fa-arrow-right"></i></a>
 							</div>
@@ -297,8 +297,8 @@
 						<div class="course-pic relative-position mb25">
 							<img src="{{asset('front/img/course/c-3.jpg')}}" alt="">
 							<div class="course-price text-center gradient-bg">
-								<span>$99.00</span>
-							</div>
+								<span>€99.00</span>
+								</div>
 							<div class="course-details-btn">
 								<a href="#">COURSE DETAIL <i class="fas fa-arrow-right"></i></a>
 							</div>
@@ -335,8 +335,8 @@
 						<div class="course-pic relative-position mb25">
 							<img src="{{asset('front/img/course/c-2.jpg')}}" alt="">
 							<div class="course-price text-center gradient-bg">
-								<span>$99.00</span>
-							</div>
+								<span>€99.00</span>
+								</div>
 							<div class="course-details-btn">
 								<a href="#">COURSE DETAIL <i class="fas fa-arrow-right"></i></a>
 							</div>
@@ -373,9 +373,9 @@
 						<div class="course-pic relative-position mb25">
 							<img src="{{asset('front/img/course/c-3.jpg')}}" alt="">
 							<div class="course-price text-center gradient-bg">
-								<span>$99.00</span>
-							</div>
-							<div class="course-details-btn">
+								</div>
+								<span>€99.00</span>
+								<div class="course-details-btn">
 								<a href="#">COURSE DETAIL <i class="fas fa-arrow-right"></i></a>
 							</div>
 						</div>
@@ -411,8 +411,8 @@
 						<div class="course-pic relative-position mb25">
 							<img src="{{asset('front/img/course/c-1.jpg')}}" alt="">
 							<div class="course-price text-center gradient-bg">
-								<span>$99.00</span>
-							</div>
+								<span>€99.00</span>
+								</div>
 							<div class="course-details-btn">
 								<a href="#">COURSE DETAIL <i class="fas fa-arrow-right"></i></a>
 							</div>
@@ -502,12 +502,12 @@
 							<div class="section-title relative-position mb20 headline text-center"  >
 								<span class="subtitle ml42 text-uppercase">SORT ABOUT US</span>
 								<h2>We are <span>Tutors2home </span>
-								work since 2010.</h2>
+								since 2020.</h2>
 								<p class="text-left">With the help of Tutors2home, you can find out the top class in-home and online tutors  for students and also work as tutor on part-time.</p>
 							</div>
 							<div class="section-title about-content-text text-center">
 								<h2><span>Quality and Assurance</span></h2>
-								<p class="text-left"  >We take 100% responsibility of the performance,qualification, commitment and behaviour of our tutors. And we are sure no one else can give such an assurance like this much audicityaudicity.We have have over thousands of parents and students as our happy and satisfied clients as we have been providing tutors in the UK for the past 10 years.</p>
+								<p class="text-left"  >We take 100% responsibility of the performance,qualification, commitment and behaviour of our tutors. And we are sure no one else can give such an assurance like this much audicityaudicity.We have over thousands of parents and students as our happy and satisfied clients as we have been providing tutors in the UK for the past 10 years.</p>
 								<div class="about-list mb65 ul-li-block "  >
 									<ul class="text-justify">
 										<li>Professional And Experienced Since 2010</li>
@@ -860,8 +860,8 @@
 										<span>Trending</span>
 									</div>
 									<div class="course-price text-center gradient-bg">
-										<span>$99.00</span>
-									</div>
+										<span>€99.00</span>
+										</div>
 									<div class="course-rate ul-li">
 										<ul>
 											<li><i class="fas fa-star"></i></li>
@@ -894,8 +894,8 @@
 								<div class="best-course-pic relative-position">
 									<img src="{{asset('front/img/course/bc-2.jpg')}}" alt="">
 									<div class="course-price text-center gradient-bg">
-										<span>$99.00</span>
-									</div>
+										<span>€99.00</span>
+										</div>
 									<div class="course-rate ul-li">
 										<ul>
 											<li><i class="fas fa-star"></i></li>
@@ -928,8 +928,8 @@
 								<div class="best-course-pic relative-position">
 									<img src="{{asset('front/img/course/bc-3.jpg')}}" alt="">
 									<div class="course-price text-center gradient-bg">
-										<span>$99.00</span>
-									</div>
+										<span>€99.00</span>
+										</div>
 									<div class="course-rate ul-li">
 										<ul>
 											<li><i class="fas fa-star"></i></li>
@@ -962,8 +962,8 @@
 								<div class="best-course-pic relative-position">
 									<img src="{{asset('front/img/course/bc-4.jpg')}}" alt="">
 									<div class="course-price text-center gradient-bg">
-										<span>$99.00</span>
-									</div>
+										<span>€99.00</span>
+										</div>
 									<div class="course-rate ul-li">
 										<ul>
 											<li><i class="fas fa-star"></i></li>
@@ -996,8 +996,8 @@
 								<div class="best-course-pic relative-position">
 									<img src="{{asset('front/img/course/bc-5.jpg')}}" alt="">
 									<div class="course-price text-center gradient-bg">
-										<span>$99.00</span>
-									</div>
+										<span>€99.00</span>
+										</div>
 									<div class="course-rate ul-li">
 										<ul>
 											<li><i class="fas fa-star"></i></li>
@@ -1034,8 +1034,8 @@
 										<span>Trending</span>
 									</div>
 									<div class="course-price text-center gradient-bg">
-										<span>$99.00</span>
-									</div>
+										<span>€99.00</span>
+										</div>
 									<div class="course-rate ul-li">
 										<ul>
 											<li><i class="fas fa-star"></i></li>
@@ -1068,8 +1068,8 @@
 								<div class="best-course-pic relative-position">
 									<img src="{{asset('front/img/course/bc-7.jpg')}}" alt="">
 									<div class="course-price text-center gradient-bg">
-										<span>$99.00</span>
-									</div>
+										<span>€99.00</span>
+										</div>
 									<div class="course-rate ul-li">
 										<ul>
 											<li><i class="fas fa-star"></i></li>
@@ -1102,8 +1102,8 @@
 								<div class="best-course-pic relative-position">
 									<img src="{{asset('front/img/course/bc-8.jpg')}}" alt="">
 									<div class="course-price text-center gradient-bg">
-										<span>$99.00</span>
-									</div>
+										<span>€99.00</span>
+										</div>
 									<div class="course-rate ul-li">
 										<ul>
 											<li><i class="fas fa-star"></i></li>
@@ -1146,7 +1146,7 @@
 				<div class="container">
 					<div class="section-title mb20 headline text-center "  >
 						<span class="subtitle text-uppercase">OUR PROFESSIONAL</span>
-						<h2>Genius Courses <span>Teachers.</span></h2>
+						<h2>Tutors2Home Qualified <span>Teachers.</span></h2>
 					</div>
 
 					<div class="teacher-list">
@@ -1369,7 +1369,7 @@
 
 	<!-- Start of best product section
 		============================================= -->
-		<section id="best-product" class="best-product-section best-product-content">
+		<!-- <section id="best-product" class="best-product-section best-product-content">
 			<div class="container">
 				<div class="section-title-2 mb65 headline text-left "  >
 					<h2>Genius <span>Best Products.</span></h2>
@@ -1511,7 +1511,7 @@
 					</div>
 				</div>
 			</div>
-		</section>
+		</section> -->
 	<!-- End  of best product section
 		============================================= -->
 		
