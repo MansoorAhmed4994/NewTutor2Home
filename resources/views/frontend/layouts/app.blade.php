@@ -314,7 +314,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="genius-btn area-contact-content mt60 gradient-bg text-center text-uppercase ul-li-block bold-font ">
+							<div class="genius-btn area-contact-content mt60 gradient-bg text-center text-uppercase ul-li-block bold-font " style="margin: 20px;">
 								<a href="#">Contact Us <i class="fas fa-caret-right"></i></a>
 							</div>
 						</div>

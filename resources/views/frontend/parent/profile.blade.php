@@ -123,18 +123,15 @@
                                                                 (jpg/png/jpeg) extensions allowed. </small>
                                                         </div>
                                                     </div>
-                                                    <div class="m-auto">
-                                                        <div class="text-center ">
-                                                            <button name="search" class="btn btn-sm btn-primary mb-sm-5" type="submit">Update Profile</button>
-                                                        </div>
-                                                    </div>
+                                                    
 
 
 
                                                 </div>
                                             </div>
-                                            <div class="p-3 text-right">
-                                                <a href="javascript:;" data-id="349" id="delete-account" class="btn btn-danger">Delete my account</a>
+                                            <div class="text-right">
+                                                <button name="search" class="btn btn-primary float-left ml-3" type="submit">Update Profile</button>
+                                                <a href="javascript:;" data-id="349" id="delete-account" class="btn btn-danger mr-3">Delete my account</a>
                                             </div>
                                         </div>
                                     </form>

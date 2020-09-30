@@ -1465,6 +1465,21 @@ b, strong {
 
 @media only screen and (max-width: 767px) {
 
+  .table td, .table th {
+    padding: 0.2rem !important;
+  }
+
+  .faq-content{
+    margin: 20px;
+  }
+  .course-item-pic-text {
+    
+    margin: 27px;
+}
+  .contact-map-section{
+    margin:20px;
+  }
+
   .padding-heading-pargraph
   {
     padding-top: 105px;
@@ -1474,12 +1489,7 @@ b, strong {
     margin-left: 0px !important;
     
   }
-  .course-item-pic-text {
-
-    
-    margin: 20px;
-
-	}
+  
 .logo_tutor_mobile { 
   width: 80px !important ;
 }
@@ -1601,6 +1611,14 @@ b, strong {
 }
 @media only screen and (max-width: 480px) {
 
+  .justify-content-center
+  {
+    margin-top: 20px;
+  }
+  .table td, .table th {
+    padding: 0.2rem !important;
+    font-size: 13px;
+}
   .padding-heading-pargraph
   {
     padding-top: 30px;
@@ -1707,6 +1725,7 @@ b, strong {
   .section-title .subtitle {
     
     margin: 20px;
+    letter-spacing: 3px;  
 }
   .section-title h2 span {
     
@@ -1785,6 +1804,16 @@ b, strong {
 }
 @media only screen and (max-width: 375px) 
 {
+
+  .justify-content-center
+  {
+    margin-top: 20px;
+  }
+
+  .table td, .table th {
+    padding: 0.1rem !important;
+    font-size: 8px;
+  }
   
   .section-title .dot-margin {
     
@@ -1886,6 +1915,14 @@ b, strong {
   }
   @media only screen and (max-width: 580px)
   {
+    .no-gutters {
+      margin-top: 25px;
+      
+    }
+    .justify-content-center
+    {
+      margin-top: 20px;
+    }
     .search-counter-up {
       margin-left: 70px;
     }
@@ -2022,4 +2059,7 @@ b, strong {
   {
     height: 950px !important;
   }
+  .footer-area-section {
+    margin: 20px;
+}
   
