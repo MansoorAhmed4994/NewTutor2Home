@@ -287,7 +287,7 @@
                         <div class="col-md-6 aos-init aos-animate" data-aos="fade-right">
                             <div class="bg">
                                 <h2>It's flexible and saves you time</h2>
-                                <p>TutorNinjas ensures your online tutoring suits your busy life. Your students can book
+                                <p>Tutors2Home ensures your online tutoring suits your busy life. Your students can book
                                     sessions one at a time or in blocks for ultimate flexibility.</p>
                                 <p>And with our comprehensive online platform, there's no need to travel! Whether on the sofa or
                                     the beach - we make it easy to connect and teach!</p>

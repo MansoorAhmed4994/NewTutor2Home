@@ -342,7 +342,7 @@
 							<div class="col-md-3">
 								<div class="footer-widget "  >
 									<div class="footer-logo area-footer-content  mb35">
-										<img src="{{asset('front/img/logo/f-logo.png')}}" alt="">
+										<img src="{{asset('front/img/logo/tutors2home.png')}}" alt="">
 									</div>
 									<div class="footer-about-text area-footer-content ">
 										<p>We take our mission of increasing global access to quality education seriously. We connect learners to best Tutors from around the UK.</p>

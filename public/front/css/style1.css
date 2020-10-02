@@ -1465,8 +1465,13 @@ b, strong {
 
 @media only screen and (max-width: 767px) {
 
+  .footer-logo
+  {
+    width: 320px;
+  }
   .table td, .table th {
     padding: 0.2rem !important;
+    font-size: 13px;
   }
 
   .faq-content{
@@ -1525,7 +1530,7 @@ b, strong {
 #search-course .search-course .course
   {
     font-weight: 400 !important;
-    font-size: 24px !important;
+    font-size: 18px !important;
   }
   
 
@@ -1577,6 +1582,10 @@ b, strong {
   { 
     width: 105px ;
   }
+  #search-course .search-course .course {
+    font-weight: 400 !important;
+    font-size: 24px !important;
+}
 
   
   .slider-text {
@@ -1611,13 +1620,20 @@ b, strong {
 }
 @media only screen and (max-width: 480px) {
 
+  .footer-logo
+  {
+    width: 235px;
+  }
+  #slider-item .slider-course-category li:after {
+    top: 3px;
+}
   .justify-content-center
   {
     margin-top: 20px;
   }
   .table td, .table th {
     padding: 0.2rem !important;
-    font-size: 13px;
+    font-size: 11px;
 }
   .padding-heading-pargraph
   {
@@ -1750,7 +1766,7 @@ b, strong {
     font-size: 20px !important;
 }
   #slider-item .search-course .button{
-    width: 118px;
+    width: 92px;
   }
   .search-course .nws-button button, .subs-form .nws-button button {
     background-color: transparent;
@@ -1761,7 +1777,7 @@ b, strong {
     color: #fff;
 }
 #search-course .search-course {
-  max-width: 420px !important;
+  max-width: 258px !important;
   font-size: 16px !important;
   margin-left: 19px !important;
 }
@@ -1769,7 +1785,7 @@ b, strong {
   #slider-item .search-course .course
 {
   font-weight: 400 !important;
-    font-size: 12px;
+    font-size: 10px;
 }
   #search-course .search-course .course {
     font-weight: 400 !important;
@@ -1804,6 +1820,10 @@ b, strong {
 }
 @media only screen and (max-width: 375px) 
 {
+  .footer-logo
+  {
+    width: 190px;
+  }
 
   .justify-content-center
   {
@@ -1837,7 +1857,7 @@ b, strong {
     right: 6px !important;
   }
   .search-course .nws-button, .subs-form .nws-button {
-    width: 75px !important ;
+    width: 72px !important ;
   }
   .logo_tutor_mobile 
   { 
@@ -1875,7 +1895,7 @@ b, strong {
   #slider-item .search-course .course 
   {
     font-weight: 400 !important;
-    font-size: 8px !important;
+    font-size: 10px !important;
   }
   #search-course .search-course .course
   {
@@ -1955,6 +1975,7 @@ b, strong {
   }
   @media only screen and (max-width: 1024px){
 
+    
     .slider-text {
       padding: 0px 60px;
     }
@@ -1984,6 +2005,9 @@ b, strong {
   }
   @media only screen and (min-width: 1025px)
     {
+      .slider-text .section-title h2 {
+        font-size: 55px !important;
+        }
      
       .slider-bg-1, .slider-bg-2, .slider-bg-3, .slider-bg-4, .slider-bg-5 
       {

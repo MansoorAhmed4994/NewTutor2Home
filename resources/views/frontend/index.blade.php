@@ -1,5 +1,38 @@
 @extends('frontend.layouts.app', ['class' => 'off-canvas-sidebar', 'activePage' => 'home', 'title' => __('Material Dashboard')])
 @section('content')
+
+<style>
+
+
+    @media (max-width:2057px  ){
+            
+            .full_size_text{
+                display:inline-block;
+            }
+            .short_size_text{
+                display:none; 
+            }
+
+        }
+
+        
+
+        @media (max-width:766px  ){
+            
+            .full_size_text{
+                display:none;
+               
+            }
+            .short_size_text{
+                display:inline-block; 
+            }
+
+        }
+
+        
+
+</style>
+</head>
 <!-- Start of slider section
 		============================================= -->
 		<section id="slide" class="slider-section">
@@ -18,7 +51,7 @@
 							<form>
 								<input class="course" name="course" type="text" placeholder="Type what do you want to learn today?">
 								<div class="nws-button button text-center  gradient-bg text-capitalize" >
-									<a href="{{route('find-tutors')}}"><button type="button">Search Course</button> </a>
+									<a href="{{route('find-tutors')}}"><button type="button"><span class="full_size_text">Search Course</span><span class="short_size_text">Search</span></button> </a>
 									</div>
 								</form>
 							</div>
@@ -26,11 +59,11 @@
 								<div class="slider-course-category ul-li text-center">
 									<span class="float-left">Subject Wise:</span>
 									<ul>
-										<li>Graphics Design</li>
-										<li>Web Design</li>
-										<li>Mobile Application</li>
-										<li>Enginering</li>
+										<li>Maths</li>
+										<li>English</li>
 										<li>Science</li>
+										<li>GCSE</li>
+										<li>SATS</li>
 									</ul>
 								</div>
 							</div>
@@ -136,14 +169,14 @@
 		<section id="search-course" class="search-course-section">
 			<div class="container">
 				<div class="section-title mb20 headline text-center "  >
-					<span class="subtitle text-uppercase">LEARN NEW SKILLS</span>
+					<span class="subtitle text-uppercase">boost your confidence</span>
 					<h2><span>Search</span> For Tutors</h2>
 				</div>
 				<div class="search-course mb30 relative-position "  >
 					<form >
 						<input class="course" name="course" type="text" placeholder="Type what do you want to learn today?">
 						<div class="nws-button text-center  gradient-bg text-capitalize">
-							<a href="{{route('find-tutors')}}"><button type="button" >Search Tutors</button></a>
+							<a href="{{route('find-tutors')}}"><button type="button" ><span class="full_size_text">Search Tutors</span><span class="short_size_text">Search</span></button></a>
 						</div>
 					</form>
 				</div>
@@ -1529,10 +1562,10 @@
 						<div class="tab-button text-center mb65 "  >
 							<ul class="product-tab">
 								<li class="active" rel="tab1">GENERAL </li>
-								<li rel="tab2"> COURSES </li>
+								<!-- <li rel="tab2"> COURSES </li> -->
 								<li rel="tab3"> TEACHERS </li>
-								<li rel="tab4">  EVENTS  </li>
-								<li rel="tab5">  OTHERS  </li>
+								<!-- <li rel="tab4">  EVENTS  </li>
+								<li rel="tab5">  OTHERS  </li> -->
 							</ul>
 						</div>
 						<!-- /tab-head -->
@@ -1545,32 +1578,32 @@
 								<div class="row">
 									<div class="col-md-6">
 										<div class="ques-ans mb45 headline "  >
-											<h3> What is Genius Courses?</h3>
-											<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam volutpat. Ut wisi enim ad minim veniam.</p>
+											<h3>What is Tutors2Home??</h3>
+											<p>Tutor2home is online tuition platform where student and tutors connect with each other across the UK.Tutors2home is an online marketplace which helps parents and students connect with our qualified tutors. Our tutors provide one-to-one tuition through our Online learning whiteboard removing the hassle and cost of travelling, and meaning students can enjoy tuition from the comfort of their home.Tutors2home also provide in-home face2face tuition for subjects Math’s, English and Science.</p>
 										</div>
 
 										<div class="ques-ans mb45 headline "  >
-											<h3> What Lorem Ipsum Dolor Sit Amet Consectuerer?</h3>
-											<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam volutpat. Ut wisi enim ad minim veniam.</p>
+											<h3>How does Tutors2home ensure online safety</h3>
+											<p>YYour safety online is our utmost priority. Our site has been developed with this in mind, and we have a number of checks in place to ensure that you and your child remain in a safe environment at all times. Please see our online safety guidelines.</p>
 										</div>
 									</div>
 
 									<div class="col-md-6">
 										<div class="ques-ans mb45 headline "  >
-											<h3> How to Register or Make An Account in Genius?</h3>
-											<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam volutpat. Ut wisi enim ad minim veniam.</p>
+											<h3> How does the Online Lesson Space work?</h3>
+											<p>In the Online Lesson Space, you can see and speak with your tutor via live video and audio. Tutor and student can use the lesson space to share documents, essays, past papers, diagrams and mark schemes, and solve problems together using the interactive whiteboard to write, type and draw. All of our lessons are recorded - meaning you can play them back as you need. All recordings will be available 24 hours after the tutorial has taken place, and last for 90 days. </p>
 										</div>
-
+										<br>
 										<div class="ques-ans mb45 headline "  >
-											<h3> Adipiscing Diamet Nonnumy Nibh Euismod?</h3>
-											<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam volutpat. Ut wisi enim ad minim veniam.</p>
+											<h3>How do I launch the lesson space?</h3>
+											<p>You can launch the Online Lesson space for a session, once it is confirmed, from the bookings section of your account using the blue ‘Launch’ button. Once you enter, the tutor will meet you at the agreed time. Please note that tutorials must be paid for in advance, and bookings are time sensitive meaning that the launch link is available from 5 minutes before the session until the session is due to complete. The time on the website is current UK time, regardless of the country of the user.   </p>
 										</div>
 									</div>
 								</div>
 							</div>
 							<!-- #tab1 -->
 
-							<div id="tab2" class="tab-content-1 pt35">
+							<!-- <div id="tab2" class="tab-content-1 pt35">
 								<div class="row">
 									<div class="col-md-6">
 										<div class="ques-ans mb45 headline "  >
@@ -1596,15 +1629,15 @@
 										</div>
 									</div>
 								</div>
-							</div>
+							</div> -->
 							<!-- #tab2 -->
 
 							<div id="tab3" class="tab-content-1 pt35">
 								<div class="row">
 									<div class="col-md-6">
 										<div class="ques-ans mb45 headline">
-											<h3> What is Genius Courses?</h3>
-											<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam volutpat. Ut wisi enim ad minim veniam.</p>
+											<h3>Who are the tutors?</h3>
+											<p>All of our tutors have achieved outstanding grades at school (A/A* at A-level, 6/7 in International Baccalaureate or equivalent) and are personally interviewed by a member of our team to ensure they will be able to inspire their students. You are also welcome to read feedback from others who have previously worked with our tutors to help you make your choice; all parents and tutees are invited to leave feedback after each session they have with a tutor.</p>
 										</div>
 
 										<div class="ques-ans mb45 headline">
