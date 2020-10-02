@@ -2086,4 +2086,44 @@ b, strong {
   .footer-area-section {
     margin: 20px;
 }
+
+:root {
+  --home-slider-background-picture-one: url(../img/banner/s-1.jpg);
+  --home-slider-background-picture-two: url(../img/banner/s-2.jpg);
+  --home-slider-background-picture-three: url(../img/banner/s-3.jpg);
+  --home-slider-background-picture-four: url(../img/banner/s-4.jpg);
+  
+}
+.slider-bg-1 
+  {
+ 
+    background: linear-gradient(rgb(0 0 0 / 58%), rgb(0 0 0 / 78%)) , var(--home-slider-background-picture-one) center center;
+    background-size: cover;
+  }
+.slider-bg-2 
+  {
+
+    background: linear-gradient(rgb(0 0 0 / 58%), rgb(0 0 0 / 78%)) , var(--home-slider-background-picture-two) center center;
+    background-size: cover;
+  }
+
+.slider-bg-3 
+  {
+
+    background: linear-gradient(rgb(0 0 0 / 58%), rgb(0 0 0 / 78%)) , var(--home-slider-background-picture-three) center center;
+    background-size: cover;
+  }
+
+.slider-bg-4 
+  {
+
+    background: linear-gradient(rgb(0 0 0 / 58%), rgb(0 0 0 / 78%)) , var(--home-slider-background-picture-four) center center;
+    background-size: cover;
+  }
+
+.slider-bg-5 
+  {
+    background-image: url(../img/banner/sd-1.jpg); 
+  }
+
   

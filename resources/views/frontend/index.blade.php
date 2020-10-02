@@ -38,6 +38,7 @@
 		<section id="slide" class="slider-section">
 			<div id="slider-item" class="slider-item-details">
 				<div  class="slider-area slider-bg-1 relative-position">
+				
 					<div class="slider-text">
 						<div class="section-title mb20 headline text-center ">
 							<div class="layer-1-1">
@@ -71,6 +72,7 @@
 						</div>
 
 					</div>
+				
 					<div class="slider-area slider-bg-2 relative-position">
 						<div class="slider-text">
 							<div class="section-title mb20 headline text-center ">
@@ -1640,14 +1642,14 @@
 											<p>All of our tutors have achieved outstanding grades at school (A/A* at A-level, 6/7 in International Baccalaureate or equivalent) and are personally interviewed by a member of our team to ensure they will be able to inspire their students. You are also welcome to read feedback from others who have previously worked with our tutors to help you make your choice; all parents and tutees are invited to leave feedback after each session they have with a tutor.</p>
 										</div>
 
-										<div class="ques-ans mb45 headline">
+										<!-- <div class="ques-ans mb45 headline">
 											<h3> What Lorem Ipsum Dolor Sit Amet Consectuerer?</h3>
 											<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam volutpat. Ut wisi enim ad minim veniam.</p>
-										</div>
+										</div> -->
 									</div>
 
 									<div class="col-md-6">
-										<div class="ques-ans mb45 headline">
+										<!-- <div class="ques-ans mb45 headline">
 											<h3> How to Register or Make An Account in Genius?</h3>
 											<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam volutpat. Ut wisi enim ad minim veniam.</p>
 										</div>
@@ -1655,7 +1657,7 @@
 										<div class="ques-ans mb45 headline">
 											<h3> Adipiscing Diamet Nonnumy Nibh Euismod?</h3>
 											<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam volutpat. Ut wisi enim ad minim veniam.</p>
-										</div>
+										</div> -->
 									</div>
 								</div>
 							</div>

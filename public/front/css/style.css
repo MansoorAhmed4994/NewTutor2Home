@@ -1281,10 +1281,15 @@ button.alt-menu-btn.float-left {
   height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center; }
+  background-position: center center; 
+  
+}
+  
 
 .slider-bg-1 {
-  background-image: url(../img/banner/s-1.jpg); }
+  background-image: url(../img/banner/s-1.jpg); 
+  background: linear-gradient(rgb(0 0 0 / 58%), rgb(0 0 0 / 78%)) , var(--url) center center;
+}
 
 .slider-bg-2 {
   background-image: url(../img/banner/s-4.jpg); }
@@ -1589,6 +1594,8 @@ button.alt-menu-btn.float-left {
   right: 20px;
   opacity: 1;
   visibility: visible; }
+
+
 
 .owl-nav {
   right: 0;

@@ -187,7 +187,7 @@
 										<li><a href="{{ route('become-tutors') }}">Become A Tutor</a></li>
 										<li><a href="#footer-area">About Us</a></li>
 										<!--<li><a href="#best-product">shop</a></li>-->
-										<li><a href="#contact-area">Contact Us</a></li>
+										<!-- <li><a href="#contact-area">Contact Us</a></li> -->
 										<!--<li class="menu-item-has-children ul-li-block">
 											<a href="#!">Pages</a>
 											<ul class="sub-menu">
@@ -262,7 +262,7 @@
 
 	<!-- Start of contact area
 		============================================= -->
-		<section id="contact-area" class="contact-area-section backgroud-style " >
+		<!-- <section id="contact-area" class="contact-area-section backgroud-style " >
 			<div class="container ">
 				<div class="contact-area-content">
 					<div class="row">
@@ -329,7 +329,7 @@
 					</div>
 				</div>
 			</div>
-		</section>
+		</section> -->
 	<!-- End of contact area
 		============================================= -->
 	<!-- Start of footer section
@@ -369,7 +369,7 @@
 									<ul>
 										<li><a href="#"><i class="fas fa-caret-right"></i>Setting Account</a></li>
 										<li><a href="#"><i class="fas fa-caret-right"></i>Login & Register</a></li>
-										<li><a href="#"><i class="fas fa-caret-right"></i>Contact Us</a></li>
+										<!-- <li><a href="#"><i class="fas fa-caret-right"></i>Contact Us</a></li> -->
 										<li><a href="#"><i class="fas fa-caret-right"></i>Graphic Design</a></li>
 										<li><a href="#"><i class="fas fa-caret-right"></i>Mobile Apps</a></li>
 										<li><a href="#"><i class="fas fa-caret-right"></i>Responsive Website</a></li>
