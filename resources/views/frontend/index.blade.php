@@ -88,20 +88,20 @@
 									<form action="#" method="post">
 										<input class="course" name="course" type="text" placeholder="Type what do you want to learn today?">
 										<div class="nws-button text-center  gradient-bg text-capitalize">
-											<button type="submit" value="Submit">Search Course</button> 
+											<button type="submit" value="Submit"><span class="full_size_text">Search Course</span><span class="short_size_text">Search</span></button> 
 										</div>
 									</form>
 								</div>
 								<div class="layer-1-4">
 									<div class="slider-course-category ul-li text-center">
-										<span class="float-left">BY CATEGORY:</span>
-										<ul>
-											<li>Graphics Design</li>
-											<li>Web Design</li>
-											<li>Mobile Application</li>
-											<li>Enginering</li>
-											<li>Science</li>
-										</ul>
+										<span class="float-left">Subject Wise:</span>
+											<ul>
+												<li>Maths</li>
+												<li>English</li>
+												<li>Science</li>
+												<li>GCSE</li>
+												<li>SATS</li>
+											</ul>
 									</div>
 								</div>
 							</div>
@@ -1742,58 +1742,34 @@
 				</div>
 				<div class="category-item">
 					<div class="row">
-						<div class="col-md-3">
+						<div class="col-md-4">
 							<div class="category-icon-title text-center "  >
 								<div class="category-icon">
 									<i class="text-gradiant flaticon-technology"></i>
 								</div>
 								<div class="category-title">
-									<h4>Responsive Website</h4>
+									<h4>Maths</h4>
 								</div>
 							</div>
 						</div>
 						<!-- /category -->
 
-						<div class="col-md-3">
+						<div class="col-md-4">
 							<div class="category-icon-title text-center "  >
 								<div class="category-icon">
 									<i class="text-gradiant flaticon-app-store"></i>
 								</div>
 								<div class="category-title">
-									<h4>IOS Applications</h4>
+									<h4>English</h4>
 								</div>
 							</div>
 						</div>
 						<!-- /category -->
 
-						<div class="col-md-3">
+						<div class="col-md-4">
 							<div class="category-icon-title text-center "  >
 								<div class="category-icon">
 									<i class="text-gradiant flaticon-artist-tools"></i>
-								</div>
-								<div class="category-title">
-									<h4>Graphic Design</h4>
-								</div>
-							</div>
-						</div>
-						<!-- /category -->
-
-						<div class="col-md-3">
-							<div class="category-icon-title text-center "  >
-								<div class="category-icon">
-									<i class="text-gradiant flaticon-business"></i>
-								</div>
-								<div class="category-title">
-									<h4>Marketing</h4>
-								</div>
-							</div>
-						</div>
-						<!-- /category -->
-
-						<div class="col-md-3">
-							<div class="category-icon-title text-center "  >
-								<div class="category-icon">
-									<i class="text-gradiant flaticon-dna"></i>
 								</div>
 								<div class="category-title">
 									<h4>Science</h4>
@@ -1802,39 +1778,63 @@
 						</div>
 						<!-- /category -->
 
-						<div class="col-md-3">
+						<!-- <div class="col-md-3">
+							<div class="category-icon-title text-center "  >
+								<div class="category-icon">
+									<i class="text-gradiant flaticon-business"></i>
+								</div>
+								<div class="category-title">
+									<h4>Marketing</h4>
+								</div>
+							</div>
+						</div> -->
+						<!-- /category -->
+
+						<div class="col-md-4">
+							<div class="category-icon-title text-center "  >
+								<div class="category-icon">
+									<i class="text-gradiant flaticon-dna"></i>
+								</div>
+								<div class="category-title">
+									<h4>GCSE</h4>
+								</div>
+							</div>
+						</div>
+						<!-- /category -->
+
+						<div class="col-md-4">
 							<div class="category-icon-title text-center "  >
 								<div class="category-icon">
 									<i class="text-gradiant flaticon-cogwheel"></i>
 								</div>
 								<div class="category-title">
-									<h4>Enginering</h4>
+									<h4>SATS</h4>
 								</div>
 							</div>
 						</div>
 						<!-- /category -->
 
 						<div class="col-md-3">
-							<div class="category-icon-title text-center "  >
+							<!-- <div class="category-icon-title text-center "  >
 								<div class="category-icon">
 									<i class="text-gradiant flaticon-technology-1"></i>
 								</div>
 								<div class="category-title">
 									<h4>Photography</h4>
 								</div>
-							</div>
+							</div> -->
 						</div>
 						<!-- /category -->
 
 						<div class="col-md-3">
-							<div class="category-icon-title text-center "  >
+							<!-- <div class="category-icon-title text-center "  >
 								<div class="category-icon">
 									<i class="text-gradiant flaticon-technology-2"></i>
 								</div>
 								<div class="category-title">
 									<h4>Mobile Application</h4>
 								</div>
-							</div>
+							</div> -->
 						</div>
 						<!-- /category -->
 					</div>

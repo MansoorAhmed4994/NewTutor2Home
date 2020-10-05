@@ -355,12 +355,12 @@
 									<div class="footer-menu ul-li-block">
 										<h2 class="widget-title">Useful Links</h2>
 										<ul>
-											<li><a href="#"><i class="fas fa-caret-right"></i>About Us</a></li>
+											<li><a href="#footer-area"><i class="fas fa-caret-right"></i>About Us</a></li>
+											<li><a href="{{ route('find-tutors') }}"><i class="fas fa-caret-right"></i>Find A Tutor</a></li>
+											<li><a href="{{ route('become-tutors') }}"><i class="fas fa-caret-right"></i>Become A Tutor</a></li>
+											<!-- <li><a href="#"><i class="fas fa-caret-right"></i>Responsive Website</a></li>
 											<li><a href="#"><i class="fas fa-caret-right"></i>Graphic Design</a></li>
-											<li><a href="#"><i class="fas fa-caret-right"></i>Mobile Apps</a></li>
-											<li><a href="#"><i class="fas fa-caret-right"></i>Responsive Website</a></li>
-											<li><a href="#"><i class="fas fa-caret-right"></i>Graphic Design</a></li>
-											<li><a href="#"><i class="fas fa-caret-right"></i>Mobile Apps</a></li>
+											<li><a href="#"><i class="fas fa-caret-right"></i>Mobile Apps</a></li> -->
 										</ul>
 									</div>
 								</div>
@@ -368,11 +368,12 @@
 									<h2 class="widget-title">Account Info</h2>
 									<ul>
 										<li><a href="#"><i class="fas fa-caret-right"></i>Setting Account</a></li>
-										<li><a href="#"><i class="fas fa-caret-right"></i>Login & Register</a></li>
+										<li><a href="{{ route('login') }}"><i class="fas fa-caret-right"></i>Login</a></li>
+										<li><a href="{{ route('signup') }}"><i class="fas fa-caret-right"></i>Register</a></li>
 										<!-- <li><a href="#"><i class="fas fa-caret-right"></i>Contact Us</a></li> -->
-										<li><a href="#"><i class="fas fa-caret-right"></i>Graphic Design</a></li>
+										<!-- <li><a href="#"><i class="fas fa-caret-right"></i>Graphic Design</a></li>
 										<li><a href="#"><i class="fas fa-caret-right"></i>Mobile Apps</a></li>
-										<li><a href="#"><i class="fas fa-caret-right"></i>Responsive Website</a></li>
+										<li><a href="#"><i class="fas fa-caret-right"></i>Responsive Website</a></li> -->
 									</ul>
 								</div>
 							</div>
