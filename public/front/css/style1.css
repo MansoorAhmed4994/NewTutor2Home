@@ -1465,6 +1465,21 @@ b, strong {
 
 @media only screen and (max-width: 767px) {
 
+  .owl-nav .owl-prev, .owl-nav .owl-next {
+    
+    width: 40px;
+    
+    margin: 0 24px;
+  
+}
+
+  .section-title .subtitle 
+  {
+    
+    letter-spacing: 2px;
+    
+  }
+
   .footer-logo
   {
     width: 320px;
