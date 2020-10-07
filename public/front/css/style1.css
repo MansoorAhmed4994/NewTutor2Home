@@ -2136,9 +2136,9 @@ b, strong {
     background-size: cover;
   }
 
-.slider-bg-5 
-  {
-    background-image: url(../img/banner/sd-1.jpg); 
-  }
+.bdr
+{
+  padding-top: 16px;
+}
 
   

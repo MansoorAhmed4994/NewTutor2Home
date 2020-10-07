@@ -150,7 +150,7 @@
                                                 <h4>{{ $teacher->name }}
                                                     <span class="subtitle d-block">{{$teacher->description }}</span>
                                                 </h4>
-                                                <p>I am a Afrocentric Dr. Of…</p>
+                                                <!-- <p>I am a Afrocentric Dr. Of…</p> -->
                                                 @if(isset($teacher->teacherSpecialization) && !empty($teacher->teacherSpecialization))
                                                 <h6>Subjects: 
                                                     <span class="subtitle">  
@@ -204,7 +204,7 @@
                                                     </ul>
                                                     <div class="clearfix">
 
-                                                    as
+                                                    
                                                     </div>
                                                 </div>
                                                 <!-- <p><span class="badge badge-success">0</span> completed lessons</p> -->
