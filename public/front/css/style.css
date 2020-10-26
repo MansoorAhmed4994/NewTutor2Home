@@ -3495,7 +3495,7 @@ ul.product-tab li.active:after {
     border-bottom: none; }
 
 .google-map-container {
-  height: 666px;
+  height: 600px;
   background-color: #dddddd; }
 
 #google-map {

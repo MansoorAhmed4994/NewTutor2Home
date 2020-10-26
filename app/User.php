@@ -40,9 +40,26 @@ class User extends Authenticatable
     ];
 
     public function getTeachers(){
-        $query = $this;
-        $query = $query->where('role_id',Role::TEACHER)->get();
+        $query = $this->where('role_id',Role::TEACHER)->get();
         return $query;
+    }
+
+    public function getStudents(){
+        $query = $this->where('role_id',Role::STUDENT)->get();
+        return $query;
+    }
+
+    public function getParents(){
+        $query = $this->where('role_id',Role::PARENTS)->get();
+        return $query;
+    }
+
+    public static function studentCount(){
+       return User::where('role_id',Role::STUDENT)->count();
+    }
+
+    public static function teacherCount(){
+       return User::where('role_id',Role::TEACHER)->count();
     }
         
     public function role() {

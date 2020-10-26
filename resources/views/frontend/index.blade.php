@@ -155,7 +155,7 @@
 									<i class="text-gradiant flaticon-graduation-hat"></i>
 								</div>
 								<div class="counter-number"  style="margin-left: 10px">
-									<span class="counter-count bold-font">5 </span><span>M+</span>
+									<span class="counter-count bold-font">{{ \App\User::studentCount() }} </span>
 									<p>Students Enrolled</p>
 								</div>
 							</div>
@@ -168,7 +168,7 @@
 									<i class="text-gradiant flaticon-book"></i>
 								</div>
 								<div class="counter-number">
-									<span class="counter-count bold-font">122</span><span>.500+</span>
+									<span class="counter-count bold-font">{{ \App\Models\Course::coursesCount() }}</span>
 									<p>Online Available Courses</p>
 								</div>
 							</div>
@@ -194,7 +194,7 @@
 									<i class="text-gradiant flaticon-group"></i>
 								</div>
 								<div class="counter-number">
-									<span class="counter-count bold-font">7</span><span>.500+</span>
+									<span class="counter-count bold-font">{{ \App\User::teacherCount() }}</span>
 									<p>Teachers Registered</p>
 								</div>
 							</div>

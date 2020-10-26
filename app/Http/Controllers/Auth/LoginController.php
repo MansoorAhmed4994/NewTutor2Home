@@ -60,6 +60,8 @@ class LoginController extends Controller
         if(!$user->hasVerifiedEmail()) {
             Auth::logout();
             return redirect('/');
+        }elseif ($user->role_id == Role::ADMIN) {
+            return redirect()->route('home');
         } 
         elseif($user->role_id == Role::TEACHER) {
             return redirect()->route('teacher-dashboard');

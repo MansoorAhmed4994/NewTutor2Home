@@ -6,7 +6,7 @@
   -->
   <div class="logo">
     <a href="https://creative-tim.com/" class="simple-text logo-normal">
-      {{ __('Creative Tim') }}
+      {{ __('Tutors 2 Home') }}
     </a>
   </div>
   <div class="sidebar-wrapper">
@@ -35,16 +35,40 @@
             <li class="nav-item{{ $activePage == 'user-management' ? ' active' : '' }}">
               <a class="nav-link" href="{{ route('user.index') }}">
                 <span class="sidebar-mini"> UM </span>
-                <span class="sidebar-normal"> {{ __('User Management') }} </span>
+                <span class="sidebar-normal"> {{ __('Admin Management') }} </span>
               </a>
             </li>
           </ul>
         </div>
       </li>
-      <li class="nav-item{{ $activePage == 'table' ? ' active' : '' }}">
+     {{--  <li class="nav-item{{ $activePage == 'table' ? ' active' : '' }}">
         <a class="nav-link" href="{{ route('table') }}">
           <i class="material-icons">content_paste</i>
             <p>{{ __('Table List') }}</p>
+        </a>
+      </li> --}}
+      <li class="nav-item{{ $activePage == 'admin/teachers' ? ' active' : '' }}">
+        <a class="nav-link" href="{{ route('admin.teachers') }}">
+          <i class="material-icons">content_paste</i>
+            <p>{{ __('Teacher List') }}</p>
+        </a>
+      </li>
+      <li class="nav-item{{ $activePage == 'admin/students' ? ' active' : '' }}">
+        <a class="nav-link" href="{{ route('admin.students') }}">
+          <i class="material-icons">content_paste</i>
+            <p>{{ __('Student List') }}</p>
+        </a>
+      </li>
+      <li class="nav-item{{ $activePage == 'admin/parents' ? ' active' : '' }}">
+        <a class="nav-link" href="{{ route('admin.parents') }}">
+          <i class="material-icons">content_paste</i>
+            <p>{{ __('Parent List') }}</p>
+        </a>
+      </li>
+      <li class="nav-item{{ $activePage == 'admin/courses' ? ' active' : '' }}">
+        <a class="nav-link" href="{{ route('courses-list') }}">
+          <i class="material-icons">content_paste</i>
+            <p>{{ __('Courses List') }}</p>
         </a>
       </li>
       {{-- <li class="nav-item{{ $activePage == 'typography' ? ' active' : '' }}">

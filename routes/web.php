@@ -95,43 +95,70 @@ Route::group(['prefix' => 'student','middleware' => ['student','auth']], functio
    
 
 });
+Route::get('course/{filename}', function ($filename)
+{
+    $path = storage_path('app/course/' . $filename);
+    if (!File::exists($path)) {
+        abort(404);
+    }
+    $file = File::get($path);
+    $type = File::mimeType($path);
 
-
-Route::get('/home', 'HomeController@index')->name('home')->middleware('auth');
-
-Route::group(['middleware' => 'auth'], function () {
-	Route::get('table-list', function () {
-		return view('pages.table_list');
-	})->name('table');
-
-	Route::get('typography', function () {
-		return view('pages.typography');
-	})->name('typography');
-
-	Route::get('icons', function () {
-		return view('pages.icons');
-	})->name('icons');
-
-	Route::get('map', function () {
-		return view('pages.map');
-	})->name('map');
-
-	Route::get('notifications', function () {
-		return view('pages.notifications');
-	})->name('notifications');
-
-	Route::get('rtl-support', function () {
-		return view('pages.language');
-	})->name('language');
-
-	Route::get('upgrade', function () {
-		return view('pages.upgrade');
-	})->name('upgrade');
+    $response = Response::make($file, 200);
+    $response->header("Content-Type", $type);
+    ob_clean();
+    return $response;
 });
 
-Route::group(['middleware' => 'auth'], function () {
-	Route::resource('user', 'UserController', ['except' => ['show']]);
-	Route::get('profile', ['as' => 'profile.edit', 'uses' => 'ProfileController@edit']);
-	Route::put('profile', ['as' => 'profile.update', 'uses' => 'ProfileController@update']);
-	Route::put('profile/password', ['as' => 'profile.password', 'uses' => 'ProfileController@password']);
+Route::get('/admin/login', 'HomeController@login')->name('admin.login');
+Route::group(['prefix' => 'admin','middleware' => ['admin','auth']], function () {
+   Route::get('/home', 'HomeController@index')->name('home');
+   Route::get('/teachers', 'Backend\UserController@teacherList')->name('admin.teachers');
+   Route::get('/students', 'Backend\UserController@studentList')->name('admin.students');
+   Route::get('/parents', 'Backend\UserController@parentList')->name('admin.parents');
+   Route::get('/activate/{user}', 'Backend\UserController@activate')->name('admin.activate');
+
+   Route::group(['prefix'=>'courses'], function(){
+      Route::get('/','Backend\CourseController@index')->name('courses-list');
+      Route::get('/add','Backend\CourseController@create')->name('courses-create');
+      Route::post('/store','Backend\CourseController@store')->name('courses-store');
+      Route::get('/edit/{courses}','Backend\CourseController@edit')->name('courses-edit');
+      Route::match(['put','patch'],'/update/{course}','Backend\CourseController@update')->name('courses-update');
+      Route::get('/delete/{course}','Backend\CourseController@delete')->name('courses-delete');
+   });
+
+
+   	// Route::get('table-list', function () {
+   	// 	return view('backend.pages.table_list');
+   	// })->name('table');
+
+   	// Route::get('typography', function () {
+   	// 	return view('pages.typography');
+   	// })->name('typography');
+
+   	// Route::get('icons', function () {
+   	// 	return view('pages.icons');
+   	// })->name('icons');
+
+   	// Route::get('map', function () {
+   	// 	return view('pages.map');
+   	// })->name('map');
+
+   	// Route::get('notifications', function () {
+   	// 	return view('pages.notifications');
+   	// })->name('notifications');
+
+   	// Route::get('rtl-support', function () {
+   	// 	return view('pages.language');
+   	// })->name('language');
+
+   	// Route::get('upgrade', function () {
+   	// 	return view('pages.upgrade');
+   	// })->name('upgrade');
+   Route::group(['middleware' => 'auth'], function () {
+   	Route::resource('user', 'UserController', ['except' => ['show']]);
+   	Route::get('profile', ['as' => 'profile.edit', 'uses' => 'ProfileController@edit']);
+   	Route::put('profile', ['as' => 'profile.update', 'uses' => 'ProfileController@update']);
+   	Route::put('profile/password', ['as' => 'profile.password', 'uses' => 'ProfileController@password']);
+   });
 });

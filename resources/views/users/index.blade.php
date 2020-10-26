@@ -1,4 +1,4 @@
-@extends('layouts.app', ['activePage' => 'user-management', 'titlePage' => __('User Management')])
+@extends('layouts.app', ['activePage' => 'user-management', 'titlePage' => __('Admin Management')])
 
 @section('content')
                 <div class="content">
@@ -7,8 +7,8 @@
                       <div class="col-md-12">
                         <div class="card">
                           <div class="card-header card-header-primary">
-                            <h4 class="card-title ">Users</h4>
-                            <p class="card-category"> Here you can manage users</p>
+                            <h4 class="card-title ">Admins</h4>
+                            <p class="card-category"> Here you can manage Admins</p>
                           </div>
                           <div class="card-body">
                             <div class="row">
@@ -28,28 +28,30 @@
                                   <th>
                                     Creation date
                                   </th>
-                                  <th class="text-right">
+                                  {{-- <th class="text-right">
                                     Actions
-                                  </th>
+                                  </th> --}}
                                 </tr></thead>
                                 <tbody>
+                                    @foreach($users as $user)
                                   <tr>
                                     <td>
-                                      Admin Admin
+                                      {{ $user->name }}
                                     </td>
                                     <td>
-                                      admin@material.com
+                                      {{ $user->email }}
                                     </td>
                                     <td>
-                                      2020-02-24
+                                      {{ $user->created_at }}
                                     </td>
-                                    <td class="td-actions text-right">
+                                    {{-- <td class="td-actions text-right">
                                       <a rel="tooltip" class="btn btn-success btn-link" href="#" data-original-title="" title="">
                                         <i class="material-icons">edit</i>
                                         <div class="ripple-container"></div>
                                       </a>
-                                    </td>
+                                    </td> --}}
                                   </tr>
+                                  @endforeach
                                 </tbody>
                               </table>
                             </div>
