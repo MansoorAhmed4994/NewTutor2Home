@@ -187,7 +187,7 @@
 										<li><a href="{{ route('become-tutors') }}">Become A Tutor</a></li>
 										<li><a href="#footer-area">About Us</a></li>
 										<!--<li><a href="#best-product">shop</a></li>-->
-										<li><a href="#contact-area">Contact Us</a></li>
+										<!-- <li><a href="#contact-area">Contact Us</a></li> -->
 										<!--<li class="menu-item-has-children ul-li-block">
 											<a href="#!">Pages</a>
 											<ul class="sub-menu">
@@ -219,12 +219,12 @@
 										<li><a href="{{ route('find-tutors') }}">Find a Tutor</a></li>
 										<li><a href="{{ route('become-tutors') }}">Become A Tutor</a></li>
 										<li><a href="#footer-area">About</a></li>
-										<li><a href="blog.html">Blog</a>
+										<!-- <li><a href="blog.html">Blog</a>
 											<ul>
 												<li><a href="blog.html">Blog</a></li>
 												<li><a href="blog-single.html">Blog sinlge</a></li>
 											</ul>
-										</li>
+										</li> -->
 										<li><a href="#best-product">Shop</a>
 										</li>
 										<li><a href="#contact-area">Contact</a></li>
@@ -262,13 +262,13 @@
 
 	<!-- Start of contact area
 		============================================= -->
-		<section id="contact-area" class="contact-area-section backgroud-style ">
+		<!-- <section id="contact-area" class="contact-area-section backgroud-style " >
 			<div class="container ">
 				<div class="contact-area-content">
 					<div class="row">
 						<div class="col-md-6">
 							<div class="contact-left-content " >
-								<div class="section-title area-contact-content  mb45 headline text-center">
+								<div class="section-title area-contact-content  mb45 headline text-center" style="margin: 20px;">
 									<span class="subtitle ml42  text-uppercase">CONTACT US</span>
 									<h2><span>Get in Touch</span></h2>
 									<p>
@@ -276,7 +276,7 @@
 									</p>
 								</div>
 
-								<div class="contact-address area-contact-content">
+								<div class="contact-address area-contact-content" style="margin: 20px;">
 									<div class="contact-address-details">
 										<div class="address-icon relative-position text-center float-left">
 											<i class="fas fa-map-marker-alt"></i>
@@ -314,7 +314,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="genius-btn area-contact-content mt60 gradient-bg text-center text-uppercase ul-li-block bold-font ">
+							<div class="genius-btn area-contact-content mt60 gradient-bg text-center text-uppercase ul-li-block bold-font " style="margin: 20px;">
 								<a href="#">Contact Us <i class="fas fa-caret-right"></i></a>
 							</div>
 						</div>
@@ -323,13 +323,13 @@
 							<div id="contact-map" class="contact-map-section">
 								<div id="google-map">
 									<div id="googleMaps" class="google-map-container"></div>
-								</div><!-- /#google-map-->
+								</div>/#google-map
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</section>
+		</section> -->
 	<!-- End of contact area
 		============================================= -->
 	<!-- Start of footer section
@@ -342,7 +342,7 @@
 							<div class="col-md-3">
 								<div class="footer-widget "  >
 									<div class="footer-logo area-footer-content  mb35">
-										<img src="{{asset('front/img/logo/f-logo.png')}}" alt="">
+										<img src="{{asset('front/img/logo/tutors2home.png')}}" alt="">
 									</div>
 									<div class="footer-about-text area-footer-content ">
 										<p>We take our mission of increasing global access to quality education seriously. We connect learners to best Tutors from around the UK.</p>
@@ -355,12 +355,12 @@
 									<div class="footer-menu ul-li-block">
 										<h2 class="widget-title">Useful Links</h2>
 										<ul>
-											<li><a href="#"><i class="fas fa-caret-right"></i>About Us</a></li>
+											<li><a href="#footer-area"><i class="fas fa-caret-right"></i>About Us</a></li>
+											<li><a href="{{ route('find-tutors') }}"><i class="fas fa-caret-right"></i>Find A Tutor</a></li>
+											<li><a href="{{ route('become-tutors') }}"><i class="fas fa-caret-right"></i>Become A Tutor</a></li>
+											<!-- <li><a href="#"><i class="fas fa-caret-right"></i>Responsive Website</a></li>
 											<li><a href="#"><i class="fas fa-caret-right"></i>Graphic Design</a></li>
-											<li><a href="#"><i class="fas fa-caret-right"></i>Mobile Apps</a></li>
-											<li><a href="#"><i class="fas fa-caret-right"></i>Responsive Website</a></li>
-											<li><a href="#"><i class="fas fa-caret-right"></i>Graphic Design</a></li>
-											<li><a href="#"><i class="fas fa-caret-right"></i>Mobile Apps</a></li>
+											<li><a href="#"><i class="fas fa-caret-right"></i>Mobile Apps</a></li> -->
 										</ul>
 									</div>
 								</div>
@@ -368,11 +368,12 @@
 									<h2 class="widget-title">Account Info</h2>
 									<ul>
 										<li><a href="#"><i class="fas fa-caret-right"></i>Setting Account</a></li>
-										<li><a href="#"><i class="fas fa-caret-right"></i>Login & Register</a></li>
-										<li><a href="#"><i class="fas fa-caret-right"></i>Contact Us</a></li>
-										<li><a href="#"><i class="fas fa-caret-right"></i>Graphic Design</a></li>
+										<li><a href="{{ route('login') }}"><i class="fas fa-caret-right"></i>Login</a></li>
+										<li><a href="{{ route('signup') }}"><i class="fas fa-caret-right"></i>Register</a></li>
+										<!-- <li><a href="#"><i class="fas fa-caret-right"></i>Contact Us</a></li> -->
+										<!-- <li><a href="#"><i class="fas fa-caret-right"></i>Graphic Design</a></li>
 										<li><a href="#"><i class="fas fa-caret-right"></i>Mobile Apps</a></li>
-										<li><a href="#"><i class="fas fa-caret-right"></i>Responsive Website</a></li>
+										<li><a href="#"><i class="fas fa-caret-right"></i>Responsive Website</a></li> -->
 									</ul>
 								</div>
 							</div>

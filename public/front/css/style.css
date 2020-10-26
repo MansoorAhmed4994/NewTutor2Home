@@ -346,14 +346,14 @@ h1, h2, h3, h4, h5, h6 {
   position: relative; }
   .section-title-2 h2 span {
     font-weight: 700; }
-  .section-title-2 h2:after {
+  /* .section-title-2 h2:after {
     position: absolute;
     content: '';
     bottom: -20px;
     height: 2px;
     width: 50px;
     left: 0;
-    background-color: #17d0cf; }
+    background-color: #17d0cf; } */
 
 .widget-title {
   font-size: 25px;
@@ -1281,10 +1281,15 @@ button.alt-menu-btn.float-left {
   height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center; }
+  background-position: center center; 
+  
+}
+  
 
 .slider-bg-1 {
-  background-image: url(../img/banner/s-1.jpg); }
+  background-image: url(../img/banner/s-1.jpg); 
+  background: linear-gradient(rgb(0 0 0 / 58%), rgb(0 0 0 / 78%)) , var(--url) center center;
+}
 
 .slider-bg-2 {
   background-image: url(../img/banner/s-4.jpg); }
@@ -1590,17 +1595,19 @@ button.alt-menu-btn.float-left {
   opacity: 1;
   visibility: visible; }
 
+
+
 .owl-nav {
   right: 0;
-  top: -90px;
+  top: -63px;
   position: absolute; }
   .owl-nav .owl-prev, .owl-nav .owl-next {
     float: left;
-    width: 60px;
-    height: 60px;
+    width: 52px;
+    height: 55px;
     line-height: 60px;
     text-align: center;
-    margin: 0 5px;
+    margin: 0 30px;
     border-radius: 4px;
     background-color: #f7f7f7; }
 
@@ -1690,13 +1697,13 @@ button.alt-menu-btn.float-left {
       font-weight: 500;
       color: #333333;
       margin-top: 20px; }
-    .about-us-text .section-title:after {
+    /* .about-us-text .section-title:after {
       position: absolute;
       content: '';
       bottom: -30px;
       height: 2px;
       width: 50px;
-      background-color: #17d0cf; }
+      background-color: #17d0cf; } */
 
 .about-content-text p {
   font-size: 18px;

@@ -16,7 +16,6 @@
             </div>
             <form class="form" action="" method="GET" accept-charset="utf-8" id="filterfrom" >
         @csrf
-      
             <div class="container mb-3">
                 <div class="search_course_bg">
                     <div class="row">
@@ -149,7 +148,7 @@
                                                 <h4>{{ $teacher->name }}
                                                     <span class="subtitle d-block">{{$teacher->description }}</span>
                                                 </h4>
-                                                <p>I am a Afrocentric Dr. Of…</p>
+                                                <!-- <p>I am a Afrocentric Dr. Of…</p> -->
                                                 @if(isset($teacher->teacherSpecialization) && !empty($teacher->teacherSpecialization))
                                                 <h6>Subjects: <span class="subtitle">  @for($i=0;$i<=count($subjectall)-1;$i++)
                               @if($teacher->teacherSpecialization->subject==$i) {{ $subjectall[$i] }} @endif
@@ -160,6 +159,7 @@
                              @endfor</span></h6> 
                                                 @endif   
                                             </div>
+<<<<<<< HEAD
                                         <div class="right col-lg-5 col-md-6">
                                         <div class="bdr">
                                             <div class="text-center">
@@ -179,6 +179,37 @@
                                                     <li><small style="font-size: small;">0 reviews</small></li>
                                                 </ul>
                                                 <div class="clearfix"></div>
+=======
+                                            <div class="right col-lg-5 col-md-6">
+                                                <div class="bdr">
+                                                    <div class="text-center">
+                                                        <span class="hour">
+                                                        
+                                                            @if(isset($teacher->qualification) && !empty($teacher->qualification)) 
+                                                            <span class="price d-block">
+                                                                @for($i=0;$i<=count($rate)-1;$i++)
+                                                                @if($teacher->qualification->Tutor_per_hour==$i) ${{ $rate[$i] }} @endif
+                                                                @endfor
+                                                            </span> /hour
+                                                                @endif
+                                                        </span>
+                                                    </div>
+                                                <div>
+                                                
+                                                    <ul class="rating mb-0">
+                                                        <li class="pr-1"><i class="fa fa-star-o" aria-hidden="true"></i></li>
+                                                        <li class="pr-1"><i class="fa fa-star-o" aria-hidden="true"></i></li>
+                                                        <li class="pr-1"><i class="fa fa-star-o" aria-hidden="true"></i></li>
+                                                        <li class="pr-1"><i class="fa fa-star-o" aria-hidden="true"></i></li>
+                                                        <li class="pr-1"><i class="fa fa-star-o" aria-hidden="true"></i></li>
+                                                        <li><small style="font-size: small;">0 reviews</small></li>
+                                                    </ul>
+                                                    <div class="clearfix">
+
+                                                    
+                                                    </div>
+                                                </div>
+>>>>>>> b367e22e7aa493464a3761c601f9b5d883a759b8
                                                 <!-- <p><span class="badge badge-success">0</span> completed lessons</p> -->
                                             </div>
                                             <p class="d-none">Complete Session <span class="icn">450</span></p>

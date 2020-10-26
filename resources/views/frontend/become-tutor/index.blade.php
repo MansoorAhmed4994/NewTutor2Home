@@ -19,7 +19,7 @@
 					</div>
 				</div>
             </div>
-            <div class="container mb-3">
+            <div class="container mb-3" style="margin-top: -105px;">
                 <div class="search_course_bg">
                     <div class="text-center">
                         <h2 class="text-white landing-h2-font">Become a tutor today with Tutors2Home</h2>
@@ -32,7 +32,7 @@
                 </div>
             </div>
             <!-- Start Easy side -->
-            <div class="Easyside text-center pt-0">
+            <div class="Easyside  text-center pt-0" style="margin: 20px;">
                 <div class="container">
                     <div class="row">
                         <div class="box col-sm-6 col-md-4 aos-init aos-animate" data-aos="fade-right">
@@ -63,7 +63,7 @@
             <!-- End Easy side -->
 
             <!-- Start Easy side -->
-            <div class="Easyside text-center pt-0">
+            <div class="Easyside text-center pt-0" style="margin: 20px;">
                 <div class="container">
                     <div class="row">
                         <div class="box col-sm-6 col-md-4 aos-init aos-animate" data-aos="fade-right">
@@ -118,7 +118,7 @@
 
             <!-- Start Custom side -->
 
-            <div class="Customside  bg-white text-center pb-0">
+            <div class="Customside  bg-white text-center pb-0" style="margin: 20px;">
                 <div class="container">
                     <img src="{{asset('front/img/customised-img.png')}}"  class="customised-photo-size" alt="">
                 </div>
@@ -210,7 +210,7 @@
             <!-- Video end -->
 
             <!-- Start Easy side -->
-            <div class="Easyside text-center">
+            <div class="Easyside  text-center" style="margin: 20px;">
                 <div class="container">
                     <h2>Why tutor online? <small class="d-block">We help you find regular, flexible and reliable work by making
                             it easier than ever to secure online tutoring jobs.</small></h2>
@@ -256,7 +256,7 @@
 
 
             <!-- Start Build side -->
-            <div class="Buildside inner build-6 space-inner opposite">
+            <div class="Buildside inner build-6 space-inner opposite" style="margin: 20px;">
                 <div class="container">
                     <div class="row text-left justify-content-end">
                         <div class="col-md-6 aos-init aos-animate" data-aos="fade-left">
@@ -278,7 +278,7 @@
             
             
             <!-- Start Build side -->
-            <div class="Buildside build-3 inner">
+            <div class="Buildside build-3 inner" style="margin: 20px;">
                 <div class="container">
                     <div class="row text-left">
                         <div class="col-md-6 build-side-photo-size-two d-block d-md-none">
@@ -287,7 +287,7 @@
                         <div class="col-md-6 aos-init aos-animate" data-aos="fade-right">
                             <div class="bg">
                                 <h2>It's flexible and saves you time</h2>
-                                <p>TutorNinjas ensures your online tutoring suits your busy life. Your students can book
+                                <p>Tutors2Home ensures your online tutoring suits your busy life. Your students can book
                                     sessions one at a time or in blocks for ultimate flexibility.</p>
                                 <p>And with our comprehensive online platform, there's no need to travel! Whether on the sofa or
                                     the beach - we make it easy to connect and teach!</p>
@@ -300,7 +300,7 @@
             
             
             <!-- Start Build side -->
-            <div class="Buildside build-5 inner opposite">
+            <div class="Buildside build-5 inner opposite" style="margin: 20px;">
                 <div class="container">
                     <div class="row text-left justify-content-end">
                         <div class="col-md-6 aos-init" data-aos="fade-right">
@@ -322,7 +322,7 @@
             
             
             <!-- Start Build side -->
-            <div class="Buildside build-4 inner mb-4 mb-md-5">
+            <div class="Buildside build-4 inner mb-4 mb-md-5" style="margin: 20px;">
                 <div class="container">
                     <div class="row text-left">
                         <div class="col-md-6 build-side-photo-size-four d-block d-md-none">
@@ -346,38 +346,40 @@
             <div class="Instituteside text-center">
                 <div class="overlay">
                     <div class="container">
-                        <h2>Only the best become tutor!</h2>
-                        <p>We've built a unique algorithm that reviews and scores every application by prospective tutors
+                        <h2 style="margin: 20px;">Only the best become tutor!</h2>
+                        <p style="margin: 20px;">We've built a unique algorithm that reviews and scores every application by prospective tutors
                             - only those who score over 85% are accepted. That's 1 in every 8 applications! This is how we
                             ensure that tutors provides its students with only the very best online tutors. And because
                             many of our tutors are still students themselves, they are the best at communicating with our
                             students!</p>
-                        <h4>Help change someone's prospects today and sign up to become a tutor. <span class="subtitle">(Tutor any of over 300 subjects that we offer)</span></h4>
+                        <h4 style="margin: 20px;">Help change someone's prospects today and sign up to become a tutor. 
+                            <!-- <span class="subtitle">(Tutor any of over 300 subjects that we offer)</span> -->
+                        </h4>
                     </div>
                     <div class="subject">
                         <div class="container">
                             <ul>
                                 <h4>Academics</h4>
                                 <li class=""><a class="cursor-pointer bottom-subject-links" data-subject-id="330">English</a></li>
-                                <li class=""><a class="cursor-pointer bottom-subject-links" data-subject-id="699">Business</a></li>
-                                <li class=""><a class="cursor-pointer bottom-subject-links" data-subject-id="551">Economics</a></li>
-                                <li class=""><a class="cursor-pointer bottom-subject-links" data-subject-id="517">Biology</a></li>
-                                <li class=""><a class="cursor-pointer bottom-subject-links" data-subject-id="597">Physics</a></li>
-                                <li class=""><a class="cursor-pointer bottom-subject-links" data-subject-id="580">Chemistry</a></li>
-                                <li class=""><a class="cursor-pointer bottom-subject-links" data-subject-id="642">History</a></li>
+                                <li class=""><a class="cursor-pointer bottom-subject-links" data-subject-id="699">Maths</a></li>
+                                <li class=""><a class="cursor-pointer bottom-subject-links" data-subject-id="551">Science</a></li>
+                                <li class=""><a class="cursor-pointer bottom-subject-links" data-subject-id="517">GCSE</a></li>
+                                <li class=""><a class="cursor-pointer bottom-subject-links" data-subject-id="597">SATS</a></li>
+                                <!-- <li class=""><a class="cursor-pointer bottom-subject-links" data-subject-id="580">Chemistry</a></li>
+                                <li class=""><a class="cursor-pointer bottom-subject-links" data-subject-id="642">History</a></li> -->
                             </ul>
-                            <ul>
+                            <!-- <ul>
                                 <h4 class="mt-3">Lifestyle</h4>
                                 <li class=""><a class="cursor-pointer bottom-subject-links" data-subject-id="89">Cooking</a></li>
                                 <li class=""><a class="cursor-pointer bottom-subject-links" data-subject-id="183">Coaching</a></li>
                                 <li class=""><a class="cursor-pointer bottom-subject-links" data-subject-id="828">Song writing</a></li>
-                            </ul>
+                            </ul> -->
                             <ul>
                                 <h4 class="mt-3">Professional learning</h4>
-                                <li class=""><a class="cursor-pointer bottom-subject-links" data-subject-id="230">Web design</a></li>
-                                <li class=""><a class="cursor-pointer bottom-subject-links" data-subject-id="620">Software</a></li>
-                                <li class=""><a class="cursor-pointer bottom-subject-links" data-subject-id="265">Coding</a></li>
-                                <li class=""><a class="cursor-pointer bottom-subject-links" data-subject-id="549">Social media</a></li>
+                                <li class=""><a class="cursor-pointer bottom-subject-links" data-subject-id="230">Teacher Training</a></li>
+                                <li class=""><a class="cursor-pointer bottom-subject-links" data-subject-id="620">Teacher Assistant</a></li>
+                                <li class=""><a class="cursor-pointer bottom-subject-links" data-subject-id="265">Nursing</a></li>
+                                <li class=""><a class="cursor-pointer bottom-subject-links" data-subject-id="549">Child Care</a></li>
                             </ul>
                         </div>
                     </div>
@@ -386,7 +388,7 @@
             <!-- End Institute side -->
 
             <!-- Start Book side -->
-            <div class="Easyside text-center">
+            <div class="Easyside text-center" style="margin: 20px;">
                 <div class="container">
                     <h2>Convenient earning and comfortable learning <br>
                     </h2>

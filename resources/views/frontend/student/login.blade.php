@@ -74,7 +74,7 @@
                                                        </div>
                                                        
                                                        <div class="form-group text-center mb-0">
-                                                           <p>Don't have an account? <a href="signup.php">Sign Up</a>
+                                                           <p>Don't have an account? <a href="{{ route('teacher-registration') }}">Sign Up</a>
                                                            </p>
                                                        </div>
                                                        </form>

@@ -458,6 +458,11 @@
 
 @media screen and (max-width: 767px) { 
 
+	.color-switcher {
+
+		display: none;
+
+	}
 	html {
 
 		overflow-x: hidden;
@@ -510,7 +515,11 @@
 
 		max-width: 400px;
 
-		margin: 0 auto;
+		margin-top: 90px;
+
+		margin-right: auto;
+
+		margin-left: auto;
 
 		margin-bottom: 30px;
 

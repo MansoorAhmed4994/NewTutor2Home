@@ -10,7 +10,7 @@
 
 .search_course_bg
 {
-
+  z-index: 1;
   position: relative;
   padding: 40px 30px 30px 30px;
   background-color: #0b6096;
@@ -294,6 +294,8 @@
 
 .step{
   padding-top: 30px;
+  margin-right: 40px;
+  margin-left: 40px;
 }
 
 
@@ -328,7 +330,7 @@
 
 .step .bg .std img {
   margin-bottom: 15px;
-  margin-left: 165px;
+  margin-left: 58px;
 }
 
 .step .bg p {
@@ -1463,14 +1465,53 @@ b, strong {
 
 @media only screen and (max-width: 767px) {
 
-  .course-item-pic-text {
-
+  .owl-nav .owl-prev, .owl-nav .owl-next {
     
-    margin: 20px;
+    width: 40px;
+    
+    margin: 0 24px;
+  
+}
 
-	}
+  .section-title .subtitle 
+  {
+    
+    letter-spacing: 2px;
+    
+  }
+
+  .footer-logo
+  {
+    width: 320px;
+  }
+  .table td, .table th {
+    padding: 0.2rem !important;
+    font-size: 13px;
+  }
+
+  .faq-content{
+    margin: 20px;
+  }
+  .course-item-pic-text {
+    
+    margin: 27px;
+}
+  .contact-map-section{
+    margin:20px;
+  }
+
+  .padding-heading-pargraph
+  {
+    padding-top: 105px;
+  }
+  
+.step .bg .std img{
+    margin-left: 0px !important;
+    
+  }
+  
 .logo_tutor_mobile { 
-  width: 70px !important ;
+  width: 80px !important ;
 }
 .search-course .nws-button, .subs-form .nws-button {
   width: 124px ;
@@ -1504,7 +1545,7 @@ b, strong {
 #search-course .search-course .course
   {
     font-weight: 400 !important;
-    font-size: 24px !important;
+    font-size: 18px !important;
   }
   
 
@@ -1554,8 +1595,12 @@ b, strong {
 {
   .logo_tutor_mobile 
   { 
-    width: 90px ;
+    width: 105px ;
   }
+  #search-course .search-course .course {
+    font-weight: 400 !important;
+    font-size: 24px !important;
+}
 
   
   .slider-text {
@@ -1589,6 +1634,40 @@ b, strong {
 
 }
 @media only screen and (max-width: 480px) {
+
+  .footer-logo
+  {
+    width: 235px;
+  }
+  #slider-item .slider-course-category li:after {
+    top: 3px;
+}
+  .justify-content-center
+  {
+    margin-top: 20px;
+  }
+  .table td, .table th {
+    padding: 0.2rem !important;
+    font-size: 11px;
+}
+  .padding-heading-pargraph
+  {
+    padding-top: 30px;
+  }
+  .step .bg p {
+    font-size: 10px;
+  
+  }
+  .step .bg img {
+    margin-left: 0px !important;
+    margin-bottom: 0px !important;
+    
+  }
+.step .bg .std img{
+    margin-left: 0px !important;
+    margin-bottom: 0px !important;
+    
+  }
 
   .heading-look h2 span {
     font-weight: 700 !important;
@@ -1677,6 +1756,7 @@ b, strong {
   .section-title .subtitle {
     
     margin: 20px;
+    letter-spacing: 3px;  
 }
   .section-title h2 span {
     
@@ -1701,7 +1781,7 @@ b, strong {
     font-size: 20px !important;
 }
   #slider-item .search-course .button{
-    width: 118px;
+    width: 92px;
   }
   .search-course .nws-button button, .subs-form .nws-button button {
     background-color: transparent;
@@ -1712,7 +1792,7 @@ b, strong {
     color: #fff;
 }
 #search-course .search-course {
-  max-width: 420px !important;
+  max-width: 258px !important;
   font-size: 16px !important;
   margin-left: 19px !important;
 }
@@ -1720,7 +1800,7 @@ b, strong {
   #slider-item .search-course .course
 {
   font-weight: 400 !important;
-    font-size: 12px;
+    font-size: 10px;
 }
   #search-course .search-course .course {
     font-weight: 400 !important;
@@ -1747,6 +1827,22 @@ b, strong {
 }
 @media only screen and (max-width: 375px) 
 {
+
+  .footer-logo
+  {
+    width: 190px;
+  }
+
+  .justify-content-center
+  {
+    margin-top: 20px;
+  }
+
+  .table td, .table th {
+    padding: 0.1rem !important;
+    font-size: 8px;
+  }
+
   .section-title .dot-margin {
     
     margin: 0px !important;
@@ -1769,11 +1865,11 @@ b, strong {
     right: 6px !important;
   }
   .search-course .nws-button, .subs-form .nws-button {
-    width: 75px !important ;
+    width: 72px !important ;
   }
   .logo_tutor_mobile 
   { 
-    padding-top: 7px !important;
+    padding-top: 9px !important;
     padding-bottom: 0px !important;
     width: 60px!important;
 
@@ -1807,7 +1903,7 @@ b, strong {
   #slider-item .search-course .course 
   {
     font-weight: 400 !important;
-    font-size: 8px !important;
+    font-size: 10px !important;
   }
   #search-course .search-course .course
   {
@@ -1840,9 +1936,24 @@ b, strong {
     .slider-text .section-title h2 {
         font-size: 40px !important;
     }
+    .lower-width-fontsize
+    {
+      font-size: 18px !important;
+    }
   }
   @media only screen and (max-width: 580px)
   {
+    .no-gutters {
+      margin-top: 25px;
+      
+    }
+    .justify-content-center
+    {
+      margin-top: 20px;
+    }
+    .search-counter-up {
+      margin-left: 70px;
+    }
     #search-course .search-course {
       max-width: 550px !important;
       font-size: 16px !important;
@@ -1873,8 +1984,16 @@ b, strong {
   @media only screen and (max-width: 1024px){
 
     
+    .slider-text {
+      padding: 0px 60px;
+    }
+    .step .bg img {
+      margin-bottom: 15px;
+      margin-left: 0px; 
+    }
     .slider-bg-1, .slider-bg-2, .slider-bg-3, .slider-bg-4, .slider-bg-5 {
         height: 80vh ;
+        max-height: 1000px !important;
         min-height: 600px !important;
     height: 403.2px !important;
       }
@@ -1894,6 +2013,9 @@ b, strong {
   }
   @media only screen and (min-width: 1025px)
     {
+      .slider-text .section-title h2 {
+        font-size: 55px !important;
+        }
      
       .slider-bg-1, .slider-bg-2, .slider-bg-3, .slider-bg-4, .slider-bg-5 
       {
@@ -1914,3 +2036,100 @@ b, strong {
       height: 400px;
     }
 
+    .genius-btn .find-tutor-now {
+      color: #fff;
+      display: block;
+      width: 100%; }
+      .genius-btn .find-tutor-now i {
+        margin-left: 5px;
+        color: #01a6fd; }
+      
+        
+        .find-tutor-now {
+      color: #007bff;
+      text-decoration: none;
+      background-color: transparent;
+      -webkit-text-decoration-skip: objects;
+      border-style: none !important;
+      text-transform: uppercase!important;
+    }
+
+    .sidebar-content-find-tutor
+    {
+      margin-top: 55px;
+    }
+
+    
+  
+    .area-contact-content
+    {
+      margin-top: 55px;
+    }
+    .teacher-book-bottun-box
+      {
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-top: 20px;
+        width: 100%;
+        white-space: normal;
+        color: white;
+    }
+    .dynamic-content-padding
+    {
+      padding-bottom: 35px;
+    }
+
+    .search-counter-up
+  {
+    margin-top: 35px;
+  }
+  
+  .item .no-gutters{
+    margin: 23px !important;
+  }
+  .teacher-bg-size
+  {
+    height: 950px !important;
+  }
+  .footer-area-section {
+    margin: 20px;
+}
+
+:root {
+  --home-slider-background-picture-one: url(../img/banner/s-1.jpg);
+  --home-slider-background-picture-two: url(../img/banner/s-2.jpg);
+  --home-slider-background-picture-three: url(../img/banner/s-3.jpg);
+  --home-slider-background-picture-four: url(../img/banner/s-4.jpg);
+  
+}
+.slider-bg-1 
+  {
+ 
+    background: linear-gradient(rgb(0 0 0 / 58%), rgb(0 0 0 / 78%)) , var(--home-slider-background-picture-one) center center;
+    background-size: cover;
+  }
+.slider-bg-2 
+  {
+
+    background: linear-gradient(rgb(0 0 0 / 58%), rgb(0 0 0 / 78%)) , var(--home-slider-background-picture-two) center center;
+    background-size: cover;
+  }
+
+.slider-bg-3 
+  {
+
+    background: linear-gradient(rgb(0 0 0 / 58%), rgb(0 0 0 / 78%)) , var(--home-slider-background-picture-three) center center;
+    background-size: cover;
+  }
+
+.slider-bg-4 
+  {
+
+    background: linear-gradient(rgb(0 0 0 / 58%), rgb(0 0 0 / 78%)) , var(--home-slider-background-picture-four) center center;
+    background-size: cover;
+  }
+
+.bdr
+{
+  padding-top: 16px;
+}

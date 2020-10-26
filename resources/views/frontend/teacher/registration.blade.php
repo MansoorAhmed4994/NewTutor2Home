@@ -46,11 +46,11 @@
 		============================================= -->
 		<section id="slide" class="slider-section">
 			<div id="slider-item" class="slider-item-details">
-				<div  class="slider-area slider-bg-1 relative-position">
+				<div  class="slider-area slider-bg-1 teacher-bg-size relative-position">
 					<div class="slider-text">
-						<div class="section-title mb20 headline text-center ">
+						<div class="section-title padding-heading-pargraph mb20 headline text-center ">
 							<div class="layer-1-3 heading">
-								<h2><span>Become A Tutor</span></h2><br>
+								<h2><span class="lower-width-fontsize">Become A Tutor</span></h2><br>
                                 <p><span>At Tutors2Home, you can find students really easily, organise your lessons</span><p>
 								<p><span>and get paid straight into your account</span><p>
 							</div><br>

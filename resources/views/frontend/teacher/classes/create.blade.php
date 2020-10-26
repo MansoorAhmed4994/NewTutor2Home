@@ -48,7 +48,7 @@
 
                                                     <div class="form-group col-sm-12 col-lg-6 ">
                                                         <label class="font-weight-bold">
-                                                            Topic
+                                                            Agenda
                                                         </label>
                                                         <textarea type="text" name="agenda" id="agenda"  class="form-control "></textarea>
                                                     </div>
