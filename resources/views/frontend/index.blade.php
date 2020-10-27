@@ -190,7 +190,7 @@
 									<i class="text-gradiant flaticon-graduation-hat"></i>
 								</div>
 								<div class="counter-number"  style="margin-left: 10px">
-									<span class="counter-count bold-font">5 </span><span>M+</span>
+									<span class="counter-count bold-font">{{ \App\User::studentCount() }} </span>
 									<p>Students Enrolled</p>
 								</div>
 							</div>
@@ -203,8 +203,9 @@
 									<i class="text-gradiant flaticon-book"></i>
 								</div>
 								<div class="counter-number">
-									<span class="counter-count bold-font">122</span><span>.500+</span>
-									<p>Daily Lesson Completed</p>
+									<span class="counter-count bold-font">{{ \App\Models\Course::coursesCount() }}</span>
+									<p>Online Available Courses</p>
+
 								</div>
 							</div>
 						</div>
@@ -229,7 +230,8 @@
 									<i class="text-gradiant flaticon-group"></i>
 								</div>
 								<div class="counter-number">
-									<span class="counter-count bold-font">2</span><span>00+</span>
+									<span class="counter-count bold-font">{{ \App\User::teacherCount() }}</span>
+
 									<p>Teachers Registered</p>
 								</div>
 							</div>
@@ -285,6 +287,9 @@
 									<li><a href="#"><i class="fas fa-comment-dots"></i> 1.015</a></li>
 									<li><a href="#">125k Unrolled</a></li>
 								</ul>
+							</div>
+							<div class="nws-button text-center  gradient-bg text-capitalize">
+								<button type="button"><span class="full_size_text">Search Tutors</span><span class="short_size_text">Search</span></button>
 							</div>
 						</div>
 					</div>

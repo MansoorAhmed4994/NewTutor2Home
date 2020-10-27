@@ -1825,16 +1825,9 @@ b, strong {
 
     }
 }
-@media only screen and (max-width: 362px)
-{
-  .btn-margin-short-width {
-    
-    margin-top: 10px;
-    
-  }
-}
 @media only screen and (max-width: 375px) 
 {
+
   .footer-logo
   {
     width: 190px;
@@ -1849,7 +1842,7 @@ b, strong {
     padding: 0.1rem !important;
     font-size: 8px;
   }
-  
+
   .section-title .dot-margin {
     
     margin: 0px !important;
@@ -2140,5 +2133,3 @@ b, strong {
 {
   padding-top: 16px;
 }
-
-  
