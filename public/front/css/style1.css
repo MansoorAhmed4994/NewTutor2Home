@@ -1465,6 +1465,21 @@ b, strong {
 
 @media only screen and (max-width: 767px) {
 
+  .owl-nav .owl-prev, .owl-nav .owl-next {
+    
+    width: 40px;
+    
+    margin: 0 24px;
+  
+}
+
+  .section-title .subtitle 
+  {
+    
+    letter-spacing: 2px;
+    
+  }
+
   .footer-logo
   {
     width: 320px;
@@ -1810,16 +1825,9 @@ b, strong {
 
     }
 }
-@media only screen and (max-width: 362px)
-{
-  .btn-margin-short-width {
-    
-    margin-top: 10px;
-    
-  }
-}
 @media only screen and (max-width: 375px) 
 {
+
   .footer-logo
   {
     width: 190px;
@@ -1834,7 +1842,7 @@ b, strong {
     padding: 0.1rem !important;
     font-size: 8px;
   }
-  
+
   .section-title .dot-margin {
     
     margin: 0px !important;
@@ -2121,9 +2129,7 @@ b, strong {
     background-size: cover;
   }
 
-.slider-bg-5 
-  {
-    background-image: url(../img/banner/sd-1.jpg); 
-  }
-
-  
+.bdr
+{
+  padding-top: 16px;
+}

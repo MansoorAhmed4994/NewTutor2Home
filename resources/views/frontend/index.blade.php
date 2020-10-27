@@ -190,7 +190,7 @@
 									<i class="text-gradiant flaticon-graduation-hat"></i>
 								</div>
 								<div class="counter-number"  style="margin-left: 10px">
-									<span class="counter-count bold-font">5 </span><span>M+</span>
+									<span class="counter-count bold-font">{{ \App\User::studentCount() }} </span>
 									<p>Students Enrolled</p>
 								</div>
 							</div>
@@ -203,8 +203,9 @@
 									<i class="text-gradiant flaticon-book"></i>
 								</div>
 								<div class="counter-number">
-									<span class="counter-count bold-font">122</span><span>.500+</span>
-									<p>Daily Lesson Completed</p>
+									<span class="counter-count bold-font">{{ \App\Models\Course::coursesCount() }}</span>
+									<p>Online Available Courses</p>
+
 								</div>
 							</div>
 						</div>
@@ -229,7 +230,8 @@
 									<i class="text-gradiant flaticon-group"></i>
 								</div>
 								<div class="counter-number">
-									<span class="counter-count bold-font">2</span><span>00+</span>
+									<span class="counter-count bold-font">{{ \App\User::teacherCount() }}</span>
+
 									<p>Teachers Registered</p>
 								</div>
 							</div>
@@ -542,7 +544,7 @@
 							</div>
 							<div class="section-title about-content-text text-center">
 								<h2><span>Quality and Assurance</span></h2>
-								<p class="text-left"  >We take 100% responsibility of the performance,qualification, commitment and behaviour of our tutors. And we are sure no one else can give such an assurance like this much audicityaudicity.We have over thousands of parents and students as our happy and satisfied clients as we have been providing tutors in the UK for the past 10 years.</p>
+								<p class="text-left"  >We take 100% responsibility of the performance,qualification, commitment and behaviour of our tutors. And we are sure no one else can give such an assurance like this much audicity.We have over thousands of parents and students as our happy and satisfied clients as we have been providing tutors in the UK for the past 10 years.</p>
 								<div class="about-list mb65 ul-li-block "  >
 									<ul class="text-justify">
 										<li>Professional And Experienced Since 2010</li>
@@ -683,7 +685,7 @@
 
 	<!-- Start latest section
 		============================================= -->
-		<section id="latest-area" class="latest-area-section">
+		<!-- <section id="latest-area" class="latest-area-section">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-4">
@@ -711,7 +713,7 @@
 										</ul>
 									</div>
 								</div>
-								<!-- /post -->
+								/post
 
 								<div class="latest-news-posts">
 									<div class="latest-news-area">
@@ -733,7 +735,7 @@
 											</ul>
 										</div>
 									</div>
-									<!-- /post -->
+									/post
 								</div>
 
 								<div class="view-all-btn bold-font">
@@ -742,7 +744,7 @@
 							</div>
 						</div>
 					</div>
-					<!-- /latest-news -->
+					/latest-news
 					<div class="col-md-4">
 						<div class="latest-area-content " >
 							<div class="section-title-2 mb65 headline text-left">
@@ -804,7 +806,7 @@
 							</div>
 						</div>
 					</div>
-					<!-- /events -->
+					/events
 
 					<div class="col-md-4">
 						<div class="latest-area-content " >
@@ -826,10 +828,10 @@
 							</div>
 						</div>
 					</div>
-					<!-- /. -->
+					/.
 				</div>
 			</div>
-		</section>
+		</section> -->
 	<!-- End latest section
 		============================================= -->
 
@@ -1745,7 +1747,8 @@
 						<div class="col-md-4">
 							<div class="category-icon-title text-center "  >
 								<div class="category-icon">
-									<i class="text-gradiant flaticon-technology"></i>
+									<!-- <i class="text-gradiant flaticon-technology"></i> -->
+									<i class="text-gradiant fas fa-calculator"></i>
 								</div>
 								<div class="category-title">
 									<h4>Maths</h4>
@@ -1757,7 +1760,9 @@
 						<div class="col-md-4">
 							<div class="category-icon-title text-center "  >
 								<div class="category-icon">
-									<i class="text-gradiant flaticon-app-store"></i>
+									<!-- <i class="text-gradiant flaticon-app-store"></i> -->
+									<i class="text-gradiant fa fa-sort-alpha-desc"></i>
+									
 								</div>
 								<div class="category-title">
 									<h4>English</h4>
@@ -1769,7 +1774,8 @@
 						<div class="col-md-4">
 							<div class="category-icon-title text-center "  >
 								<div class="category-icon">
-									<i class="text-gradiant flaticon-artist-tools"></i>
+									<!-- <i class="text-gradiant flaticon-artist-tools"></i> -->
+									<i class="text-gradiant fas fa-flask"></i>
 								</div>
 								<div class="category-title">
 									<h4>Science</h4>
@@ -1793,7 +1799,8 @@
 						<div class="col-md-4">
 							<div class="category-icon-title text-center "  >
 								<div class="category-icon">
-									<i class="text-gradiant flaticon-dna"></i>
+									<!-- <i class="text-gradiant flaticon-dna"></i> -->
+									<i class="text-gradiant fas fa-certificate"></i>
 								</div>
 								<div class="category-title">
 									<h4>GCSE</h4>
@@ -1805,7 +1812,8 @@
 						<div class="col-md-4">
 							<div class="category-icon-title text-center "  >
 								<div class="category-icon">
-									<i class="text-gradiant flaticon-cogwheel"></i>
+									<!-- <i class="text-gradiant flaticon-cogwheel"></i> -->
+									<i class="text-gradiant fas fa-book"></i>
 								</div>
 								<div class="category-title">
 									<h4>SATS</h4>

@@ -352,32 +352,34 @@
                             ensure that tutors provides its students with only the very best online tutors. And because
                             many of our tutors are still students themselves, they are the best at communicating with our
                             students!</p>
-                        <h4 style="margin: 20px;">Help change someone's prospects today and sign up to become a tutor. <span class="subtitle">(Tutor any of over 300 subjects that we offer)</span></h4>
+                        <h4 style="margin: 20px;">Help change someone's prospects today and sign up to become a tutor. 
+                            <!-- <span class="subtitle">(Tutor any of over 300 subjects that we offer)</span> -->
+                        </h4>
                     </div>
                     <div class="subject">
                         <div class="container">
                             <ul>
                                 <h4>Academics</h4>
                                 <li class=""><a class="cursor-pointer bottom-subject-links" data-subject-id="330">English</a></li>
-                                <li class=""><a class="cursor-pointer bottom-subject-links" data-subject-id="699">Business</a></li>
-                                <li class=""><a class="cursor-pointer bottom-subject-links" data-subject-id="551">Economics</a></li>
-                                <li class=""><a class="cursor-pointer bottom-subject-links" data-subject-id="517">Biology</a></li>
-                                <li class=""><a class="cursor-pointer bottom-subject-links" data-subject-id="597">Physics</a></li>
-                                <li class=""><a class="cursor-pointer bottom-subject-links" data-subject-id="580">Chemistry</a></li>
-                                <li class=""><a class="cursor-pointer bottom-subject-links" data-subject-id="642">History</a></li>
+                                <li class=""><a class="cursor-pointer bottom-subject-links" data-subject-id="699">Maths</a></li>
+                                <li class=""><a class="cursor-pointer bottom-subject-links" data-subject-id="551">Science</a></li>
+                                <li class=""><a class="cursor-pointer bottom-subject-links" data-subject-id="517">GCSE</a></li>
+                                <li class=""><a class="cursor-pointer bottom-subject-links" data-subject-id="597">SATS</a></li>
+                                <!-- <li class=""><a class="cursor-pointer bottom-subject-links" data-subject-id="580">Chemistry</a></li>
+                                <li class=""><a class="cursor-pointer bottom-subject-links" data-subject-id="642">History</a></li> -->
                             </ul>
-                            <ul>
+                            <!-- <ul>
                                 <h4 class="mt-3">Lifestyle</h4>
                                 <li class=""><a class="cursor-pointer bottom-subject-links" data-subject-id="89">Cooking</a></li>
                                 <li class=""><a class="cursor-pointer bottom-subject-links" data-subject-id="183">Coaching</a></li>
                                 <li class=""><a class="cursor-pointer bottom-subject-links" data-subject-id="828">Song writing</a></li>
-                            </ul>
+                            </ul> -->
                             <ul>
                                 <h4 class="mt-3">Professional learning</h4>
-                                <li class=""><a class="cursor-pointer bottom-subject-links" data-subject-id="230">Web design</a></li>
-                                <li class=""><a class="cursor-pointer bottom-subject-links" data-subject-id="620">Software</a></li>
-                                <li class=""><a class="cursor-pointer bottom-subject-links" data-subject-id="265">Coding</a></li>
-                                <li class=""><a class="cursor-pointer bottom-subject-links" data-subject-id="549">Social media</a></li>
+                                <li class=""><a class="cursor-pointer bottom-subject-links" data-subject-id="230">Teacher Training</a></li>
+                                <li class=""><a class="cursor-pointer bottom-subject-links" data-subject-id="620">Teacher Assistant</a></li>
+                                <li class=""><a class="cursor-pointer bottom-subject-links" data-subject-id="265">Nursing</a></li>
+                                <li class=""><a class="cursor-pointer bottom-subject-links" data-subject-id="549">Child Care</a></li>
                             </ul>
                         </div>
                     </div>
