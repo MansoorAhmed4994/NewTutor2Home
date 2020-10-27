@@ -288,6 +288,9 @@
 									<li><a href="#">125k Unrolled</a></li>
 								</ul>
 							</div>
+							<div class="nws-button text-center  gradient-bg text-capitalize">
+								<button type="button"><span class="full_size_text">Search Tutors</span><span class="short_size_text">Search</span></button>
+							</div>
 						</div>
 					</div>
 					<!-- /item -->

@@ -159,7 +159,6 @@
                              @endfor</span></h6> 
                                                 @endif   
                                             </div>
-<<<<<<< HEAD
                                         <div class="right col-lg-5 col-md-6">
                                         <div class="bdr">
                                             <div class="text-center">
@@ -168,48 +167,21 @@
                                                     @if(isset($teacher->qualification) && !empty($teacher->qualification)) 
                                                     <span class="price d-block">
                                                     @for($i=0;$i<=count($rate)-1;$i++)
-                              @if($teacher->qualification->Tutor_per_hour==$i) ${{ $rate[$i] }} @endif
-                             @endfor</span> /hour
-                             @endif
+                                                    @if($teacher->qualification->Tutor_per_hour==$i) ${{ $rate[$i] }} @endif
+                                                    @endfor</span> /hour
+                                                    @endif
                                                 </span>
                                             </div>
-                                            <div>
+                                        <div>
                                                 <ul class="rating mb-0">
-                                                    <li class="pr-1"><i class="fa fa-star-o" aria-hidden="true"></i></li><li class="pr-1"><i class="fa fa-star-o" aria-hidden="true"></i></li><li class="pr-1"><i class="fa fa-star-o" aria-hidden="true"></i></li><li class="pr-1"><i class="fa fa-star-o" aria-hidden="true"></i></li><li class="pr-1"><i class="fa fa-star-o" aria-hidden="true"></i></li>
+                                                    <li class="pr-1"><i class="fa fa-star-o" aria-hidden="true"></i></li>
+                                                    <li class="pr-1"><i class="fa fa-star-o" aria-hidden="true"></i></li>
+                                                    <li class="pr-1"><i class="fa fa-star-o" aria-hidden="true"></i></li>
+                                                    <li class="pr-1"><i class="fa fa-star-o" aria-hidden="true"></i></li>
+                                                    <li class="pr-1"><i class="fa fa-star-o" aria-hidden="true"></i></li>
                                                     <li><small style="font-size: small;">0 reviews</small></li>
                                                 </ul>
                                                 <div class="clearfix"></div>
-=======
-                                            <div class="right col-lg-5 col-md-6">
-                                                <div class="bdr">
-                                                    <div class="text-center">
-                                                        <span class="hour">
-                                                        
-                                                            @if(isset($teacher->qualification) && !empty($teacher->qualification)) 
-                                                            <span class="price d-block">
-                                                                @for($i=0;$i<=count($rate)-1;$i++)
-                                                                @if($teacher->qualification->Tutor_per_hour==$i) ${{ $rate[$i] }} @endif
-                                                                @endfor
-                                                            </span> /hour
-                                                                @endif
-                                                        </span>
-                                                    </div>
-                                                <div>
-                                                
-                                                    <ul class="rating mb-0">
-                                                        <li class="pr-1"><i class="fa fa-star-o" aria-hidden="true"></i></li>
-                                                        <li class="pr-1"><i class="fa fa-star-o" aria-hidden="true"></i></li>
-                                                        <li class="pr-1"><i class="fa fa-star-o" aria-hidden="true"></i></li>
-                                                        <li class="pr-1"><i class="fa fa-star-o" aria-hidden="true"></i></li>
-                                                        <li class="pr-1"><i class="fa fa-star-o" aria-hidden="true"></i></li>
-                                                        <li><small style="font-size: small;">0 reviews</small></li>
-                                                    </ul>
-                                                    <div class="clearfix">
-
-                                                    
-                                                    </div>
-                                                </div>
->>>>>>> b367e22e7aa493464a3761c601f9b5d883a759b8
                                                 <!-- <p><span class="badge badge-success">0</span> completed lessons</p> -->
                                             </div>
                                             <p class="d-none">Complete Session <span class="icn">450</span></p>
