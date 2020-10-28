@@ -1400,6 +1400,220 @@ b, strong {
   margin-left: 15px;
 }
 
+.modal-dialog {
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  max-width: 490px;
+  border: 4px solid #ddd;
+  background: #000
+}
+
+.modal-header {
+  -webkit-border-top-left-radius: 3px;
+  -moz-border-top-left-radius: 3px;
+  border-top-left-radius: 3px;
+  -webkit-border-top-right-radius: 3px;
+  -moz-border-top-right-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom: 0px !important ;
+}
+
+.modal-footer {
+  -webkit-border-bottom-left-radius: 3px;
+  -moz-border-bottom-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  -moz-border-bottom-right-radius: 3px;
+  border-bottom-right-radius: 3px
+}
+
+.modal-search-input {
+  border: 0;
+  width: 100%;
+  height: 50px;
+  outline: 0;
+  font-size: 30px
+}
+
+.panel-square {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0
+}
+
+.panel-default {
+  border: 1px solid #ffb7ac
+}
+
+.panel-default .panel-heading {
+  background-color: #fddad4;
+  color: #b55241
+}
+
+.panel-heading a {
+  font-size: 14px;
+  color: #333
+}
+
+.panel-light {
+  border: 1px solid #ebebeb
+}
+
+.panel-light .panel-heading {
+  background-color: #fff;
+  color: #333
+}
+
+.panel-gray {
+  border: 1px solid #e1e1e1
+}
+
+.panel-gray .panel-heading {
+  background-color: #e1e1e1;
+  color: #333
+}
+
+.panel-dark {
+  border: 1px solid #111
+}
+
+.panel-dark .panel-heading {
+  background-color: #333;
+  color: #fff
+}
+
+.panel-heading {
+  padding: 10px 15px;
+  font-size: 13px!important;
+  cursor: pointer
+}
+
+.panel-heading i {
+  margin-right: 10px
+}
+
+.panel-collapse.collapse.in,
+.panel-collapse.collapsing {
+  background-color: #fff!important
+}
+
+.color-blue {
+  color: #17d0cf !important
+}
+
+.modal-title
+{
+  margin: 0;
+  line-height: 1.42857143;
+}
+.modal-header h3
+{
+  font-family: Oswald, sans-serif;
+  font-weight: 400!important;
+  color: #000;
+  font-size: 22px;
+  -webkit-font-smoothing: antialiased;
+}
+
+.modal-content {
+  background-color: #000000 !important;
+  margin: auto;
+  padding: 20px;
+   border: 0px !important;
+  width: auto !important;
+}
+
+.modal-header .close {
+  margin-top: -2px !important;
+  margin: 0rem !important;
+}
+
+.close:hover {
+  color: #fff !important;
+  text-decoration: none !important;
+  cursor: pointer !important;
+}
+
+button.close {
+  -webkit-appearance: none !important;
+  padding: 0 !important;
+  cursor: pointer !important;
+  background: 0 0 !important;
+  border: 0 !important;
+}
+
+.close {
+  float: right !important;
+  font-size: 28px !important;
+  line-height: 1 !important;
+  color: #fff !important;
+}
+
+.close, .popover, .tooltip {
+  font-weight: 400 !important;
+}
+
+.input-group {
+  display: table;
+  border-collapse: separate;
+}
+
+.input-group, .input-group-btn, .input-group-btn>.btn, .nav>li, .nav>li>a, .navbar {
+  position: relative;
+}
+
+
+
+.input-group-addon:first-child {
+  border-right: 0;
+}
+
+
+element.style {
+}
+.input-group-addon:first-child {
+    border-right: 0;
+}
+.input-group .form-control:first-child, .input-group-addon:first-child, .input-group-btn:first-child>.btn, .input-group-btn:first-child>.btn-group>.btn, .input-group-btn:first-child>.dropdown-toggle, .input-group-btn:last-child>.btn-group:not(:last-child)>.btn, .input-group-btn:last-child>.btn:not(:last-child):not(.dropdown-toggle) {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.input-group-addon {
+    background-color: #000;
+    border-radius: 0;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    padding: 6px 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.input-group-addon, .input-group-btn {
+  width: 1%;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+.input-group .form-control, .input-group-addon, .input-group-btn {
+  display: table-cell;
+}
+
+
+.input-group .form-control, .input-group-addon, .input-group-btn {
+  display: table-cell;
+}
+
+
+.input-group .form-control {
+  position: relative;
+  z-index: 2;
+  float: left;
+  width: 100%;
+  margin-bottom: 0;
+}
+
 @media (max-width: 1549px){
 .btn {
     font-size: 14px;

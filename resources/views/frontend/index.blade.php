@@ -29,9 +29,78 @@
 
         }
 
+
+		body {font-family: Arial, Helvetica, sans-serif;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
         
 
 </style>
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
 </head>
 <!-- Start of slider section
 		============================================= -->
@@ -288,8 +357,68 @@
 									<li><a href="#">125k Unrolled</a></li>
 								</ul>
 							</div>
-							<div class="nws-button text-center  gradient-bg text-capitalize">
-								<button type="button"><span class="full_size_text">Search Tutors</span><span class="short_size_text">Search</span></button>
+							<br>
+							
+							<div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="margin-left: -40rem;" aria-hidden="true">
+								<div class="modal-dialog" style="margin: 0.75rem auto !important;" role="document">
+									<div class="modal-content">
+										<div class="modal-header ">
+											<button type="button" class="close" data-dismiss="modal">×</button>
+        									<h3 class="modal-title text-center color-blue"> TELL US ABOUT YOUR PROJECT </h3>
+										</div>
+										<div class="modal-body ">
+											<form class="form-horizontal">
+												<div class="form-group">
+													<input name="subject" id="q_sub" value="TELL US ABOUT YOUR PROJECT" type="hidden">
+													<div class="col-sm-12">
+													<div class="input-group">
+														<div class="input-group-addon"><i class="fa fa-user" aria-hidden="true"></i></div>
+														<input class="form-control" id="q_name" placeholder="Name" type="text" maxlength="25">
+													</div>
+													<br>
+													</div>
+													<div class="col-sm-12">
+													<div class="input-group">
+														<div class="input-group-addon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+														<input class="form-control" id="q_email" placeholder="Email" type="text" maxlength="75">
+													</div>
+													</div>
+												</div>
+												<div class="form-group">
+													<div class="col-sm-12">
+													<div class="input-group">
+														<div class="input-group-addon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+														<input class="form-control" id="q_phone" placeholder="Phone Number" type="text" maxlength="13">
+													</div>
+													<br>
+													</div>
+													<div class="col-sm-12">
+													<div class="input-group">
+														<div class="input-group-addon"><i class="fa fa-dribbble" aria-hidden="true"></i></div>
+														<input class="form-control" id="q_country" placeholder="Country" type="text" maxlength="20" value="Australia">
+													</div>
+													</div>
+												</div>
+												<div class="form-group">
+													<div class="col-sm-12">
+													<textarea id="q_msg" class="form-control" rows="2" placeholder="Message" maxlength="150"></textarea>
+													</div>
+												</div>
+												<div class="form-group text-center">
+													<div class="genius-btn gradient-bg  d-flex justify-content-center  text-uppercase ul-li-block bold-font">
+														<a type="button " style="color: #fff;">Get quote</a>
+													</div>
+												</div>
+											</form>
+
+										</div>
+										
+									</div>
+								</div>
+							</div>
+							
+							<div class="genius-btn gradient-bg ml-5 text-center text-uppercase ul-li-block bold-font">
+								<a href=""  data-toggle="modal" data-target="#modalLoginForm">Request a Quote <i class="fas fa-caret-right"></i></a>
 							</div>
 						</div>
 					</div>
@@ -329,6 +458,10 @@
 									<li><a href="#">125k Unrolled</a></li>
 								</ul>
 							</div>
+							<br>
+							<div class="genius-btn gradient-bg ml-5 text-center text-uppercase ul-li-block bold-font">
+								<a href=""  data-toggle="modal" data-target="#modalLoginForm">Request a Quote <i class="fas fa-caret-right"></i></a>
+							</div>
 						</div>
 					</div>
 					<!-- /item -->
@@ -367,6 +500,10 @@
 									<li><a href="#">125k Unrolled</a></li>
 								</ul>
 							</div>
+							<br>
+							<div class="genius-btn gradient-bg ml-5 text-center text-uppercase ul-li-block bold-font">
+								<a href=""  data-toggle="modal" data-target="#modalLoginForm">Request a Quote <i class="fas fa-caret-right"></i></a>
+							</div>
 						</div>
 					</div>
 					<!-- /item -->
@@ -404,6 +541,10 @@
 									<li><a href="#"><i class="fas fa-comment-dots"></i> 1.015</a></li>
 									<li><a href="#">125k Unrolled</a></li>
 								</ul>
+							</div>
+							<br>
+							<div class="genius-btn gradient-bg ml-5 text-center text-uppercase ul-li-block bold-font">
+								<a href=""  data-toggle="modal" data-target="#modalLoginForm">Request a Quote <i class="fas fa-caret-right"></i></a>
 							</div>
 						</div>
 					</div>
